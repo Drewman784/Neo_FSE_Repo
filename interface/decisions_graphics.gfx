@@ -1,0 +1,58 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_category_image_template"
+		texturefile = "gfx/interface/decisions/category_image_template.dds"
+	}
+	spriteType = {
+		name = "GFX_category_icon"
+		texturefile = "gfx/interface/decisions/category_icon_template.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_default"
+		texturefile = "gfx/interface/decisions/decision_icon_default.dds"
+	}
+	spriteType = {
+		name = "GFX_first_stage_done"
+		texturefile = "gfx/interface/decisions/first_stage_done.dds"
+	}
+	spriteType = {
+		name = "GFX_structural_profile"
+		texturefile = "gfx/interface/decisions/structural_profile.dds"
+	}
+	spriteType = {
+		name = "GFX_machine_shop"
+		texturefile = "gfx/interface/decisions/machine_shop.dds"
+	}
+	spriteType = {
+		name = "GFX_foundry"
+		texturefile = "gfx/interface/decisions/foundry.dds"
+	}
+	spriteType = {
+		name = "GFX_machine_part"
+		texturefile = "gfx/interface/decisions/machine_part.dds"
+	}
+	spriteType = {
+		name = "GFX_steel_composite"
+		texturefile = "gfx/interface/decisions/steel_composite.dds"
+	}
+	spriteType = {
+		name = "GFX_pressure_valves_done"
+		texturefile = "gfx/interface/decisions/pressure_valves_done.dds"
+	}
+	spriteType = {
+		name = "GFX_tower_pumps"
+		texturefile = "gfx/interface/decisions/tower_pumps_done.dds"
+	}
+	spriteType = {
+		name = "GFX_generator_core"
+		texturefile = "gfx/interface/decisions/generator_core_done.dds"
+	}
+	spriteType = {
+		name = "GFX_support_frame"
+		texturefile = "gfx/interface/decisions/support_frame_one_done.dds"
+	}
+		spriteType = {
+		name = "GFX_thermal_hull"
+		texturefile = "gfx/interface/decisions/thermal_hull_done.dds"
+	}
+}

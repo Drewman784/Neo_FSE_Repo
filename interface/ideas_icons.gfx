@@ -1,0 +1,42 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_construction_crew"
+		texturefile = "gfx/interface/ideas/construction_crew_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_iec_oversight"
+		texturefile = "gfx/interface/ideas/iec_oversight_idea.dds"
+		}
+		
+	SpriteType = { #Rick Astley Placeholder Icon
+		name = "GFX_idea_get_rick_rolled_scrub"
+		texturefile = "gfx/interface/ideas/get_rick_rolled_scrub.ddss"
+
+	}
+	SpriteType = {
+		name = "GFX_idea_many_workers"
+		texturefile = "gfx/interface/ideas/many_workers.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_some_workers"
+		texturefile = "gfx/interface/ideas/some_workers.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_some_workers"
+		texturefile = "gfx/interface/ideas/some_workers.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_few_workers"
+		texturefile = "gfx/interface/ideas/few_workers.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_no_workers"
+		texturefile = "gfx/interface/ideas/no_workers.dds"
+	}
+		
+		
+		
+		
+		
+}

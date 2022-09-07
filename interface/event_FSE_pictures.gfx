@@ -1,0 +1,22 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_forager_construction_event"
+		texturefile = "gfx/event_pictures/report_forager_construction_event.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_startup_event"
+		texturefile = "gfx/event_pictures/report_startup_event.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_ordering_pop_event"
+		texturefile = "gfx/event_pictures/report_ordering_pop_event.dds"
+	}
+
+
+
+
+
+}

@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tla_bookmark"
+		texturefile = "gfx/interface/the_last_autumn_1922.dds"
+	}
+
+	spriteType = {
+		name = "GFX_under_construction_bookmark"
+		texturefile = "gfx/interface/under_construction_1922.dds"
+	}
+}

@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_construction_crew"
+		texturefile = "gfx/interface/advisors/construction_crew_idea.dds"
+	}
+
+	
+}
