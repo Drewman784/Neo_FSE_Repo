@@ -1,0 +1,167 @@
+﻿l_english:
+ 
+ ##
+ ## National Focus Localization
+ ##
+ 
+  SIX_starting_focus:0 "A Man of Conviction"
+  SIX_starting_focus_desc:0 "One of the first people to arrive at Site Zero-Six is it's director, Arthur Row; even back home he bore the appearance of a man plucked straight from the past, this contrast is made even more apparent as he helms a small part of what many are hoping will be the Empire's future. Though rightly pinned as a capable administrator, it's quickly becoming apparent that he'd much rather be back home, enjoying his retirement."
+ 
+  establish_operations:0 "Establishing the Operation"
+  establish_operations_desc:0 "test desc"
+
+  of_chilled_calculations:0 "Of Chilled Calculations"
+  of_chilled_calculations_desc:0 "Placeholder"
+
+  of_the_disillusioned:0 "Of the Disillusioned"
+  of_the_disillusioned_desc:0 "Placeholder"
+
+  of_sweat_and_blood:0 "Of Sweat and Blood"
+  of_sweat_and_blood_desc:0 "placeholder"
+
+  of_tempered_steel:0 "Of Tempered Steel"
+  of_tempered_steel_desc:0 "placeholder"
+
+  smooth_sailing:0 "Smooth Sailing?"
+  smooth_sailing_desc:0 "Placeholder"
+
+  a_bad_workman...:0 "A bad workman..."
+  a_bad_workman..._desc:0 "Placeholder"
+
+  always_blames_his_tools:0 "...always blames his tools"
+  always_blames_his_tools_desc:0 "Placeholder"
+
+  calm_the_workers:0 "Calm the Workers"
+  calm_the_workers_desc:0 "Placeholder"
+
+  establish_the_foremen:0 "Establish the Foremen"
+  establish_the_foremen_desc:0 "Placeholder"
+
+  call_in_some_favors:0 "Call in some favors"
+  call_in_some_favors_desc:0 "Placeholder"
+
+  improve_safety_standards:0 "Improve Safety Procedures"
+  improve_safety_standards_desc:0 "Placeholder"
+
+  aid_from_03:0 "Aid from 03"
+  aid_from_03_desc:0 "Placeholder"
+  
+  the_dove_of_birmingham:0 "The Dove of Birmingham"
+  the_dove_of_birmingham_desc:0 "Placeholder"
+  
+  better_tools:0 "A step in the right direction"
+  better_tools_desc:0 "placeholder"
+  
+  halt_construction:0 "Halt construction!"
+  halt_construction_desc:0 "Placeholder"
+  
+  asses_damages:0 "Asses the damage"
+  asses_damages_desc:0 "Placeholder"
+  
+  a_sermon_for_the_lost:0 "A Sermon for the lost"
+  a_sermon_for_the_lost_desc:0 "Placeholder"
+  
+  visit_the_wounded:0 "Visit the wounded"
+  visit_the_wounded_desc:0 "Placeholder"
+  
+  taking_on_water:0 "Taking on water"
+  taking_on_water_desc:0 "Placeholder"
+  
+  a_gift_from_an_old_friend:0 "A gift from an old friend"
+  a_gift_from_an_old_friend_desc:0 "Placeholder"
+  
+  promise_change:0 "Promise Change"
+  promise_change_desc:0 "Placeholder"
+  
+  another_look_at_safety:0 "Another look at safety"
+  another_look_at_safety_desc:0 "Placeholder"
+  
+  what_we_need:0 "What we need"
+  what_we_need_desc: "Placeholder"
+  
+  re-establish_order:0 "Re-establish Order"
+  re-establish_order_desc:0 "Placeholder"
+  
+  call_in_the_jackboots:0 "Call in the jackboots"
+  call_in_the_jackboots_desc:0 "Placeholder"
+  
+  safety_of_another_kind:0 "Safety of another kind"
+  safety_of_another_kind_desc:0 "Placeholder"
+  
+  the_foragers_plan:0 "The Forager's Plan"
+  the_foragers_plan_desc:0 "Placeholder"
+  
+  address_the_hazards:0 "Address the Hazards"
+  address_the_hazards_desc:0 "Placeholder"
+  
+  what_we_can_afford:0 "What we can afford"
+  what_we_can_afford_desc:0 "Placeholder"
+  
+  form_a_council:0 "An Employee's Council?"
+  form_a_council_desc:0 "Placeholder
+  
+  a_union_of_laborers:0 "A Union of Laborers"
+  a_union_of_laborers:0 "Placeholder"
+  
+  a_board_of_inspectors:0 "A Board of Inspectors"
+  a_board_of_inspectors:0 "Placeholder"
+  
+  a_meeting_of_some_magnitude:0 "A Meeting of some Magnitude"
+  a_meeting_of_some_magnitude_desc:0 "Placeholder"
+  
+  the_workers_heard:0 "The Workers Heard?"
+  the_workers_heard_desc:0 "Placeholder"
+  
+  reason_prevails:0 "Reason Prevails?"
+  reason_prevails_desc:0 "Placeholder"
+  
+  a_question_of_locale:0 "A question of locale"
+  a_question_of_locale_desc:0 "Placeholder"
+  
+  a_question_of_security:0 "A question of security"
+  a_question_of_security_desc:0 "Placeholder"
+
+  ## 
+  ## Events Localization
+  ##
+  nf_six.1.t:0 "The Director Arrives."
+  nf_six.1.d:0 "There was little grandeur to remark about the train station that Arthur Row stepped onto as he arrived at the outskirts of Construction Site 06. As opposed to the immense passenger stations of London, this comparitevly small enterprise had it's primary facilities dedicated towards the unloading of cargo, a litany of laymen milling about the area in their task of unloading the newly arrived train's contents. The men hardly paid Row any mind, much more wary of the company foreman watching their activities from afar. Had this same station been in the isles, a a group of mechanical, automated contraptions would have been unloading the train's burdenous haul instead. \n \n"Well, nothing that can't be improved upon." Row muttered to himself, already lighting a cigar. A small pillar of smoke rose from it's end a moment later. The newly appointed Director let out a small sigh, taking a puff of his cigar before beginning to make his way across the station in the direction of the company officer. \n \nAfter introducing himself and inquiring upon directions to the rest of the Site from the foreman, Row began his walk down the worn path towards the personnel elevator just outside the train station. As Row arrived and the elevator began it's descent, small glimpses of his new "domain" could be seen through the beams and girders that enabled the elevator’s travel. \n \nIt’s visage scarcely resembled his past operations in the subcontinent of India, let alone his home in Britain; a few sparse facilities accommodating a dozen tents, all centered around what appeared to be a fresh pit to Hell. This, according to what had been said by the company, was where the construction of what the engineers called a "Heat Generator Tower" would take place. All of this work for some sort of fancy expansion project for the big cats of the Empire, a safe haven in case the Empire descended further into crisis. Row snorted quietly at the thought, watching as the elevator neared the canyon floor. As far as he was concerned, this whole ‘Long Autumn’ business was nothing more than a passing trend, a brief blip of trouble in the Empire’s continued history. It would let up eventually, god willing, and this whole project will have been for naught. If man could live here, in the farthest reaches of the north, how would the world perish if it got a little colder? \n \nRegardless, it was his job to see the project through and to do so poorly would be a stain upon his career... Maybe after all the hysteria had died down, he'd be able to return to Glasgow, and to fishing along the Clyde. \n \nPutting those thoughts aside as the elevator came to a shuddering stop however, Row set foot upon the cold earth, his gaze traveling across his new industrial fiefdom. Readying himself for the task ahead."
+ 
+  ##
+  ## Custom Effect Tooltips
+  ##
+  
+  ## Site 06 ##
+  chilled_calculations_tt:0 "We will recieve §Y10 Engineers §Wfrom the IEC to bolster our efforts"
+  the_disllusioned_tt:0 "We will recieve §O5 Medical Personnel §Wfrom the IEC to bolster our efforts"
+  sweat_and_blood_tt:0 "We will recieve §R30 Workers §Wfrom the IEC to bolster our efforts"
+  tempered_steel_tt:0 "We will recieve §g20 Guards §Wfrom the IEC to bolster our efforts"
+
+  halt_construction_tt:0 "§RConstruction efforts shall cease temporarily§W"
+  
+  jackboots_06_tt:0 "§gWe will request 20 additional armed IEC personnel to help fortify the Site from any future strikes led by the workers§W"
+  
+  forager_path_06_tt:0 "§9This focus will unlock a new focus tree for the Site§W"
+  
+  guard_path_06_tt:0 "§gThis focus will unlock a new focus tree for the Site§W"
+  
+  engineer_path_06_tt:0 "§YThis focus will unlock a new focus tree for the Site§W"
+  
+  worker_path_06_tt:0 "§RThis focus will unlock a new focus tree for the Site§W"
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

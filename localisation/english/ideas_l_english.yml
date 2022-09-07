@@ -1,0 +1,240 @@
+﻿l_english:
+ #construction_site_idea:0 "Construction Crew"
+ #construction_site_idea_desc:0 "We are one of ten Sites, sent here to the cold north to construct the gretest device ever concieved- a Generator. Allured here by the promise of a good wage and safe working conditions, our men and women work tirelessly to complete the British Empire's latest expansion project."
+ iec_oversight:0 "IEC Oversight"
+ 
+ 
+ no_div_tt:0 "§RCan not train or disband units, or edit unit templates. §W"
+
+ #Laws/Policies
+ 
+ national_identity:0 "National Identity"
+ 
+ ###
+ #Origins
+ ###
+ 
+ origin:0 "Oirigin"
+ 
+ construction_crew:0 "Construction Crew"
+ construction_crew_desc:0 "We are one of ten Sites, sent here to the cold north to construct the gretest device ever concieved- a Generator. Allured here by the promise of a good wage and safe working conditions, our men and women work tirelessly to complete the British Empire's latest expansion project."
+ construction_crew_trait:0 "Origin"
+
+ penal_colony:0 "Penal Colony"
+ penal_colony_trait:0 "Origin"
+ 
+ ark_caretakers:0 "Ark Caretakers"
+ seedling_ark_trait:0 "Origin"
+ 
+ corporation:0 "Corporation"
+ corporation_trait:0 "Origin"
+ 
+ ###
+ #Governance Type
+ ###
+ 
+ governance_type:0 "Governance Type"
+ 
+ iec_subsidiary:0 "IEC Subsidiary"
+ 
+ megacorporation:0 "Megacorporation"
+ 
+ ###
+ #National Ambition
+ ###
+ 
+ national_ambition:0 "National Ambition"
+ 
+ propoganda_ambition:0 "Propoganda"
+ 
+ warfare_ambition:0 "Warfare"
+ 
+ work_safety_ambition:0 "Work Safety"
+ 
+ ws_safety.tt:0 "§GIncreases Work Safety by a level§W" 
+ 
+ work_safety_2_ambition:0 "Expedited Work"
+ 
+ ws_expedite.tt:0 "§RDecreases Work Safety by a level§W"
+ 
+ technology_ambition:0 "Technological Progress"
+ 
+ exploration_ambition:0 "Exploration"
+ 
+ explore_ambition.tt:0 "§GDecreases the amount of time it takes for Foragers to return by 10 days§W"
+ 
+ ###
+ # Dominant Nationality
+ ###
+ 
+ dominant_nationality:0 "Dominant Nationality"
+ 
+ english_nationality:0 "English"
+ 
+ german_nationality:0 "German"
+ 
+ icelandic_nationality:0 "Icelandic"
+ 
+ ###
+ # Societal Outlook
+ ###
+ 
+ societal_outlook:0 "Societal Outlook"
+ 
+ industrialist:0 "Industrialist"
+ 
+ competetive:0 "Competetive"
+ 
+ elitist:0 "Elitist"
+ 
+ faithful:0 "Faithful"
+ 
+ militarist:0 "Militarist"
+ 
+ jingoistic:0 "Jingoistic"
+ 
+ collaborative:0 "Collaborative"
+ 
+ cannibalistic:0 "Cannibalistic"
+ 
+ ###
+ # Level of Militarism
+ ###
+ 
+ level_of_militarism:0 "Level of Militarism"
+ 
+ disarmed:0 "Disarmed"
+ 
+ defensive_only:0 "Defensive Only"
+ 
+ standard_force:0 "Standard Force"
+ 
+ mobilized:0 "Mobilized"
+ 
+ for_god_and_country:0 "For God and Country!"
+ 
+ ###
+ # Population Demographics
+ ###
+ 
+ workers_slot:0 "Workers"
+ 
+ workers_0:0 "No Workers"
+ 
+ workers_20:0 "Skeleton Crew"
+ 
+ workers_40:0 "Minimal Labor Force"
+ 
+ workers_60:0 "Standard Labor Force"
+ 
+ workers_80:0 "Large Labor Force"
+ 
+ workers_100:0 "Massive Labor Force"
+ 
+ engineers_slot:0 "Engineers"
+ 
+ engineers_0:0 "No Engineers"
+ 
+ engineers_10:0 "Brain Drain"
+ 
+ engineers_15:0 "Severely Understaffed R&D Department"
+ 
+ engineers_20:0 "Understaffed R&D Department"
+ 
+ engineers_25:0 "Lightly Understaffed R&D Department"
+ 
+ engineers_30:0 "Standard Department"
+ 
+ engineers_35:0 "Above Average R&D Department"
+ 
+ engineers_40:0 "Large R&D Department"
+ 
+ engineers_45:0 "Very Large R&D Department"
+ 
+ engineers_50:0 "Oxford's Envy"
+ 
+ medical_personnel_slot:0 "Medical Personnel"
+ 
+ medical_personnel_0:0 "No Medical Personnel"
+ 
+ medical_personnel_10:0 "Miniscule Health Department" 
+ 
+ medical_personnel_15:0 "Struggling Health Department"
+ 
+ medical_personnel_20:0 "Small Health Department"
+ 
+ medical_personnel_25:0 "Standard Health Department"
+ 
+ medical_personnel_30:0 "Burgeoning Health Department"
+ 
+ medical_personnel_35:0 "Substantial Health Department"
+ 
+ medical_personnel_40:0 "Large Health Department"
+ 
+ medical_personnel_45:0 "Very Large Health Department"
+ 
+ medical_personnel_50:0 "Medical Refuge"
+ 
+ guards_slot:0 "Guards"
+ 
+ guards_0:0 "Anarchy in the streets"
+ 
+ guards_10:0 "Widespread lawlessness"
+ 
+ guards_15:0 "Tiny Guard Presence"
+ 
+ guards_20:0 "Small Guard Presence"
+ 
+ guards_25:0 "Standard Guard Presence"
+ 
+ guards_30:0 "Heightened Security"
+ 
+ guards_35:0 "Safe and Secure"
+ 
+ guards_40:0 "Large Guard Force"
+ 
+ guards_45:0 "Huge Guard Force"
+ 
+ guards_50:0 "A Guard Around Every Corner"
+ 
+ convicts_slot:0 "Convicts"
+ 
+ children_slot:0 "Children"
+ 
+ amputees_slot:0 "Amputees"
+ 
+ automatons_slot:0 "Automatons"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ####
+ ## Societal Traits
+ ####
+ #
+ #society_trait_1:0 "Society Trait"
+ #
+ #society_trait_2:0 "Society Trait"
+ #
+ #society_trait_3:0 "Society Trait"
+ #
+ #indefatigable_1:0 "Indefatigable"
+ #
+ #indefatigable_2:0 "Indefatigable"
+ #
+ #indefatigable_3:0 "Indefatigable"
+ #
+ #erudite_1:0 "Erudite"
+ #
+ #erudite_2:0 "Erudite"
+ #
+ #erudite_3:0 "Erudite"
+ 
+
+
+

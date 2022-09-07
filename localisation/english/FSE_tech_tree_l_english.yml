@@ -1,0 +1,21 @@
+﻿l_english:
+ heating_folder:0 "Heating Folder"
+ heating_folder_desc:0 "To improve the heating capabilities of the site"
+ exploration_folder:0 "Exploration Folder"
+ exploration_folder_desc:0 "To explore and exploit resources elsewhere"
+ food_folder:0 "Food Folder"
+ food_folder_desc:0 "To prodcue and extend our precious food supplies"
+ healthcare_folder:0 "Healthcare Folder"
+ healthcare_folder_desc:0 "Sadly it's not free"
+ resources_folder:0 "Resources Folder"
+ resources_folder_desc:0 "To exploit our resources more efficiently"
+ shelter_folder:0 "Shelter Folder"
+ shelter_folder_desc:0 "To improve the capacity of our population"
+ transportation_folder:0 "Transportation Folder"
+ transportation_folder_desc:0 "The innovation of new transports"
+ innovation_folder:0 "Innovation Folder"
+ innovation_folder_desc:0 "Big brain time"
+ generator_folder:0 "Generator Folder"
+ generator_folder_desc:0 "The generator must continue to be improved upon"
+ 
+ 
