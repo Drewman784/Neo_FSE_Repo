@@ -1,0 +1,454 @@
+ideas = { #societal_outlook
+	
+	#How nation's society views the world, can impact events and how other nations see them
+	
+	societal_outlook = {
+		# SOCIETAL OUTLOOK	
+		industrialist = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = has_country_tag = cannibalistic_society
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+			}
+
+			available = { #Can a nation slect it
+				always = yes
+					
+						NOT = {has_country_flag = competitive_society }
+						NOT = {has_country_flag = elitist_society }
+						NOT = {has_country_flag = faithful_society }
+						NOT = {has_country_flag = militarist_society }
+						NOT = {has_country_flag = jingoistic_society }
+						NOT = {has_country_flag = collaborative_society }
+						NOT = {has_country_flag = cannibalistic_society }	
+					
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = industrialist_society
+			}
+			
+			on_remove = {
+				clr_country_flag = industrialist_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		competetive = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = { #Can a nation slect it
+				always = yes
+				
+					NOT = {has_country_flag = industrialist_society}
+					NOT = {has_country_flag = elitist_society }
+					NOT = {has_country_flag = faithful_society }
+					NOT = {has_country_flag = militarist_society }
+					NOT = {has_country_flag = jingoistic_society }
+					NOT = {has_country_flag = collaborative_society }
+					NOT = {has_country_flag = cannibalistic_society }
+				
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = competitive_society
+			}
+			
+			on_remove = {
+				clr_country_flag = competitive_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+	
+		elitist = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = { #Can a nation slect it
+				always = yes
+					NOT = {has_country_flag = industrialist_society }
+					NOT = {has_country_flag = competitive_society }
+					NOT = {has_country_flag = faithful_society }
+					NOT = {has_country_flag = militarist_society }
+					NOT = {has_country_flag = jingoistic_society }
+					NOT = {has_country_flag = collaborative_society }
+					NOT = {has_country_flag = cannibalistic_society }
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = elitist_society
+			}
+			
+			on_remove = {
+				clr_country_flag = elitist_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		faithful = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = { #Can a nation slect it
+				always = yes
+					NOT = {has_country_flag = industrialist_society }
+					NOT = {has_country_flag = competitive_society }
+					NOT = {has_country_flag = elitist_society }
+					NOT = {has_country_flag = militarist_society }
+					NOT = {has_country_flag = jingoistic_society }
+					NOT = {has_country_flag = collaborative_society }
+					NOT = {has_country_flag = cannibalistic_society }
+
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = faithful_society
+			}
+			
+			on_remove = {
+				clr_country_flag = faithful_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		militarist = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = { #Can a nation slect it
+				always = yes
+				
+					NOT = {has_country_flag = industrialist_society }
+					NOT = {has_country_flag = competitive_society }
+					NOT = {has_country_flag = elitist_society }
+					NOT = {has_country_flag = faithful_society }
+					NOT = {has_country_flag = jingoistic_society }
+					NOT = {has_country_flag = collaborative_society }
+					NOT = {has_country_flag = cannibalistic_society }
+				
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = militarist_society
+			}
+			
+			on_remove = {
+				clr_country_flag = militarist_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		jingoistic = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = { #Can a nation slect it
+				always = yes
+				
+					NOT = {has_country_flag = industrialist_society }
+					NOT = {has_country_flag = competitive_society }
+					NOT = {has_country_flag = elitist_society }
+					NOT = {has_country_flag = faithful_society }
+					NOT = {has_country_flag = militarist_society }
+					NOT = {has_country_flag = collaborative_society }
+					NOT = {has_country_flag = cannibalistic_society }
+				
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = jingoistic_society
+			}
+			
+			on_remove = {
+				clr_country_flag = jingoistic_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		collaborative = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = { #Can a nation slect it
+				always = yes
+				
+					NOT = {has_country_flag = industrialist_society }
+					NOT = {has_country_flag = competitive_society }
+					NOT = {has_country_flag = elitist_society }
+					NOT = {has_country_flag = faithful_society }
+					NOT = {has_country_flag = militarist_society }
+					NOT = {has_country_flag = jingoistic_society }
+					NOT = {has_country_flag = cannibalistic_society }
+				
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = collaborative_society
+			}
+			
+			on_remove = {
+				clr_country_flag = collaborative_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		cannibalistic = { 
+		picture = get_rick_rolled_scrub
+			
+			Cost = 150
+			removal_cost = 150
+			
+			
+			allowed = { #Will it show up
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = { #Can a nation slect it
+				#always = yes
+					has_country_flag = cannibals
+					NOT = {has_country_flag = industrialist_society }
+					NOT = {has_country_flag = competitive_society }
+					NOT = {has_country_flag = faithful_society }
+					NOT = {has_country_flag = militarist_society }
+					NOT = {has_country_flag = jingoistic_society }
+					NOT = {has_country_flag = collaborative_society }
+				
+			}
+			
+			#modifier = {
+			#	industrial_capacity_factory = 0.25
+			#	production_factory_start_efficiency_factor = 0.1
+			#	production_factory_max_efficiency_factor = 0.1 
+			#}
+			
+			on_add = {
+				set_country_flag = cannibalistic_society
+			}
+			
+			on_remove = {
+				clr_country_flag = cannibalistic_society
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+	}
+
+}

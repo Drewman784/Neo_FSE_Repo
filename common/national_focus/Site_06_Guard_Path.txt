@@ -1,0 +1,37 @@
+focus_tree = {
+	id = site_06_guard_path
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 6
+			tag = SIX
+		}
+	}
+	#load_focus_tree - command used in event to Load new focus tree for a country, in the end write ID of focus tree 
+	default = no
+    continuous_focus_position = { x = 50 y = 5000 }
+
+    focus = {
+		id = a_question_of_security
+		icon = GFX_goal_SIX_starting_focus
+		x = 0
+		y = 0
+		available_if_capitulated = no
+		completion_reward = {
+			#Gets event about where to house the soldiers w/Brooke
+			add_to_variable = { brooke_influence = 10 }
+			add_to_variable = { row_influence = -10 }
+			add_stability = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+			}
+		}
+	}
+
+
+}
+

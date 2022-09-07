@@ -1,0 +1,216 @@
+ideas = { #Origins
+	
+	origin = {
+		# ORIGIN	
+		construction_crew = { #Construction Crew Origin
+		picture = construction_crew
+			
+			allowed = {
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = {
+				#always = no
+				OR = {
+				
+					#NOT = { tag = IEC }
+					#NOT = { original_tag = ONE }
+					#NOT = { original_tag = NIN }
+					original_tag = TWO
+					original_tag = TRE
+					original_tag = FOR
+					original_tag = FIV
+					original_tag = SIX
+					original_tag = SEV
+					original_tag = EIG
+					original_tag = TEN
+				}
+			}
+			
+			traits = { construction_crew_trait
+			}
+			
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	origin = {
+		# ORIGIN	
+		penal_colony = { #Penal Colony Origin
+		picture = get_rick_rolled_scrub
+			
+			allowed = {
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = {
+				#always = no
+				OR = {
+				
+					#NOT = { tag = IEC }
+					#NOT = { original_tag = ONE }
+					original_tag = NIN 
+					#original_tag = TWO
+					#original_tag = TRE
+					#original_tag = FOR
+					#original_tag = FIV
+					#original_tag = SIX
+					#original_tag = SEV
+					#original_tag = EIG
+					#original_tag = TEN
+				}
+			}
+			
+			traits = { penal_colony_trait
+			}
+			
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	origin = {
+		# ORIGIN	
+		ark_caretakers = { #Seedling Arks Origin
+		picture = get_rick_rolled_scrub
+			
+			allowed = {
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = {
+				#always = no
+				OR = {
+				
+					#NOT = { tag = IEC }
+					original_tag = ONE 
+					#original_tag = NIN 
+					#original_tag = TWO
+					#original_tag = TRE
+					#original_tag = FOR
+					#original_tag = FIV
+					#original_tag = SIX
+					#original_tag = SEV
+					#original_tag = EIG
+					#original_tag = TEN
+				}
+			}
+			
+			traits = { seedling_ark_trait
+			}
+			
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	origin = {
+		# ORIGIN	
+		corporation = { #IEC Origin
+		picture = get_rick_rolled_scrub
+			
+			allowed = {
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = {
+				#always = no
+				OR = {
+				
+					tag = IEC 
+					#original_tag = ONE 
+					#original_tag = NIN 
+					#original_tag = TWO
+					#original_tag = TRE
+					#original_tag = FOR
+					#original_tag = FIV
+					#original_tag = SIX
+					#original_tag = SEV
+					#original_tag = EIG
+					#original_tag = TEN
+				}
+			}
+			
+			traits = { corporation_trait
+			}
+			
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+	}
+
+}

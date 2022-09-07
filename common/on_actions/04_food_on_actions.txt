@@ -1,0 +1,4460 @@
+on_actions = {
+
+#	on_monthly = {
+#		effect = {
+#			every_controlled_state = {
+#				limit = {
+#					has_resources_amount = {
+#					resource = steel
+#					amount > 0
+#					}
+#				}
+#				add_resource = {
+#					type = steel
+#					amount = -1	
+#				}
+#			}
+#		}
+#	}
+	
+	##     ##
+	## SIX ##
+	##     ##
+	
+	on_monthly_SIX = { #Less than 100 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_SIX = { #Less than 200 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_SIX = { #Less than 300 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 400 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 500 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 600 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 700 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 600
+							state_population < 700
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -7
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 800 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 700
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 900 people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 1k people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 1.2k people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 1.4k people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 1.6k people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 1.8k people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #Less than 2k people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SIX = { #More than 2k people
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						7 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					7 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	###     ###
+	### IEC ###
+	###     ###
+	
+	on_monthly_IEC = { #Less than 100 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_IEC = { #Less than 200 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_IEC = { #Less than 300 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 400 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 500 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 600 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 2700 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 600
+							state_population < 2700
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -27
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 800 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 2700
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 900 people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 1k people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 1.2k people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 1.4k people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 1.6k people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 1.8k people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #Less than 2k people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_IEC = { #More than 2k people
+		effect = {
+			IEC = {
+				if = {
+					limit = {
+						27 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					27 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	###      ###
+	### ONE  ###
+	###      ###
+	
+	on_monthly_ONE = { #Less than 100 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_ONE = { #Less than 200 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_ONE = { #Less than 300 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 400 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 500 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 600 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 1700 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 600
+							state_population < 1700
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -17
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 800 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 1700
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 900 people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 1k people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 1.2k people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 1.4k people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 1.6k people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 1.8k people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #Less than 2k people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ONE = { #More than 2k people
+		effect = {
+			ONE = {
+				if = {
+					limit = {
+						17 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					17 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	##     ##
+	## TWO ##
+	##     ##
+	
+	on_monthly_TWO = { #Less than 100 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_TWO = { #Less than 200 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_TWO = { #Less than 300 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 400 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 500 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 600 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 2300 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 600
+							state_population < 2300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -23
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 800 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 2300
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 900 people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 1k people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 1.2k people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 1.4k people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 1.6k people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 1.8k people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #Less than 2k people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TWO = { #More than 2k people
+		effect = {
+			TWO = {
+				if = {
+					limit = {
+						23 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					23 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	###    ###
+	### TRE###
+	### ###
+	
+	
+	on_monthly_TRE = { #Less than 100 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_TRE = { #Less than 200 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_TRE = { #Less than 300 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 400 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 500 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 600 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 1900 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 600
+							state_population < 1900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -19
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 800 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 1900
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 900 people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 1k people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 1.2k people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 1.4k people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 1.6k people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 1.8k people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #Less than 2k people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TRE = { #More than 2k people
+		effect = {
+			TRE = {
+				if = {
+					limit = {
+						19 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					19 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	###   ###
+	### FOR###
+	### ###
+	
+	
+	on_monthly_FOR = { #Less than 100 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_FOR = { #Less than 200 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_FOR = { #Less than 300 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 400 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 500 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 600 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 1500 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 600
+							state_population < 1500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -15
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 800 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 1500
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 900 people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 1k people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 1.2k people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 1.4k people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 1.6k people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 1.8k people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #Less than 2k people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FOR = { #More than 2k people
+		effect = {
+			FOR = {
+				if = {
+					limit = {
+						15 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					15 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	### FIV ###
+	
+	
+	on_monthly_FIV = { #Less than 100 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_FIV = { #Less than 200 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_FIV = { #Less than 300 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 400 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 500 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 600 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 1300 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 600
+							state_population < 1300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -13
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 800 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 1300
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 900 people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 1k people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 1.2k people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 1.4k people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 1.6k people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 1.8k people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #Less than 2k people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_FIV = { #More than 2k people
+		effect = {
+			FIV = {
+				if = {
+					limit = {
+						13 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					13 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	### SEV ###
+	
+	on_monthly_SEV = { #Less than 100 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_SEV = { #Less than 200 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_SEV = { #Less than 300 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 400 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 500 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 600 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 2100 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 600
+							state_population < 2100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -21
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 800 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 2100
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 900 people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 1k people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 1.2k people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 1.4k people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 1.6k people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 1.8k people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #Less than 2k people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_SEV = { #More than 2k people
+		effect = {
+			SEV = {
+				if = {
+					limit = {
+						21 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					21 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	### EIG ###
+	
+	
+	on_monthly_EIG = { #Less than 100 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_EIG = { #Less than 200 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_EIG = { #Less than 300 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 400 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 500 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 600 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 1100 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 600
+							state_population < 1100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -11
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 800 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 1100
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 900 people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 1k people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 1.2k people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 1.4k people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 1.6k people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 1.8k people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #Less than 2k people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_EIG = { #More than 2k people
+		effect = {
+			EIG = {
+				if = {
+					limit = {
+						11 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					11 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	### NIN ###
+	
+	on_monthly_NIN = { #Less than 100 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_NIN = { #Less than 200 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_NIN = { #Less than 300 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 400 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 500 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 600 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 900 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 600
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 800 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 900
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 900 people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 1k people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 1.2k people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 1.4k people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 1.6k people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 1.8k people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #Less than 2k people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_NIN = { #More than 2k people
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						9 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					9 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	### TEN ###
+	
+	
+	on_monthly_TEN = { #Less than 100 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 0
+							state_population < 100
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_TEN = { #Less than 200 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 100
+							state_population < 200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_TEN = { #Less than 300 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 200
+							state_population < 300
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 400 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 300
+							state_population < 400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -4
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 500 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 400
+							state_population < 500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 600 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 500
+							state_population < 600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -6
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 2500 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 600
+							state_population < 2500
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 800 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 2500
+							state_population < 800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -8
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 900 people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 800
+							state_population < 900
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -9
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 1k people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 900
+							state_population < 1000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 1.2k people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 1000
+							state_population < 1200
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 1.4k people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 1200
+							state_population < 1400
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -14
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 1.6k people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 1400
+							state_population < 1600
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -16
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 1.8k people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 1600
+							state_population < 1800
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -18
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #Less than 2k people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 1800
+							state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -20
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_TEN = { #More than 2k people
+		effect = {
+			TEN = {
+				if = {
+					limit = {
+						25 = {
+							state_population > 2000
+							#state_population < 2000
+							has_resources_amount = {
+							resource = steel
+							amount > 0
+							}
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+}

@@ -1,0 +1,362 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		
+		
+			NIN = { #Startup NIN stuff
+				
+				# Generator Construction #
+				
+				set_variable = { structural_profiles = 0 }
+				set_variable = { machine_parts = 0 }
+				set_variable = { steel_composites = 0 }
+				
+				set_variable = { stage_1_progress = 100 }
+				set_variable = { pressure_valves_progress = 0 }
+				set_variable = { tower_pumps_progress = 0 }
+				set_variable = { install_core_progress = 0 }
+				set_variable = { support_frame_one_progress = 0 }
+				set_variable = { support_frame_two_progress = 0 }
+				set_variable = { thermal_hull_one_progress = 0 }
+				set_variable = { thermal_hull_two_progress = 0 }
+				
+				
+				# Population Demographics #
+				
+				set_variable = { workers = 0 }
+				set_variable = { engineers = 15 }
+				set_variable = { medical_personnel = 5 }
+				set_variable = { guards = 30 }
+				set_variable = { convicts = 70 }
+				set_variable = { children = 0 }
+				set_variable = { amputees = 0 }
+				set_variable = { automatons = 0 }
+				
+				# Hope and Discontent #
+				
+				set_variable = { hope = 3 }
+				set_variable = { discontent = 0 }
+				
+				# Safety and Gas #
+				
+				set_variable = { work_safety = 2 }
+				set_variable = { cs_gas = 0 }
+				
+				# Resources #
+				
+				set_variable = { NIN_oil = 0 }
+				set_variable = { NIN_coal = 5 }
+				set_variable = { NIN_wood = 15 }
+				set_variable = { NIN_steel = 10 }
+				set_variable = { NIN_food = 10 }
+				set_variable = { NIN_steam_cores = 1 }
+				
+				# Misc #
+				
+				#set_country_flag =  convicts_allowed 
+
+				
+			}
+		}
+	}
+	
+	### Stage 1 ###
+	
+	on_weekly_NIN = { #NIN Gen Stage 1 Progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = stage_one_started
+					}
+					add_to_variable = { stage_1_progress = 20 }
+				}
+			}
+		}
+	}
+	
+#	on_weekly_NIN = { #Major Accident 1 and stage 1 variable min-max
+#		effect = {
+#				NIN = {
+#					if = {
+#						limit = {
+#							check_variable = {
+#								var = stage_1_progress
+#								value = 80
+#							}
+#						}
+#						country_event = { id = major_accident.1 }
+#					
+#					clamp_variable = {
+#						var = stage_1_progress
+#						   min = 0
+#						   max = 100
+#					}
+#					
+#					}
+#				}
+#			}
+#		}
+	
+	on_weekly_NIN = { #Stage 1 Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = stage_1_progress
+							value = 100
+						}
+					}
+					set_country_flag = stage_one_completed
+				}
+			}
+		}
+	}
+	
+	### Stage 2 ###
+	
+	on_weekly_NIN = { #NIN Gen pressure valves progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = pressure_valves_started
+					}
+					add_to_variable = { pressure_valves_progress = 20 }
+				clamp_variable = {
+					var = pressure_valves_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #pressure valves Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = pressure_valves_progress
+							value = 100
+						}
+					}
+					set_country_flag = pressure_valves_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Gen tower pumps progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = tower_pumps_started
+					}
+					add_to_variable = { tower_pumps_progress = 20 }
+				clamp_variable = {
+					var = tower_pumps_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #Tower Pumps Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tower_pumps_progress
+							value = 100
+						}
+					}
+					set_country_flag = tower_pumps_installed
+				}
+			}
+		}
+	}
+	
+	### Stage 3 ###
+	
+	on_weekly_NIN = { #NIN Gen Core progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = core_started
+					}
+					add_to_variable = { install_core_progress = 10 }
+				clamp_variable = {
+					var = install_core_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #Core Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = core_progress
+							value = 100
+						}
+					}
+					set_country_flag = the_core_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Support Frame One progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = support_frame_one_start
+					}
+					add_to_variable = { support_frame_one_progress = 20 }
+				clamp_variable = {
+					var = support_frame_one_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Support Frame One Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = support_frame_one_progress
+							value = 100
+						}
+					}
+					set_country_flag = support_frame_one_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Support Frame Two progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = support_frame_two_start
+					}
+					add_to_variable = { support_frame_two_progress = 20 }
+				clamp_variable = {
+					var = support_frame_two_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Support Frame Two Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = support_frame_two_progress
+							value = 100
+						}
+					}
+					set_country_flag = support_frame_two_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Thermal Hull One progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = thermal_hull_one_start
+					}
+					add_to_variable = { thermal_hull_one_progress = 20 }
+				clamp_variable = {
+					var = thermal_hull_one_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Thermal Hull One Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = thermal_hull_one_progress
+							value = 100
+						}
+					}
+					set_country_flag = thermall_hull_one_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_NIN = { #NIN Thermal Hull Two progress
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						has_country_flag = thermal_hull_two_start
+					}
+					add_to_variable = { thermal_hull_two_progress = 20 }
+				clamp_variable = {
+					var = thermal_hull_two_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+
+	on_weekly_NIN = { #NIN Thermal Hull Two Completion checker
+		effect = {
+			NIN = {
+				if = {
+					limit = {
+						check_variable = {
+							var = thermal_hull_two_progress
+							value = 100
+						}
+					}
+					set_country_flag = thermall_hull_two_installed
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+}

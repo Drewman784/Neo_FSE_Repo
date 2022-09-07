@@ -1,0 +1,35 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		
+		
+			SIX = {
+				
+				# Generator Construction #
+				
+				set_variable = { structural_profiles = 0 }
+				set_variable = { machine_parts = 0 }
+				set_variable = { steel_composites = 0 }
+				
+				# Population Demographics #
+				
+				set_variable = { workers = 30 }
+				set_variable = { engineers = 10 }
+				set_variable = { medical_personnel = 5 }
+				set_variable = { guards = 20 }
+				set_variable = { convicts = 0 }
+				set_variable = { children = 0 }
+				set_variable = { amputees = 0 }
+				set_variable = { automatons = 0 }
+				
+				# Hope and Discontent #
+				
+				set_variable = { hope = 3 }
+				set_variable = { discontent = 0 }
+				
+			country_event = { id = startup.1 }	
+			
+			}
+		}
+	}
+}

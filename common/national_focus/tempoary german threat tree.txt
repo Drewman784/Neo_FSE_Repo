@@ -1,0 +1,356 @@
+
+
+ ### localization
+
+#amogus:0 "The Hun in the henhouse"
+#amogus_desc:0 "Placeholder"
+#
+#launch_investigation:0 "Launch the Investigation"
+#launch_investigation_desc:0 "Placeholder"
+#
+#establish_patrols:0 "Establish patrols"
+#establish_patrols_desc:0 "Placeholder"
+#
+#order_more_guards:0 "Order more Guards"
+#order_more_guards_desc:0 "Placeholder"
+#
+#question_the_engineers:0 "Question the Engineers"
+#question_the_engineers_desc:0 "Placeholder"
+#
+#question_the_medics:0 "Question the Medics"
+#question_the_medics_desc:0 "Placeholder"
+#
+#question_the_workers:0 "Question the Workers"
+#question_the_workers_desc:0 "Placeholder"
+#
+#investigate_internally:0 "Investigate Internally"
+#investigate_internally_desc:0 "Placeholder"
+#
+#a_midnight_stroll:0 "A midnight stroll"
+#a_midnight_stroll_desc:0 "Placeholder"
+#
+####
+#
+#
+#
+#
+#	focus = {
+#		id = amogus
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 10
+#		y = 0
+#		relative_position_id = SIX_starting_focus
+#
+#		#allow_branch = {
+#		#	has_country_flag = german_fear
+#		#}
+#		
+#		
+#		available = {
+#			has_country_flag = german_fear
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 1
+#		#prerequisite = { focus = smooth_sailing }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = launch_investigation
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 0
+#		y = 1.5
+#		relative_position_id = amogus
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = amogus }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = establish_patrols
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = -2
+#		y = 1.5
+#		relative_position_id = launch_investigation
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = launch_investigation }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = order_more_guards
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 0
+#		y = 1.5
+#		relative_position_id = establish_patrols
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = establish_patrols }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = question_the_engineers
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 0
+#		y = 1.5
+#		relative_position_id = launch_investigation
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = launch_investigation }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = question_the_medics
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 0
+#		y = 1.5
+#		relative_position_id = question_the_engineers
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = question_the_engineers }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = question_the_workers
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 2
+#		y = 1.5
+#		relative_position_id = launch_investigation
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = launch_investigation }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = investigate_internally
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 0
+#		y = 1.5
+#		relative_position_id = question_the_workers
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = question_the_workers }
+#
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = a_midnight_stroll
+#		icon = GFX_goal_SIX_establishing_operations_focus
+#		x = 0
+#		y = 1.5
+#		relative_position_id = question_the_medics
+#		
+#		
+#		available = {
+#		}
+#				
+#		bypass = {
+#
+#		}
+#		
+#		cost = 2
+#		prerequisite = { focus = question_the_medics }
+#		prerequisite = { focus = investigate_internally }
+#		prerequisite = { focus = order_more_guards }
+#	
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#			}
+#		}
+#	}

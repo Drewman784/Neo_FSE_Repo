@@ -1,0 +1,38 @@
+resources = {
+
+	oil = { #Oil
+		icon_frame = 1
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	aluminium = { #Coal
+		icon_frame = 2
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	rubber = { #Wood
+		icon_frame = 3
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	tungsten = { #Steel
+		icon_frame = 4
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	steel = { #Food
+		icon_frame = 5
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	chromium = { #Steel Cores
+		icon_frame = 6
+		cic = 0.125
+		convoys = 0.1
+	}
+}

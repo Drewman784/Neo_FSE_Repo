@@ -1,0 +1,64 @@
+ideas = { #Nationalities
+
+	dominant_nationality = { 
+		law = yes
+
+		english_nationality = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+        	cancel_if_invalid = yes
+        }
+		
+		german_nationality = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+        	cancel_if_invalid = yes
+        }
+		
+		icelandic_nationality = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+        	cancel_if_invalid = yes
+        }
+		
+		
+	}
+	
+	
+}

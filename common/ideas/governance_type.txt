@@ -1,0 +1,116 @@
+ideas = { #Governance Types
+	
+	governance_type = {
+		# GOVERNANCE TYPE	
+		iec_subsidiary = { 
+		picture = get_rick_rolled_scrub
+			
+			allowed = {
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = {
+				always = No
+				#OR = {
+				#
+				#	#NOT = { tag = IEC }
+				#	#NOT = { original_tag = ONE }
+				#	#NOT = { original_tag = NIN }
+				#	original_tag = TWO
+				#	original_tag = TRE
+				#	original_tag = FOR
+				#	original_tag = FIV
+				#	original_tag = SIX
+				#	original_tag = SEV
+				#	original_tag = EIG
+				#	original_tag = TEN
+				#}
+			}
+			
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				political_power_cost = 0.1
+				industrial_capacity_factory = -0.2
+				war_support_factor = -0.3
+			}
+			
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	governance_type = {
+		# GOVERNANCE TYPE	
+		megacorporation = { 
+		picture = get_rick_rolled_scrub
+			
+			allowed = {
+				always = yes
+				#NOT = { tag = IEC }
+				#NOT = { original_tag = ONE }
+				#NOT = { original_tag = NIN }
+				#original_tag = TWO
+				#original_tag = TRE
+				#original_tag = FOR
+				#original_tag = FIV
+				#original_tag = SIX
+				#original_tag = SEV
+				#original_tag = EIG
+				#original_tag = TEN
+			}
+
+			available = {
+				always = No
+				#OR = {
+				#
+				#	#NOT = { tag = IEC }
+				#	#NOT = { original_tag = ONE }
+				#	#NOT = { original_tag = NIN }
+				#	original_tag = TWO
+				#	original_tag = TRE
+				#	original_tag = FOR
+				#	original_tag = FIV
+				#	original_tag = SIX
+				#	original_tag = SEV
+				#	original_tag = EIG
+				#	original_tag = TEN
+				#}
+			}
+			
+			modifier = {
+				political_power_factor = 0.25
+				consumer_goods_factor = 0.2
+				war_support_factor = -0.2
+			}
+			
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+}

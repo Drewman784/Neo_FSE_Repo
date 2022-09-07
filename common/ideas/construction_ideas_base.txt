@@ -1,0 +1,39 @@
+ideas = {
+
+	country = {
+		iec_oversight = {
+			picture = iec_oversight
+			
+			allowed = {
+				tag = SIX
+				tag = NIN
+				tag = SEV
+				tag = FIV
+				tag = FOR
+				tag = ONE
+				tag = TWO
+				tag = TRE
+				tag = EIG
+				tag = TEN
+			}
+
+			available = {
+			}
+			
+			cancel = {
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				stability_factor = -0.05
+				custom_modifier_tooltip = no_div_tt
+			}
+		}
+	}
+}

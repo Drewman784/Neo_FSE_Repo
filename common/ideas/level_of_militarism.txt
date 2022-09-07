@@ -1,0 +1,147 @@
+ideas = { #Level of Militarism
+
+	level_of_militarism = {
+		# LEVEL OF MILIATISM
+		disarmed = {
+		picture = get_rick_rolled_scrub
+		
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			always = no
+		}	
+		
+		modifier = {
+			stability_factor = 0.15
+			war_stability_factor = -0.3
+			war_support_factor = -0.25
+			industrial_capacity_factory = -0.2
+			ai_badass_factor = -0.5
+		}
+		
+		cancel_if_invalid = yes
+		
+		}
+	
+		defensive_only = {
+		picture = get_rick_rolled_scrub
+		
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			always = no
+		}	
+		
+		modifier = {
+			stability_factor = 0.10
+			war_stability_factor = -0.15
+			war_support_factor = -0.15
+			industrial_capacity_factory = -0.1
+			ai_badass_factor = -0.3
+		}
+		
+		cancel_if_invalid = yes
+		
+		}
+	
+	
+		standard_force = {
+		picture = get_rick_rolled_scrub
+		
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			always = no
+		}	
+		
+		modifier = {
+			stability_factor = 0.05
+			war_stability_factor = -0.05
+			war_support_factor = -0.05
+			#ai_badass_factor = -0.3
+		}
+		
+		cancel_if_invalid = yes
+		
+		}
+	
+	
+		mobilized = {
+		picture = get_rick_rolled_scrub
+		
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			always = no
+		}	
+		
+		modifier = {
+			stability_factor = -0.10
+			war_stability_factor = 0.15
+			war_support_factor = 0.15
+			industrial_capacity_factory = 0.1
+			ai_badass_factor = 0.3
+		}
+		
+		cancel_if_invalid = yes
+		
+		}
+	
+		for_god_and_country = {
+		picture = get_rick_rolled_scrub
+		
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			always = no
+		}	
+		
+		modifier = {
+			stability_factor = -0.15
+			war_stability_factor = 0.3
+			war_support_factor = 0.25
+			industrial_capacity_factory = 0.2
+			ai_badass_factor = 0.5
+		}
+		
+		cancel_if_invalid = yes
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+ideas = { #National Ambitions
+
+	national_ambition = { 
+		law = yes
+
+		propoganda_ambition = {
+        				
+        	cost = 100
+        	removal_cost = -1
+        	
+        	modifier = {
+        		stability_factor = 0.05
+        	}
+        	
+        	cancel_if_invalid = yes
+        }
+
+		warfare_ambition = {
+						
+			cost = 100
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+			
+			cancel_if_invalid = yes
+		}
+
+		work_safety_ambition = {
+        				
+        	cost = 50
+        	removal_cost = -1
+			
+			on_add = { 
+				add_to_variable = { work_safety = +1 }
+				set_country_flag = work_safety
+			}
+			
+			on_remove = {
+				add_to_variable = { work_safety = -1 }
+				clr_country_flag = work_safety
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = ws_safety.tt
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+
+        	cancel_if_invalid = yes
+        }
+
+		work_safety_2_ambition = {
+        				
+        	cost = 50
+        	removal_cost = -1
+			
+			on_add = { 
+				add_to_variable = { work_safety = -1 }
+				set_country_flag = work_expedited
+			}
+			
+			on_remove = {
+				add_to_variable = { work_safety = +1 }
+				clr_country_flag = work_expedited
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = ws_expedite.tt
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+
+        	cancel_if_invalid = yes
+        }
+
+		technology_ambition = {
+        				
+        	cost = 100
+        	removal_cost = -1
+			
+			on_add = { 
+			}
+			
+			on_remove = {
+			}
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+
+        	cancel_if_invalid = yes
+        }
+
+		exploration_ambition = {
+        				
+        	cost = 50
+        	removal_cost = -1
+			
+			on_add = { 
+				set_country_flag = fast_foragers
+			}
+			
+			on_remove = {
+				clr_country_flag = fast_foragers
+			}
+			
+			#available = {
+			#	NOT = { has_country_flag = foragers_expedition }
+			#}
+			
+			modifier = {
+				custom_modifier_tooltip = explore_ambition.tt
+			}
+
+        	cancel_if_invalid = yes
+        }
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,952 @@
+ideas = { #Population Demographic Effects
+
+	workers_slot = { #WORKER SLOT
+
+		workers_0 = {
+		picture = no_workers
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		
+		workers_20 = {
+		picture = few_workers
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+
+		workers_40 = {
+		picture = few_workers
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+
+		workers_60 = {
+		picture = some_workers
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+
+		workers_80 = {
+		picture = some_workers
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+
+		workers_100 = {
+		picture = many_workers
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	}
+	
+	engineers_slot = { #ENGINEER SLOT
+		engineers_0 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = -1.0
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+
+		engineers_10 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = -0.75
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+
+		engineers_15 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = -0.50
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+
+		engineers_20 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = -0.25
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		
+		engineers_25 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = 0.0
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		
+		engineers_30 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = 0.15
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		
+		engineers_35 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = 0.30
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		
+		engineers_40 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = 0.45
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		
+		engineers_45 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = 0.60
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		
+		engineers_50 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		research_speed_factor = 0.75
+				#Unlock building construction, University perhaps?
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	}
+	
+	medical_personnel_slot = {
+		medical_personnel_0 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+			#Some sort of modifier to prevent sickness
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_10 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_15 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_20 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_25 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_30 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_35 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_40 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_45 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		medical_personnel_50 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		
+				#Unlock building construction, a Hospital maybe?
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	}
+	guards_slot = { #GUARDS SLOT
+		guards_0 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.25
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_10 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.20
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_15 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.15
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_20 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.10
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_25 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = 0.0
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_30 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = 0.1
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_35 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = 0.15
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_40 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = 0.2
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_45 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = 0.25
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		guards_50 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = 0.3
+				#Some sort of building such as a Guard HQ?
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+		}
+	convicts_slot = { # CONVICTS SLOT
+		convicts_0 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		#Loss of stability and something else? Make construction happen faster...?
+				
+        	}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		convicts_20 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.05
+
+        	}
+			
+			on_add = {
+				add_to_variable = { discontent = 1 }
+			}
+			
+			on_remove = {
+				add_to_variable = { discontent = -1 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		convicts_40 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.1
+        	}
+			
+			on_add = {
+				add_to_variable = { discontent = 1 }
+			}
+			
+			on_remove = {
+				add_to_variable = { discontent = -1 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		convicts_60 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.15
+        	}
+			
+			on_add = {
+				add_to_variable = { discontent = 2 }
+			}
+			
+			on_remove = {
+				add_to_variable = { discontent = -2 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		convicts_80 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.2
+        	}
+			
+			on_add = {
+				add_to_variable = { discontent = 2 }
+			}
+			
+			on_remove = {
+				add_to_variable = { discontent = -2 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		convicts_100 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+        		stability_factor = -0.25
+        	}
+			
+			on_add = {
+				add_to_variable = { discontent = 3 }
+			}
+			
+			on_remove = {
+				add_to_variable = { discontent = -3 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+	}
+	children_slot = { #CHILDREN SLOT
+		children_0 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	on_add = {
+				add_to_variable = { hope = 0 }
+        	}
+			
+			on_remove = {
+				add_to_variable = { hope = -0 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		children_20 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	on_add = {
+				add_to_variable = { hope = 1 }
+        	}
+			
+			on_remove = {
+				add_to_variable = { hope = -1 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		children_40 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	on_add = {
+				add_to_variable = { hope = 2 }
+        	}
+			
+			on_remove = {
+				add_to_variable = { hope = -2 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+		children_60 = {
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	on_add = {
+				add_to_variable = { hope = 3 }
+        	}
+			
+			on_remove = {
+				add_to_variable = { hope = -3 }
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	
+	}
+	amputees_slot = { #AMPUTEES SLOT
+		amputees_0 = { #Idk what to even give these guys in terms of modifiers, come back to later
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+				
+        	}
+			
+			on_remove = {
+				
+			}
+        	
+			cancel_if_invalid = no 
+        }
+
+	}
+	automatons_slot = { #AUTOMATONS SLOT
+		automatons_0 = { #Idk what to even give these guys in terms of modifiers, come back to later
+		picture = get_rick_rolled_scrub
+		
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				always = no
+			}
+        	
+        	modifier = {
+				
+        	}
+			
+			on_remove = {
+				
+			}
+        	
+			cancel_if_invalid = no 
+        }
+	}
+	
+}

@@ -1,0 +1,253 @@
+#ideas = { #societal_traits
+#	
+#	#How nation's society views the world, can impact events and how other nations see them
+#	
+#	society_trait_1 = {
+#		# SOCIETAL TRAITS	
+#		indefatigable_1 = {
+#		picture = get_rick_rolled_scrub
+#			
+#			Cost = 50
+#			removal_cost = 50
+#			
+#			
+#			allowed = { #Will it show up
+#				always = yes
+#			}
+#
+#			available = { #Can a nation slect it
+#				has_country_flag = industrialist_society
+#				NOT = { has_country_flag = indefatigable_trait }
+#			}
+#			
+#			modifier = {
+#				industrial_capacity_factory = 0.10
+#				production_factory_start_efficiency_factor = 0.1
+#				production_factory_max_efficiency_factor = 0.1 
+#			}
+#			
+#			on_add = {
+#				set_country_flag = indefatigable_trait
+#			}
+#			
+#			on_remove = {
+#				clr_country_flag = indefatigable_trait
+#			}
+#	
+#			do_effect = {
+#			}
+#	
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+#		
+#		erudite_1 = {
+#		picture = get_rick_rolled_scrub
+#			
+#			Cost = 50
+#			removal_cost = 50
+#			
+#			
+#			allowed = { #Will it show up
+#				always = yes
+#			}
+#
+#			available = { #Can a nation slect it
+#				OR = {
+#					has_country_flag = industrialist_society
+#					has_country_flag = competitive_society
+#					has_country_flag = elitist_society
+#				}
+#				NOT = { has_country_flag = erudite_trait }
+#			}
+#			
+#			modifier = {
+#				research_speed_factor = 0.05
+#			}
+#			
+#			on_add = {
+#				set_country_flag = erudite_trait
+#			}
+#			
+#			on_remove = {
+#				clr_country_flag = erudite_trait
+#			}
+#	
+#			do_effect = {
+#			}
+#	
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+#	
+#	}
+#	
+#	society_trait_2 = {
+#		# SOCIETAL TRAITS	
+#		indefatigable_2 = {
+#		picture = get_rick_rolled_scrub
+#			
+#			Cost = 50
+#			removal_cost = 50
+#			
+#			
+#			allowed = { #Will it show up
+#				always = yes
+#				
+#			}
+#
+#			available = { #Can a nation slect it
+#				has_country_flag = industrialist_society
+#				NOT = { has_country_flag = indefatigable_trait }
+#			}
+#			
+#			modifier = {
+#				industrial_capacity_factory = 0.10
+#				production_factory_start_efficiency_factor = 0.1
+#				production_factory_max_efficiency_factor = 0.1 
+#			}
+#			
+#			on_add = {
+#				set_country_flag = indefatigable_trait
+#			}
+#			
+#			on_remove = {
+#				clr_country_flag = indefatigable_trait
+#			}
+#	
+#			do_effect = {
+#			}
+#	
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+#		
+#		erudite_2 = {
+#		picture = get_rick_rolled_scrub
+#			
+#			Cost = 50
+#			removal_cost = 50
+#			
+#			
+#			allowed = { #Will it show up
+#				always = yes
+#			}
+#
+#			available = { #Can a nation slect it
+#				OR = {
+#					has_country_flag = industrialist_society
+#					has_country_flag = competitive_society
+#					has_country_flag = elitist_society
+#				}
+#				NOT = { has_country_flag = erudite_trait }
+#			}
+#			
+#			modifier = {
+#				research_speed_factor = 0.05
+#			}
+#			
+#			on_add = {
+#				set_country_flag = erudite_trait
+#			}
+#			
+#			on_remove = {
+#				clr_country_flag = erudite_trait
+#			}
+#	
+#			do_effect = {
+#			}
+#	
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+#	
+#	}
+#	
+#	society_trait_3 = {
+#		# SOCIETAL TRAITS	
+#		indefatigable_3 = {
+#		picture = get_rick_rolled_scrub
+#			
+#			Cost = 50
+#			removal_cost = 50
+#			
+#			
+#			allowed = { #Will it show up
+#				always = yes
+#				
+#			}
+#
+#			available = { #Can a nation slect it
+#				has_country_flag = industrialist_society
+#				NOT = { has_country_flag = indefatigable_trait }
+#			}
+#			
+#			modifier = {
+#				industrial_capacity_factory = 0.10
+#				production_factory_start_efficiency_factor = 0.1
+#				production_factory_max_efficiency_factor = 0.1 
+#			}
+#			
+#			on_add = {
+#				set_country_flag = indefatigable_trait
+#			}
+#			
+#			on_remove = {
+#				clr_country_flag = indefatigable_trait
+#			}
+#	
+#			do_effect = {
+#			}
+#	
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+#		
+#		erudite_3 = {
+#		picture = get_rick_rolled_scrub
+#			
+#			Cost = 50
+#			removal_cost = 50
+#			
+#			
+#			allowed = { #Will it show up
+#				always = yes
+#			}
+#
+#			available = { #Can a nation slect it
+#				OR = {
+#					has_country_flag = industrialist_society
+#					has_country_flag = competitive_society
+#					has_country_flag = elitist_society
+#				}
+#				NOT = { has_country_flag = erudite_trait }
+#			}
+#			
+#			modifier = {
+#				research_speed_factor = 0.05
+#			}
+#			
+#			on_add = {
+#				set_country_flag = erudite_trait
+#			}
+#			
+#			on_remove = {
+#				clr_country_flag = erudite_trait
+#			}
+#	
+#			do_effect = {
+#			}
+#	
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+#	
+#	}
+#
+#}

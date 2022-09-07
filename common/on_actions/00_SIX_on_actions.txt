@@ -1,0 +1,364 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		
+		
+			SIX = { #Startup SIX stuff
+				
+				# Generator Construction #
+				
+				set_variable = { structural_profiles = 0 }
+				set_variable = { machine_parts = 0 }
+				set_variable = { steel_composites = 0 }
+				
+				set_variable = { stage_1_progress = 0 }
+				set_variable = { pressure_valves_progress = 0 }
+				set_variable = { tower_pumps_progress = 0 }
+				set_variable = { install_core_progress = 0 }
+				set_variable = { support_frame_one_progress = 0 }
+				set_variable = { support_frame_two_progress = 0 }
+				set_variable = { thermal_hull_one_progress = 0 }
+				set_variable = { thermal_hull_two_progress = 0 }
+				
+				# Population Demographics #
+				
+				set_variable = { workers = 30 }
+				set_variable = { engineers = 10 }
+				set_variable = { medical_personnel = 5 }
+				set_variable = { guards = 20 }
+				set_variable = { convicts = 0 }
+				set_variable = { children = 0 }
+				set_variable = { amputees = 0 }
+				set_variable = { automatons = 0 }
+				
+				# Hope and Discontent #
+				
+				set_variable = { SIX_hope = 3 }
+				set_variable = { SIX_discontent = 0 }
+				
+				# Safety and Gas #
+				
+				set_variable = { work_safety = 4 }
+				set_variable = { cs_gas = 0 }
+				
+				# faction influences #
+				
+				set_variable = { row_influence = 70 }
+				set_variable = { vesalius_influence = 20 }
+				set_variable = { pogsworth_influence = 5 }
+				set_variable = { brooke_influence = 10 }
+				set_variable = { hughes_influence = 5 }
+				
+				# Resources #
+				
+				set_variable = { SIX_oil = 0 }
+				set_variable = { SIX_coal = 10 }
+				set_variable = { SIX_wood = 10 }
+				set_variable = { SIX_steel = 5 }
+				set_variable = { SIX_food = 20 }
+				set_variable = { SIX_steam_cores = 2 }
+				
+			}
+		}
+	}
+	
+	### Stage 1 ###
+	
+	on_weekly_SIX = { #SIX Gen Stage 1 Progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = stage_one_started
+					}
+					add_to_variable = { stage_1_progress = 20 }
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #Major Accident 1 and stage 1 variable min-max
+		effect = {
+				SIX = {
+					if = {
+						limit = {
+							check_variable = {
+								var = stage_1_progress
+								value = 80
+							}
+						}
+						country_event = { id = major_accident.1 }
+					
+					clamp_variable = {
+						var = stage_1_progress
+						   min = 0
+						   max = 100
+					}
+					
+					}
+				}
+			}
+		}
+	
+	on_weekly_SIX = { #Stage 1 Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = stage_1_progress
+							value = 100
+						}
+					}
+					set_country_flag = stage_one_completed
+				}
+			}
+		}
+	}
+	
+	### Stage 2 ###
+	
+	on_weekly_SIX = { #SIX Gen pressure valves progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = pressure_valves_started
+					}
+					add_to_variable = { pressure_valves_progress = 20 }
+				clamp_variable = {
+					var = pressure_valves_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #pressure valves Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = pressure_valves_progress
+							value = 100
+						}
+					}
+					set_country_flag = pressure_valves_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Gen tower pumps progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = tower_pumps_started
+					}
+					add_to_variable = { tower_pumps_progress = 20 }
+				clamp_variable = {
+					var = tower_pumps_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #Tower Pumps Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tower_pumps_progress
+							value = 100
+						}
+					}
+					set_country_flag = tower_pumps_installed
+				}
+			}
+		}
+	}
+	
+	### Stage 3 ###
+	
+	on_weekly_SIX = { #SIX Gen Core progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = core_started
+					}
+					add_to_variable = { install_core_progress = 10 }
+				clamp_variable = {
+					var = install_core_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #Core Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = core_progress
+							value = 100
+						}
+					}
+					set_country_flag = the_core_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Support Frame One progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = support_frame_one_start
+					}
+					add_to_variable = { support_frame_one_progress = 20 }
+				clamp_variable = {
+					var = support_frame_one_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Support Frame One Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = support_frame_one_progress
+							value = 100
+						}
+					}
+					set_country_flag = support_frame_one_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Support Frame Two progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = support_frame_two_start
+					}
+					add_to_variable = { support_frame_two_progress = 20 }
+				clamp_variable = {
+					var = support_frame_two_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Support Frame Two Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = support_frame_two_progress
+							value = 100
+						}
+					}
+					set_country_flag = support_frame_two_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Thermal Hull One progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = thermal_hull_one_start
+					}
+					add_to_variable = { thermal_hull_one_progress = 20 }
+				clamp_variable = {
+					var = thermal_hull_one_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Thermal Hull One Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = thermal_hull_one_progress
+							value = 100
+						}
+					}
+					set_country_flag = thermall_hull_one_installed
+				}
+			}
+		}
+	}
+	
+	on_weekly_SIX = { #SIX Thermal Hull Two progress
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						has_country_flag = thermal_hull_two_start
+					}
+					add_to_variable = { thermal_hull_two_progress = 20 }
+				clamp_variable = {
+					var = thermal_hull_two_progress
+					   min = 0
+					   max = 100
+				}
+				}
+			}
+		}
+	}
+
+	on_weekly_SIX = { #SIX Thermal Hull Two Completion checker
+		effect = {
+			SIX = {
+				if = {
+					limit = {
+						check_variable = {
+							var = thermal_hull_two_progress
+							value = 100
+						}
+					}
+					set_country_flag = thermall_hull_two_installed
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+}
