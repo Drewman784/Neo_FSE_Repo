@@ -1,0 +1,95 @@
+technologies = {
+	
+	@Patent0 = 0
+	@Patent1 = 6
+	@Patent2 = 12
+	
+	patent_tier = {
+	
+		#Increases Patent level to 1
+		#Archtype Tech
+	
+		
+		allow = {
+			num_researched_technologies > 0
+        }
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = innovation_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech = patent_tier_2
+            research_cost_coeff = 1
+        }
+
+		categories = {
+			innovation
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+	}
+	
+	patent_tier_2 = {
+	
+		#Increases Patent level to 2
+	
+		
+		allow = {
+			num_researched_technologies > 3
+        }
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = innovation_folder
+			position = { x = @Patent1 y = 0}
+		}
+		
+		
+		
+		categories = {
+			innovation
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+	}
+	
+	research_tech = {
+	
+		#Increases research speed
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = innovation_folder
+			position = { x = @Patent1 y = 0}
+		}
+		
+		dependencies = {
+            patent_tier = 1
+        }
+		
+		categories = {
+			innovation
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+	}
+
+}

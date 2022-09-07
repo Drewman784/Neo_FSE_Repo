@@ -1,0 +1,96 @@
+# Site 09 #
+
+defined_text = { # 09 Food
+	name = NIN_steel_text
+	text = {
+		trigger = {
+			tag = NIN
+			check_variable = {NIN_food>0}
+			check_variable = {resource@steel>resource_imported@steel}
+		}
+		localization_key = "[?NIN_food]"
+		
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[?NIN_food]"
+	}
+}
+	
+defined_text = { # 09 Wood
+	name = NIN_rubber_text
+	text = {
+		trigger = {
+			tag = NIN
+			check_variable = {NIN_wood>0}
+			check_variable = {resource@rubber>resource_imported@rubber}
+		}
+		localization_key = "[?NIN_wood]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[?NIN_wood]"
+	}
+}
+
+defined_text = { # 09 Coal
+	name = NIN_aluminium_text
+	text = {
+		trigger = {
+			tag = NIN
+			check_variable = {NIN_coal>0}
+			check_variable = {resource@aluminium>resource_imported@aluminium}
+		}
+		localization_key = "[?NIN_coal]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[?NIN_coal]"
+	}
+}
+
+defined_text = { # 09 Steel
+	name = NIN_tungsten_text
+	text = {
+		trigger = {
+			tag = NIN
+			check_variable = {NIN_steel>0}
+			check_variable = {resource@tungsten>resource_imported@tungsten}
+		}
+		localization_key = "[?NIN_steel]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[?NIN_steel]"
+	}
+}
+
+defined_text = { # 09 Steam Cores
+	name = NIN_chromium_text
+	text = {
+		trigger = {
+			tag = NIN
+			check_variable = {NIN_steam_cores>0}
+			check_variable = {resource@chromium>resource_imported@chromium}
+		}
+		localization_key = "[?NIN_steam_cores]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[?NIN_steam_cores]"
+	}
+}
+
+
+
+

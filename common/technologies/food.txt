@@ -1,0 +1,155 @@
+technologies = {
+	
+	@Patent0 = 0
+	@Patent1 = 6
+	@Patent2 = 12
+		
+	hunters = {
+	
+		# Archtype
+		# +1 Food Point for Hunter Huts and +2 Food Points for Hunter Hangers
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = food_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech = hunters_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			food
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	hunters_2 = {
+	
+		# 10 workers required instead of 15 per Hunter Hut and Hanger
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = food_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+#		path = {
+#            leads_to_tech = hunters_3
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			food
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	hothouses = {
+	
+		# Archtype
+		# Allows the growing of plants within like a greenhouse, Unlocks the Hothouse. Requires 10 farmers for max efficiency.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = food_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+		dependencies = {
+            patent_tier = 1
+        }
+		
+		path = {
+            leads_to_tech = hothouses_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			food
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	hothouses_2 = {
+		# Allows the Hothouse to start producing drug related plants, such as Coca plants.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = food_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+#		path = {
+#            leads_to_tech = hothouses_3
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			food
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	food_preperation = {
+	
+		# Archtype
+		# Cookhouse Heat level rises by 1
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = food_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+		dependencies = {
+            patent_tier = 1
+        }
+		
+#		path = {
+#            leads_to_tech = food_preperation_2
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			food
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+
+}

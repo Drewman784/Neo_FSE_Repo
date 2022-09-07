@@ -1,0 +1,66 @@
+technologies = {
+	
+	@Patent0 = 0
+	@Patent1 = 6
+	@Patent2 = 12
+	
+	medical_posts = {
+	
+		# Archtype
+		# Medical Posts can now house up to 10 patients instead of 5. (?) 
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = healthcare_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech = medical_posts_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			healthcare
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	medical_posts_2 = {
+	
+		# +1 Heat Level to Medical Posts
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = healthcare_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = medical_posts_3
+#            research_cost_coeff = 1
+#        }
+
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+		categories = {
+			healthcare
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+		
+
+}

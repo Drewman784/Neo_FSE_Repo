@@ -1,0 +1,72 @@
+technologies = {
+	
+	@Patent0 = 0
+	@Patent1 = 6
+	@Patent2 = 12
+		
+	locomotives = {
+		
+		#Archtype
+		# Allows for the construction of the locomotive works, an upgrade to the Train Station. The Train Station will now have the capability to manufacture and repair trains.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = transportation_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = locomotive_2
+#            research_cost_coeff = 1
+#        }
+
+		dependencies = {
+            patent_tier = 1
+        }
+	
+
+		categories = {
+			transportation
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	aircraft = {
+		
+		#Archtype
+		# Allows for the construction of an airfield 
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = transportation_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = aircraft_2
+#            research_cost_coeff = 1
+#        }
+
+		dependencies = {
+            patent_tier_2 = 1
+        }
+	
+
+		categories = {
+			transportation
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+
+
+}

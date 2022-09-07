@@ -1,0 +1,53 @@
+defined_text = {
+	name = work_conditions
+	text = {
+		trigger = {
+			check_variable = {
+			var = work_safety
+			value = 1
+			compare = less_than
+			}
+		}
+		localization_key = lethal_work
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			var = work_safety
+			value = 2
+			compare = less_than
+			}
+		}
+		localization_key = dangerous_work
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			var = work_safety
+			value = 3
+			compare = less_than
+			}
+		}
+		localization_key = unhealthy_work
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			var = work_safety
+			value = 4
+			compare = less_than
+			}
+		}
+		localization_key = unsafe_work
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			var = work_safety
+			value = 5
+			compare = less_than
+			}
+		}
+		localization_key = safe_work
+	}
+}

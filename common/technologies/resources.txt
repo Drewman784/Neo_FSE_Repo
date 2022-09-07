@@ -1,0 +1,446 @@
+technologies = {
+	
+	@Patent0 = 0
+	@Patent1 = 6
+	@Patent2 = 12
+	
+	coal_thumper = {
+	
+		# Archtype
+		# Allows us to construct a Coal Thumper. +120 Coal per Shift. Must be staffed by 10 Workers.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech = coal_thumper_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	coal_thumper_2 = {
+	
+		# Allows us to construct a Steam Coal Thumper, an upgraded version of the Coal Thumper. +200 Coal per Shift, Coal must be gathered by Gathering Post or by hand. .
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+#		path = {
+#            leads_to_tech = coal_thumper_3
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	coal_mine = {
+	
+		# Archtype
+		# Allows us to construct a Coal Mine. +150 Coal per Shift. Must be staffed by 10 Workers.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+		dependencies = {
+            patent_tier = 1
+        }
+		
+		path = {
+            leads_to_tech = coal_mine_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	coal_mine_2 = {
+	
+		# +50 Coal per Shift to all mines. 
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = coal_mine_3
+#            research_cost_coeff = 1
+#        }
+		
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	steel_works = {
+	
+		# Archtype
+		# Allows the construction of a Steelworks. +50 Steel per Shift. Must be staffed by 10 Workers.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+		
+		path = {
+            leads_to_tech = steel_works_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	steel_works_2 = {
+	
+		# Allows the construction of a Steam Steelworks. +75 Steel per Shift. Must be staffed by 10 Workers. 
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+#		path = {
+#            leads_to_tech = steel_works_2
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	sawmill = {
+	
+		# Archtype
+		# Allows us to construct a Sawmill. Sawmills cut down two tree (icons) at once, with each generating 25 Wood/Shift. In the standard workday, Sawmills will deliever to us 50 Wood per Shift.Tree (icons) last for one IRP week before being fully cut down. (unknown if happen)
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech = sawmill_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	sawmill_2 = {
+	
+		# Each tree (icon) will generate 50 Wood instead of 25. Sawmills will cut down a total of 100 Wood per Shift.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = sawmill_2
+#            research_cost_coeff = 1
+#        }
+
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	train_station = {
+	
+		# Archtype
+		# Allows for us to recieve regular Train shipments from other Construction Sites, and Reykjavik. Whether it be resources or passengers, trains will arrive daily to deliever their cargo. Regular train shipments will provide us with 500 Coal Coal, 400 Wood, and 100 Steel every day. Needs to be staffed by 10 workers, can have a max number of 1 Unloading Station. Resources need to be gathered by an Unloading Station.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech = train_station_2
+            research_cost_coeff = 1
+        }
+
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	train_station_2 = {
+	
+		# An upgrade to the Basic Train Station, the Steam Train Station's expansion shall allow for more regular shipments to arrive at the Construction Site. Shipments will provide us with 600 Coal, 500 Wood and 150 Steel every day. Can have a max of 2 Unloading Stations. Resources need to be gathered by an Unloading Station.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = train_station_3
+#            research_cost_coeff = 1
+#        }
+
+		dependencies = {
+            patent_tier_2 = 1
+        }
+
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	unloading_stations = {
+	
+		#Archtype
+		# Allows for faster gathering of resources dropped off at the Train Station. Basic Unloading Stations will gather 100 Coal, 100 Wood and 50 Steel per Shift. Needs to be staffed by 10 Workers.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech = unloading_stations_2
+            research_cost_coeff = 1
+        }
+
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	unloading_stations_2 = {
+	
+		# Allows for even faster gathering of resources dropped off at the Train station. Steam Unloading Stations will gather 150 Coal, 150 Wood and 75 Steel per Shift. Needs to be staffed by 20 Workers.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = unloading_stations_3
+#            research_cost_coeff = 1
+#        }
+
+		dependencies = {
+            patent_tier_2 = 1
+        }
+	
+
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	resource_storage = {
+	
+		# Allows us to build a resource depot. This depot will increase our storage capacity in one category (Wood-600 Steel-300 Coal-1000 Oil-200 Steam Cell-5 Steam Core-5)
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech = resource_storage_2
+#            research_cost_coeff = 1
+#        }
+
+		dependencies = {
+            patent_tier = 1
+        }
+	
+
+		categories = {
+			resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	
+	
+	factory = {
+	
+		# Archtype
+		# Allows the construction of a factory. Factories can produce various luxury goods that can be sent back to England. With further research, they can also produce Automata, Prosthesis and even Steam Cores. Factories require the staffing of 10 Engineers.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech =factory_2
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			industry
+		}
+		
+		dependencies = {
+            patent_tier_2 = 1
+        }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	weapons_of_war = {
+		# Already Military factories(?)
+		# Archtype
+		# Allows the construction of an Arms's factory, which will supply ammunition and rifles to the city at the cost of 30 Steel per day.
+		
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = resources_folder
+			position = { x = @Patent0 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech =factory_2
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			industry
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+
+}

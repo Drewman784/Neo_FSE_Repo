@@ -1,0 +1,377 @@
+technologies = {
+
+	
+
+	@Patent0 = 0
+
+	@Patent1 = 6
+
+	@Patent2 = 12
+
+	
+
+	outposts = {
+
+	
+
+		# Archtype
+
+		# Allows for the deployment of Construction teams, which will construct Outposts to gather resources in countryside locations. +1 Outpost limit, Standard Outposts deliever 200 of a given resource every day.
+
+		
+
+		research_cost = 0
+
+		start_year = 1918
+
+		folder = {
+
+			name = exploration_folder
+
+			position = { x = @Patent1 y = 0 }
+
+		}
+
+		
+
+		dependencies = {
+
+            patent_tier = 1
+
+        }
+
+		
+
+		path = {
+
+            leads_to_tech = outposts_2
+
+            research_cost_coeff = 1
+
+        }
+
+		
+
+		categories = {
+
+			exploration
+
+		}
+
+		
+
+		ai_will_do = {
+
+			factor = 1
+
+		}
+
+	
+
+	}
+
+	
+
+	outposts_2 = {
+
+	
+
+		# +100 resources delievered per day
+
+		
+
+		research_cost = 0
+
+		start_year = 1918
+
+		folder = {
+
+			name = exploration_folder
+
+			position = { x = @Patent2 y = 0 }
+
+		}
+
+		
+
+		dependencies = {
+
+            patent_tier_2 = 1
+
+        }
+
+		
+
+#		path = {
+
+#            leads_to_tech = outposts_level_1
+
+#            research_cost_coeff = 1
+
+#        }
+
+		
+
+		categories = {
+
+			exploration
+
+		}
+
+		
+
+		ai_will_do = {
+
+			factor = 1
+
+		}
+
+	
+
+	}
+
+	
+
+	scouts = {
+
+	
+
+		# Archtype
+
+		# Allows for the Scouts to establish temporary Camps in the lands outside the city. These camps will hunt local wilflife in grounds with plentiful game. Consumes the Scout team for the duration of the campsite (Scout PCs may return to the Site)(?) Every day, Camps will deliever to the city 6 Food.
+
+		
+
+		research_cost = 0
+
+		start_year = 1918
+
+		folder = {
+
+			name = exploration_folder
+
+			position = { x = @Patent0 y = 0 }
+
+		}
+
+		
+
+		
+
+		path = {
+
+            leads_to_tech = scouts_2
+
+            research_cost_coeff = 1
+
+        }
+
+		
+
+		categories = {
+
+			exploration
+
+		}
+
+		
+
+		ai_will_do = {
+
+			factor = 1
+
+		}
+
+	
+
+	}
+
+	
+
+	scouts_2 = {
+
+	
+
+		# Better equipped and armed, Camps will be able to send 8 Food instead of 6 back to the Site.
+
+		
+
+		research_cost = 0
+
+		start_year = 1918
+
+		folder = {
+
+			name = exploration_folder
+
+			position = { x = @Patent1 y = 0 }
+
+		}
+
+		
+
+		dependencies = {
+
+            patent_tier = 1
+
+        }
+
+		
+
+		path = {
+
+            leads_to_tech = scouts_3
+
+            research_cost_coeff = 1
+
+        }
+
+		
+
+		categories = {
+
+			exploration
+
+		}
+
+		
+
+		ai_will_do = {
+
+			factor = 1
+
+		}
+
+	
+
+	}
+
+	
+
+	scouts_3 = {
+
+	
+
+		# This beacon will help guide our Scout Teams and any refugees in the Frostlands back to our city. Additionally, we can create a Scout team.
+
+		
+
+		research_cost = 0
+
+		start_year = 1918
+
+		folder = {
+
+			name = exploration_folder
+
+			position = { x = @Patent2 y = 0 }
+
+		}
+
+		
+
+		dependencies = {
+
+            patent_tier_2 = 1
+
+        }
+
+		
+
+#		path = {
+
+#            leads_to_tech = scouts_3
+
+#            research_cost_coeff = 1
+
+#        }
+
+		
+
+		categories = {
+
+			exploration
+
+		}
+
+		
+
+		ai_will_do = {
+
+			factor = 1
+
+		}
+
+	
+
+	}
+
+	
+
+	
+
+	weather = {
+
+	
+
+		# Archtype
+
+		# Grants the construction site the ability to predict the weather for the next 2 days.
+
+		
+
+		research_cost = 0
+
+		start_year = 1918
+
+		folder = {
+
+			name = exploration_folder
+
+			position = { x = @Patent2 y = 0 }
+
+		}
+
+		
+
+		dependencies = {
+
+            patent_tier_2 = 1
+
+        }
+
+		
+
+#		path = {
+
+#            leads_to_tech = scouts_2
+
+#            research_cost_coeff = 1
+
+#        }
+
+		
+
+		categories = {
+
+			exploration
+
+		}
+
+		
+
+		ai_will_do = {
+
+			factor = 1
+
+		}
+
+	
+
+	}
+
+		
+
+
+
+}

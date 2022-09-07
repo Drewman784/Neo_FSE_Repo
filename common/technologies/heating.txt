@@ -1,0 +1,340 @@
+technologies = {
+	
+	@Patent0 = 0
+	@Patent1 = 6
+	@Patent2 = 12
+	
+	heater = {
+	
+		# Actually Level 1 but Archtype 
+	
+		# +1 Heat Level to buildings applied
+		# -10 Coal per Heater
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		
+		path = {
+            leads_to_tech = heater_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	heater_2= {
+	
+		# +1 Heat Level to buildings applied
+		# -10 Coal per Heater
+				
+		dependencies = {
+            patent_tier_2 = 1
+        }
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = 12 y = 0 }
+		}
+		
+#		path = {
+#           leads_to_tech = heater_3
+#           research_cost_coeff = 1
+#       }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	brazier = {
+	
+		# Allows contruction of Braziers
+		# Braziers - Raises all surrounding building's Heat Level by 1. Range of 1 -20 coal per Brazier 
+				
+		dependencies = {
+            patent_tier = 1
+        }
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech  = brazier_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	brazier_2 = {
+	
+		# Increases Heat Level by 1
+		# Additional -30 coal per brazier
+				
+		dependencies = {
+            patent_tier_2 = 1
+        }
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#           leads_to_tech = brazier_3
+#           research_cost_coeff = 1
+#       }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	steamhub = {
+	
+		# Allows contruction of Steam Hubs
+		# Braziers - Raises all surrounding building's Heat Level by generator power. Range of 2. Consumes quarter of total generator consumption of coal. Stacks with Braziers
+				
+		dependencies = {
+            patent_tier = 1
+        }
+		
+		allow = {
+			has_country_flag = has_generator
+		}
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech  = steamhub_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	steamhub_2 = {
+	
+		# Lowers Steam Hub Consumption by 100 coal to a minimum of 50
+		
+			
+		dependencies = {
+            patent_tier_2 = 1
+        }
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#           leads_to_tech  = steamhub_3
+#           research_cost_coeff = 1
+#       }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	power = {
+	
+		# +2 Heat Level in Generator Range -100 Coal per day when the generator is on
+		
+				
+		dependencies = {
+            patent_tier = 1
+        }
+
+		allow = {
+			has_country_flag = has_generator
+		}
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+		path = {
+            leads_to_tech  = power_2
+            research_cost_coeff = 1
+        }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+
+	power_2 = {
+	
+		# Emergency Heat Banks 1
+		# If the Generator shuts down, for one day, emergancy Heat Banks will kick in. Mainting a Generator Heat Level for the duration. If Emergancy Banks are used, they are depleted for one week.
+		
+				
+		dependencies = {
+            patent_tier_2 = 1
+        }
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#           leads_to_tech  = power_3
+#           research_cost_coeff = 1
+#        }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+
+	range = {
+	
+		# +1 Heat range in Site
+		# Generator consumes 15% more coal a day
+		
+		allow = {
+			has_country_flag = has_generator
+		}
+				
+		dependencies = {
+            patent_tier = 1
+        }
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent1 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech  = power_level_2
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	generator_safety_repair = {
+	
+		# Allows the construction of a repair station attatched alongside the generator. The repair station will progressivley repair damage done to the generator. 50 engineers required for max effiency. The Repair station can not repair critical damage.
+		
+		allow = {
+			has_country_flag = has_generator
+		}
+				
+		dependencies = {
+            patent_tier_2 = 1
+        }
+
+	
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = heating_folder
+			position = { x = @Patent2 y = 0 }
+		}
+		
+#		path = {
+#            leads_to_tech  = power_level_2
+#            research_cost_coeff = 1
+#        }
+		
+		categories = {
+			heating
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+
+}
