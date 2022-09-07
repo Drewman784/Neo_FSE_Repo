@@ -1,0 +1,22 @@
+
+state={
+	id=24
+	name="STATE_24"
+
+	history={
+		owner = TWO
+		add_core_of = TWO
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		59 350 432 593 1056 1161 1282 1300 1505 1718 1988 1992 2179 2270 2273 2298 2398 2402 2457 2526 2545 2756 2769 2783 2800 2835 2841 2866 2872 3431 3434 3436 3450 3454 3455 3463 3480 3483 3485 3492 3496 3505 3508 3511 3515 3521 3522 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,66 @@
+
+state={
+	id=27
+	name="STATE_27"
+
+	history={
+		owner = IEC
+		add_core_of = IEC
+		victory_points = {
+			1804 80 
+		}
+		victory_points = {
+			4 10 
+		}
+		victory_points = {
+			2511 10 
+		}
+		victory_points = {
+			3732 5 
+		}
+		victory_points = {
+			1304 50 
+		}
+		victory_points = {
+			3718 30 
+		}
+		victory_points = {
+			3721 5 
+		}
+		victory_points = {
+			3685 30 
+		}
+		victory_points = {
+			3664 30 
+		}
+		
+		
+		
+		buildings = {
+			infrastructure = 10
+
+		}
+
+	}
+
+	provinces={
+		4 901 927 1143 1207 1263 1304 1354 1500 1561 1666 1804 1920 2198 2201 2236 2249 2418 2511 2598 2607 2667 2799 3647 3658 3659 3664 3667 3668 3670 3675 3677 3685 3688 3714 3717 3718 3721 3723 3728 3730 3732 
+	}
+	manpower=50000
+	resources={
+		steel=60
+		aluminium=20
+		rubber=20
+		tungsten=20
+		chromium=5
+	}
+
+
+
+
+
+
+
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

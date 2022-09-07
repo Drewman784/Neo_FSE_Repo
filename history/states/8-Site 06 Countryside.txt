@@ -1,0 +1,22 @@
+
+state={
+	id=8
+	name="STATE_8"
+
+	history={
+		owner = SIX
+		add_core_of = SIX
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		315 568 685 1054 1264 1274 1315 1335 1391 1444 1787 1886 1913 1962 2045 2287 2592 2627 2675 2696 2772 3312 3317 3323 3324 3325 3327 3337 3340 3352 3370 3385 3395 3401 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

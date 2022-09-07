@@ -1,0 +1,17 @@
+state={
+	id=35
+	name="STATE_35"
+	state_category = rural
+	history = {
+	owner = IEC
+	add_core_of = IEC
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	provinces={
+		121 297 614 663 1091 1271 1521 1654 1797 1879 1972 2040 2154 2173 2283 2322 2478 2569 2712 3380 3404 3412 3429 3443 3457 3470 
+	}
+	manpower=200
+	buildings_max_level_factor=1.000
+}

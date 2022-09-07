@@ -1,0 +1,17 @@
+state={
+	id=12
+	name="STATE_12"
+	state_category = wasteland
+	history = {
+	owner = EIG
+	add_core_of = EIG
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	provinces={
+		149 271 595 1269 1528 1575 1736 1784 2108 2133 2286 2413 2415 2476 2587 2970 2974 2981 2986 2993 2996 3002 3013 3019 3025 3031 3032 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+}

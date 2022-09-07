@@ -1,0 +1,39 @@
+
+state={
+	id=15
+	name="STATE_15"
+	state_category = city
+	history = {
+	owner = FOR
+	add_core_of = FOR
+	victory_points = {
+	3834 60
+	}
+	victory_points = {
+	1183 20
+	}
+	victory_points = {
+	1004 40
+	}
+	victory_points = {
+	3837 20
+	}
+	
+		buildings = {
+		infrastructure = 10
+		}
+	}
+	provinces={
+		1004 1183 1933 2438 2547 2869 3827 3828 3834 3836 3837 3839 
+	}
+	manpower=100
+	resources={
+		steel=10
+		aluminium=1
+		rubber=1
+		tungsten=1
+		chromium=1
+	}
+
+	buildings_max_level_factor=1.000
+}

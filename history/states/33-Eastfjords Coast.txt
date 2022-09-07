@@ -1,0 +1,20 @@
+state={
+	id=33
+	name="STATE_33"
+	state_category = town 
+	history = {
+	owner = IEC
+	add_core_of = IEC
+	victory_points = {
+		3416 20 
+	}
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	provinces={
+		99 359 669 1090 1421 1858 2523 3416 
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+}

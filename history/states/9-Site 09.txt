@@ -1,0 +1,42 @@
+
+state={
+	id=9
+	name="STATE_9"
+
+	history={
+		owner = NIN
+		add_core_of = NIN
+		victory_points = {
+			1701 60 
+		}
+		victory_points = {
+			2099 20
+		}
+		victory_points = {
+			2914 40
+		}
+		victory_points = {
+			2906 30
+		}
+		
+		buildings = {
+			infrastructure = 10
+
+		}
+
+	}
+
+	provinces={
+		143 1701 2099 2134 2252 2585 2733 2904 2906 2909 2913 2914 2915 2916 2918 
+	}
+	manpower=120
+	resources={
+		steel=10
+		aluminium=1
+		rubber=1
+		tungsten=1
+		chromium=1
+	}
+	buildings_max_level_factor=1.000
+	state_category=city
+}

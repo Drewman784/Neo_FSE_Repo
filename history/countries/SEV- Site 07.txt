@@ -1,0 +1,87 @@
+﻿capital = 21
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_country_flag = has_generator
+
+set_convoys = 0
+
+1922.9.22 = {
+	
+#	#generic focuses
+#	complete_national_focus = army_effort
+#	complete_national_focus = equipment_effort
+#	complete_national_focus = motorization_effort
+#	complete_national_focus = aviation_effort
+#	complete_national_focus = naval_effort
+#	complete_national_focus = large_navy
+#	complete_national_focus = industrial_effort
+#	complete_national_focus = construction_effort
+#	complete_national_focus = production_effort
+	
+	set_technology = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = oligarchic
+	last_election = "1916.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = SEV_director_phillip_v_hunter
+
+add_ideas = {
+	#construction_site_idea
+	iec_oversight
+	#closed_economy
+	
+	#Laws/Policy/Origin, all that good stuff
+	construction_crew
+	
+}
+
+country_lock_all_division_template = yes
+
+#######################################
+# Actual Ideologies in IEC Hist. File #
+#######################################
+
+
+
+#set_popularities = {
+#	democratic = 5
+##	fascism = 0
+#	communism = 0
+#	neutrality = 80
+#	theocracy = 0
+#	authoritarian_theocracy = 0
+#	socialism = 15
+#	despotism = 0
+#	autocracy = 0
+#	ultranationalism = 0
+#	technocracy = 0
+#	totalitarian_technocracy = 0
+#	anarchism = 0
+#}
+
+#1939.1.1 = {
+#	set_politics = {
+#		ruling_party = neutrality
+#		last_election = "1936.1.1"
+#		election_frequency = 48
+#		elections_allowed = no
+#	}
+#	set_popularities = {
+#		democratic = 25
+#		fascism = 20
+#		communism = 5
+#		neutrality = 50
+#	}
+#}
+

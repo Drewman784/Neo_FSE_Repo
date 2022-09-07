@@ -1,0 +1,22 @@
+
+state={
+	id=29
+	name="STATE_29"
+
+	history={
+		owner = IEC
+		add_core_of = IEC
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		499 942 943 962 1412 1438 1476 1596 1957 2103 2447 2536 2623 2646 2705 2757 2759 2787 3065 3068 3072 3075 3081 3082 3086 3092 3096 3101 3102 3104 3105 3109 3112 3113 3117 3118 3120 3123 3126 3131 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

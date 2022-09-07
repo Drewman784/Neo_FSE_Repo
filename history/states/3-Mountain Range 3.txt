@@ -1,0 +1,19 @@
+
+state={
+	id=3
+	name="STATE_3"
+	state_category = wasteland
+	history = {
+		owner = IEC
+		add_core_of = IEC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	impassable = yes
+	provinces={
+		210 244 256 288 391 702 730 763 953 1027 1212 1224 1351 1456 1752 1868 2079 2139 2548 3201 3202 3216 3228 3258 3264 3273 3285 3297 3356 
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+}

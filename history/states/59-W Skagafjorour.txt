@@ -1,0 +1,17 @@
+state={
+	id=59
+	name="STATE_59"
+	state_category = wasteland
+	history = {
+	owner = IEC
+	add_core_of = IEC
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	provinces={
+		8 60 91 103 217 284 287 316 453 482 509 581 654 664 667 815 847 1074 1113 1246 1283 1294 1406 1439 1547 1651 1723 1724 1762 1940 1955 1956 2161 2220 2253 2484 2489 2508 2559 2731 2940 2946 2951 2957 2967 2985 3004 3018 3030 3048 3063 3074 3076 3087 3088 3132 3135 3140 
+	}
+	manpower=200
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=19
+	name="STATE_19"
+	resources={
+		steel=10.000
+		aluminium=1.000
+		rubber=1.000
+		tungsten=1.000
+		chromium=1.000
+	}
+
+	history={
+		owner = TRE
+		add_core_of = TRE
+		victory_points = {
+			2612 60 
+		}
+		victory_points = {
+			3541 20 
+		}
+		victory_points = {
+			3533 20 
+		}
+		victory_points = {
+			741 20 
+		}
+		
+		buildings = {
+			infrastructure = 10
+
+		}
+
+	}
+
+	provinces={
+		741 879 1057 1158 1377 1533 1892 2148 2612 2836 3520 3525 3526 3528 3533 3540 3541 3542 3547 3548 3556 
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,18 @@
+state={
+	id=5
+	name="STATE_5"
+	state_category = wasteland
+	history = {
+	owner = IEC
+	add_core_of = IEC
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	impassable = yes
+	provinces={
+		1208 1781 2074 
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+}

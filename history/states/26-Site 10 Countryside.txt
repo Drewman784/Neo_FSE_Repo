@@ -1,0 +1,22 @@
+
+state={
+	id=26
+	name="STATE_26"
+
+	history={
+		owner = TEN
+		add_core_of = TEN
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		28 269 576 1137 1675 2157 2240 2678 2802 2805 3295 3302 3311 3326 3329 3330 3346 3348 3350 3354 3358 3359 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

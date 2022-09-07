@@ -1,0 +1,266 @@
+﻿capital = 27
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 0
+
+1922.9.22 = {
+	
+#	#generic focuses
+#	complete_national_focus = army_effort
+#	complete_national_focus = equipment_effort
+#	complete_national_focus = motorization_effort
+#	complete_national_focus = aviation_effort
+#	complete_national_focus = naval_effort
+#	complete_national_focus = large_navy
+#	complete_national_focus = industrial_effort
+#	complete_national_focus = construction_effort
+#	complete_national_focus = production_effort
+	
+	set_technology = {
+	}
+}
+
+
+
+set_politics = {
+	ruling_party = oligarchic
+	last_election = "1916.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+#create_country_leader = {
+#	name = "Placeholder"
+#	desc = ""
+#	picture = ""
+#	ideology = corporatism
+#	traits = {
+#		#
+#	}
+#}
+
+recruit_character = IEC_crawford
+
+add_ideas = {
+	
+	#Laws/Policy/Origin, all that good stuff
+	corporation
+	
+}
+
+
+
+set_popularities = {
+	democratic = 10
+	oligarchic = 70
+	socialist = 0
+	despotic = 15
+	totalitarian = 5
+	anarchy = 0
+}
+
+#1939.1.1 = {
+#	set_politics = {
+#		ruling_party = neutrality
+#		last_election = "1936.1.1"
+#		election_frequency = 48
+#		elections_allowed = no
+#	}
+#	set_popularities = {
+#		democratic = 25
+#		fascism = 20
+#		communism = 5
+#		neutrality = 50
+#	}
+#}
+
+
+if = {
+	limit = {
+		OR = {
+#			has_dlc = "Together for Victory"
+#			has_dlc = "Man the Guns"
+		}
+	}
+#	set_autonomy = {
+#		target = ONE
+#		autonomy_state = autonomy_client_state
+#	}
+#	set_autonomy = {
+#		target = TWO
+#		autonomy_state = autonomy_client_state
+#	}
+#	set_autonomy = {
+#		target = FOR
+#		autonomy_state = autonomy_military_government
+#	}
+#	set_autonomy = {
+#		target = SIX
+#		autonomy_state = autonomy_military_government
+#	}
+	else = {
+		puppet = ONE
+		puppet = TWO
+		puppet = TRE
+		puppet = FOR
+		puppet = FIV
+		puppet = SIX
+		puppet = SEV
+		puppet = EIG
+		puppet = NIN
+		puppet = TEN
+		
+		
+		
+		
+	}
+}
+
+#SIX = {
+#    add_popularity = { ideology = neutrality popularity = 60 }
+#	add_popularity = { ideology = democratic popularity = 10 }
+#	add_popularity = { ideology = communism popularity = 0 }
+#	add_popularity = { ideology = theocracy popularity = 15 }
+#	add_popularity = { ideology = authoritarian_theocracy popularity = 0 }
+#	add_popularity = { ideology = socialism popularity = 15 }
+#	add_popularity = { ideology = despotism popularity = 0 }
+#	add_popularity = { ideology = autocracy popularity = 0 }
+#    add_popularity = { ideology = ultranationalism popularity = 0 }
+#	add_popularity = { ideology = technocracy popularity = 0 }
+#	add_popularity = { ideology = totalitarian_technocracy popularity = 0 }
+#	add_popularity = { ideology = anarchism popularity = 0 }
+#    set_politics = {
+#    	ruling_party = neutrality
+#    	last_election = "1916.12.6"
+#    	election_frequency = 48
+#    	elections_allowed = no
+#	}
+#}
+
+
+
+#####################
+# Puppet Ideologies #
+#####################
+
+
+EIG = {
+	set_popularities = {
+		democratic = 5
+		oligarchic = 95
+		socialist = 0
+		despotic = 0
+		totalitarian = 0
+		anarchy = 0
+	}
+}
+
+FIV = {
+	set_popularities = {
+		democratic = 20
+		oligarchic = 60
+		socialist = 5
+		despotic = 10
+		totalitarian = 5
+		anarchy = 0
+	}
+}
+
+
+SIX = {
+	set_popularities = {
+		democratic = 10
+		oligarchic = 70
+		socialist = 15
+		despotic = 5
+		totalitarian = 0
+		anarchy = 0
+	}
+}
+
+FOR = {
+	set_popularities = {
+		democratic = 15
+		oligarchic = 65
+		socialist = 15
+		despotic = 5
+		totalitarian = 0
+		anarchy = 0
+	}
+}
+
+NIN = {
+	set_popularities = {
+		democratic = 5
+		oligarchic = 50
+		socialist = 0
+		despotic = 15
+		totalitarian = 30
+		anarchy = 0
+	}
+}
+
+ONE = {
+	set_popularities = {
+		democratic = 0
+		oligarchic = 95
+		socialist = 0
+		despotic = 5
+		totalitarian = 0
+		anarchy = 0
+	}
+}
+
+SEV = {
+	set_popularities = {
+		democratic = 5
+		oligarchic = 80
+		socialist = 15
+		despotic = 0
+		totalitarian = 0
+		anarchy = 0
+	}
+}
+
+TEN = {
+	set_popularities = {
+		democratic = 5
+		oligarchic = 90
+		socialist = 5
+		despotic = 0
+		totalitarian = 0
+		anarchy = 0
+	}
+}
+
+TRE = {
+	set_popularities = {
+		democratic = 10
+		oligarchic = 80
+		socialist = 5
+		despotic = 5
+		totalitarian = 0
+		anarchy = 0
+	}
+}
+
+TWO = {
+	set_popularities = {
+		democratic = 0
+		oligarchic = 75
+		socialist = 0
+		despotic = 20
+		totalitarian = 5
+		anarchy = 0
+	}
+}
+
+
+
+
+
+

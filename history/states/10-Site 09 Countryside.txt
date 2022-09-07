@@ -1,0 +1,22 @@
+
+state={
+	id=10
+	name="STATE_10"
+
+	history={
+		owner = NIN
+		add_core_of = NIN
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		489 591 785 1126 1238 1295 1325 1433 1507 1633 1639 1645 1803 1877 2119 2310 2348 2389 2445 2864 2907 2908 2911 2917 2920 2924 2930 2932 2934 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

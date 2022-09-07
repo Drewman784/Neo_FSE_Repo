@@ -1,0 +1,42 @@
+
+state={
+	id=21
+	name="STATE_21"
+	resources={
+		steel=10.000
+		aluminium=1.000
+		rubber=1.000
+		tungsten=1.000
+		chromium=1.000
+	}
+
+	history={
+		owner = SEV
+		add_core_of = SEV
+		victory_points = {
+			2579 60 
+		}
+		victory_points = {
+			194 20 
+		}
+		victory_points = {
+			2360 20 
+		}
+		victory_points = {
+			3236 20 
+		}
+		
+		buildings = {
+			infrastructure = 10
+
+		}
+
+	}
+
+	provinces={
+		194 524 641 1318 1896 1963 2048 2219 2360 2380 2579 2668 2677 2830 3231 3233 3236 3241 3244 3249 3250 3251 3255 3262 3263 
+	}
+	manpower=80
+	buildings_max_level_factor=1.000
+	state_category=city
+}

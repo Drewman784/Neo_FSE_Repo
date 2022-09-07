@@ -1,0 +1,17 @@
+state={
+	id=34
+	name="STATE_34"
+	state_category = rural 
+	history = {
+	owner = IEC
+	add_core_of = IEC
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	provinces={
+		720 891 1116 1276 1369 1392 1452 1516 1557 2080 3345 3361 3369 
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+}

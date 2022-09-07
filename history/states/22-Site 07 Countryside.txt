@@ -1,0 +1,22 @@
+
+state={
+	id=22
+	name="STATE_22"
+
+	history={
+		owner = SEV
+		add_core_of = SEV
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		846 1063 1174 1432 1462 1670 1714 1739 1813 1884 1946 1950 2137 2255 2293 2366 2383 2449 2469 2532 2554 2679 3213 3227 3232 3240 3245 3266 3270 3279 3280 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

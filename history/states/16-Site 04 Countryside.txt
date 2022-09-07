@@ -1,0 +1,18 @@
+
+state={
+	id=16
+	name="STATE_16"
+	state_category = wasteland
+	history = {
+	owner = FOR
+	add_core_of = FOR
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	provinces={
+		183 776 855 1163 1237 1465 1541 1808 2156 2175 2364 2405 2629 2644 2701 2843 2881 3820 3822 3823 3824 3825 3830 3831 3832 3835 3844 3846 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+}

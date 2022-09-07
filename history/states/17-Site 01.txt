@@ -1,0 +1,38 @@
+state={
+	id=17
+	name="STATE_17"
+	state_category = large_city
+	history = {
+	owner = ONE
+	add_core_of = ONE
+	victory_points = {
+	2812 60
+	}
+	victory_points = {
+	3865 20
+	}
+	victory_points = {
+	1904 50
+	}
+	victory_points = {
+	2738 20
+	}
+	
+		buildings = {
+		infrastructure = 10
+		}
+	}
+	provinces={
+		480 1904 2005 2321 2336 2379 2480 2724 2738 2803 2812 3858 3864 3865 3871 3872 
+	}
+	manpower=50
+	resources={
+		steel=10
+		aluminium=1
+		rubber=1
+		tungsten=1
+		chromium=1
+	}
+
+	buildings_max_level_factor=1.000
+}

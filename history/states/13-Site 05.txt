@@ -1,0 +1,38 @@
+state={
+	id=13
+	name="STATE_13"
+	state_category = city
+	history = {
+	owner = FIV
+	add_core_of = FIV
+	victory_points = {
+	3703 60
+	}
+	victory_points = {
+	2573 20
+	}
+	victory_points = {
+		1668 20
+	}
+	victory_points = {
+		2318 20
+	}
+	
+		buildings = {
+		infrastructure = 10
+		}
+	}
+	provinces={
+		1668 1833 2318 2400 2573 2883 3686 3703 3707 3713 
+	}
+	manpower=90
+	resources={
+		steel=10
+		aluminium=1
+		rubber=1
+		tungsten=1
+		chromium=1
+	}
+
+	buildings_max_level_factor=1.000
+}

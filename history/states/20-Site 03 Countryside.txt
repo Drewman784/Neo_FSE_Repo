@@ -1,0 +1,22 @@
+
+state={
+	id=20
+	name="STATE_20"
+
+	history={
+		owner = TRE
+		add_core_of = TRE
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		160 307 327 330 636 983 1110 1422 1993 2064 2111 2176 2281 2385 2392 2645 2662 2766 3502 3504 3513 3517 3519 3523 3529 3531 3534 3539 3546 3552 3555 3560 3561 3565 3566 
+	}
+	manpower=500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

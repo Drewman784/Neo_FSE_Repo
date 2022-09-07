@@ -1,0 +1,22 @@
+
+state={
+	id=52
+	name="STATE_52"
+
+	history={
+		owner = IEC
+		add_core_of = IEC
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		29 498 505 594 704 965 1013 1171 1242 1477 1576 1732 1790 1801 1823 2169 2462 2683 2842 2877 3440 
+	}
+	manpower=300
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,20 @@
+state={
+	id=32
+	name="STATE_32"
+	state_category = rural
+	history = {
+	owner = IEC
+	add_core_of = IEC
+	victory_points = {
+		1765 20 
+	}
+		buildings = {
+		infrastructure = 2
+		}
+	}
+	provinces={
+		792 825 1526 1539 1765 1881 2046 2481 2707 3615 3616 3618 3627 3629 3642 3648 3654 
+	}
+	manpower=300
+	buildings_max_level_factor=1.000
+}
