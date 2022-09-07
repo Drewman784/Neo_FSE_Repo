@@ -1,0 +1,19 @@
+bookmarks = {
+	bookmark = {
+		name = "Placeholder- do not pick!"
+		desc = "TLA_BOOKMARK_LOC"
+		date = 1922.9.22.12
+		picture = "GFX_under_construction_bookmark"
+		default_country = "SIX"
+		
+
+		"---"={
+			history = TLA_BOOKMARK_LOC
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

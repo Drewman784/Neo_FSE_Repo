@@ -1,0 +1,15 @@
+characters={
+	NIN_john_fuller={
+		name="John Fuller"
+		portraits={
+			civilian={
+				large="gfx/leaders/NIN/John Fuller.dds"
+			}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

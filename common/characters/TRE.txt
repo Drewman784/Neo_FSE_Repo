@@ -1,0 +1,15 @@
+characters={
+	TRE_timur_volga={
+		name="Timur Volga"
+		portraits={
+			#civilian={
+			#	large=""
+			#}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	TEN_andrew_carnegie={
+		name="Andrew Carnegie"
+		portraits={
+			#civilian={
+			#	large=""
+			#}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

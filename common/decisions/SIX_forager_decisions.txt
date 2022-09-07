@@ -1,0 +1,251 @@
+#####################################################################################################################
+# EXAMPLE FILE- COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+SIX_forager_decisions_categories = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	establish_the_foragers = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			check_variable = { SIX_wood > 3 }
+			check_variable = { SIX_steel > 1 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			is_debug = yes
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "Establishing the Foragers will allow us to scout out the countryside surronding the Site, and retrieve any useful resources we might find there. To do this will require 4 Wood and 2 Steel."
+			
+			hidden_effect = {
+				set_country_flag = foragers_established
+				add_to_variable = {
+					var = SIX_wood
+					value = -4
+				}			
+				add_to_variable = {
+					var = SIX_steel
+					value = -2
+				}	
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+
+
+	search_for_survivors = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			has_country_flag = foragers_established
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 60	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			is_debug = yes
+			has_country_flag = foragers_established
+			has_global_flag = iec_collapse
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "We will scavenge for any possible useable materials outside of the Site"
+			
+			hidden_effect = {
+				set_country_flag = foragers_expedition
+			
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100			
+		}
+	}
+
+
+
+
+
+	scavenge_for_materials = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			has_country_flag = foragers_established
+			NOT = { has_country_flag = foragers_expedition }
+			
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 30	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			is_debug = yes
+			has_country_flag = foragers_established
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "We will scavenge for any possible useable materials outside of the Site"
+			
+			hidden_effect = {
+				set_country_flag = foragers_expedition
+				
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100			
+		}
+	}
+
+	scavenge_for_food = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			has_country_flag = foragers_established
+			NOT = { has_country_flag = foragers_expedition }
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 30	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			is_debug = yes
+			has_country_flag = foragers_established
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "We will scavenge for any sources of Food we can find outside of the Site"
+			
+			hidden_effect = {
+				set_country_flag = foragers_expedition
+			
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100			
+		}
+	}
+
+	scavenge_for_steam_cores = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			has_country_flag = foragers_established
+			NOT = { has_country_flag = foragers_expedition }
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 90	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			NOT = { original_tag = IEC }
+		    owns_state = 7
+		    controls_state = 7
+			is_debug = yes
+			has_country_flag = foragers_established
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "We will search high and low across the countryside surronding the Site for any possible Steam Cores"
+			
+			hidden_effect = {
+				set_country_flag = foragers_expedition
+			
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100			
+		}
+	}
+
+
+
+
+
+
+
+

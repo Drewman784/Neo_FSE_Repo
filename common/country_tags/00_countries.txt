@@ -1,0 +1,12 @@
+
+SIX = "countries/Site 06.txt"
+FIV = "countries/Site 05.txt"
+SEV = "countries/Site 07.txt"
+EIG = "countries/Site 08.txt"
+NIN = "countries/Site 09.txt"
+TEN = "countries/Site 10.txt"
+FOR = "countries/Site 04.txt"
+TRE = "countries/Site 03.txt"
+TWO = "countries/Site 02.txt"
+ONE = "countries/Site 01.txt"
+IEC = "countries/IEC.txt"

@@ -1,0 +1,15 @@
+characters={
+	SEV_director_phillip_v_hunter={
+		name="Director Phillip V Hunter"
+		portraits={
+			civilian={
+				large="gfx/leaders/SEV/Director Phillip V Hunter.dds"
+			}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	FIV_sir_montague_browning={
+		name="Sir Montague Browning"
+		portraits={
+			civilian={
+				large="gfx/leaders/FIV/Sir Montague Browning.dds"
+			}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

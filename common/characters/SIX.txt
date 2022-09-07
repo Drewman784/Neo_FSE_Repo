@@ -1,0 +1,15 @@
+characters={
+	SIX_director_arthur_row={
+		name="Director Arthur Row"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIX/Director Arthur Row.dds"
+			}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1962.11.29.12"
+			id=-1
+		}
+	}
+}

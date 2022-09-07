@@ -1,0 +1,15 @@
+characters={
+	IEC_crawford={
+		name="Lord Crawford"
+		portraits={
+			#civilian={
+			#	large=""
+			#}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

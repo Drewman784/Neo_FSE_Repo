@@ -1,0 +1,15 @@
+characters={
+	EIG_john_keynes={
+		name="John Keynes"
+		portraits={
+			civilian={
+				large="gfx/leaders/EIG/John Keynes.dds"
+			}
+		}
+		country_leader={
+			ideology=corporatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

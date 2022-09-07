@@ -1,0 +1,997 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+NIN_construction_of_the_generator = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	
+
+	
+	##                     ##
+	## NIN CONSTRUCTION    ##
+	##                     ##
+	
+	NIN_construct_structural_profiles = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_structural_profile	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+			owns_state = 9
+			controls_state = 9
+			OR = {
+				check_variable = { convicts >49 }
+				check_variable = { workers >49 }
+			}
+			9 = {
+				has_resources_amount = {
+					resource = rubber
+					amount > 1
+				}
+			}
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+		}		
+
+		cost =  {			#The cost to execute the decision, by default its political power
+		
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = sp_requirements_tt
+			add_to_variable = { structural_profiles = +1 }
+			hidden_effect = {
+				9 = {
+					add_resource = {
+						type = rubber
+						amount = -1	
+					}
+				}
+				8 = { add_manpower = -500 }
+			
+			
+			
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}
+
+#	NIN_build_the_machine_shop = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_machine_shop	#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {
+#			owns_state = 9
+#			controls_state = 9
+#			9 = {
+#		    	has_resources_amount = {
+#		    		resource = chromium
+#		    		amount > 1
+#		    	}
+#            }
+#		}
+#		
+#		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+##		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			owns_state = 9
+#			controls_state = 9
+#			NOT = {has_country_flag = machine_shop_built }			
+#		}		
+#
+#		cost =  {			#The cost to execute the decision, by default its political power
+#		
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+#			custom_effect_tooltip = "Uses 2 Steam Cores to build a Machine Shop"
+#			hidden_effect = {
+#				9 = {
+#					add_resource = {
+#						type = chromium
+#						amount = -1	
+#					}
+#				}
+#			set_country_flag = machine_shop_built
+#			}
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 100	
+#		}
+#	}
+	
+	NIN_construct_machine_parts = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_machine_part	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+			owns_state = 9
+			controls_state = 9
+			OR = {
+				check_variable = { convicts >49 }
+				check_variable = { workers >49 }
+			}
+			9 = {
+				has_resources_amount = {
+					resource = tungsten
+					amount > 1
+				}
+			}
+		#has_country_flag = machine_shop_built
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			#has_country_flag = machine_shop_built
+		}		
+
+		cost =  {			#The cost to execute the decision, by default its political power
+		
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = mp_requirements_tt
+			add_to_variable = { machine_parts = +1 }
+			hidden_effect = {
+				9 = {
+					add_resource = {
+						type = tungsten
+						amount = -1	
+					}
+				}
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}
+	
+	
+	
+#	NIN_build_the_foundry = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_foundry	#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {
+#			owns_state = 9
+#			controls_state = 9
+#			9 = {
+#		    	has_resources_amount = {
+#		    		resource = chromium
+#		    		amount > 1
+#		    	}
+#            }
+#		}
+#		
+#		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+##		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			owns_state = 9
+#			controls_state = 9
+#			NOT = {has_country_flag = foundry_built }
+#		}		
+#
+#		cost =  {			#The cost to execute the decision, by default its political power
+#		
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+#			custom_effect_tooltip = "Uses 2 Steam Cores to build a Foundry"
+#			hidden_effect = {
+#				9 = {
+#					add_resource = {
+#						type = chromium
+#						amount = -1	
+#					}
+#				}
+#			set_country_flag = foundry_built
+#			}
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 100	
+#		}
+#	}
+	
+	NIN_construct_steel_composites = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_steel_composite	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+			owns_state = 9
+			controls_state = 9
+			OR = {
+				check_variable = { convicts >49 }
+				check_variable = { workers >49 }
+			}
+			9 = {
+				has_resources_amount = {
+					resource = tungsten
+					amount > 1
+					}
+				has_resources_amount = {
+					resource = aluminium
+					amount > 1
+				}
+			}
+		#has_country_flag = foundry_built
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			#has_country_flag = foundry_built
+		}		
+
+		cost =  {			#The cost to execute the decision, by default its political power
+		
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = sc_requirements_tt
+			add_to_variable = { steel_composites = +1 }
+			hidden_effect = {
+				9 = {
+					add_resource = {
+						type = tungsten
+						amount = -1
+						}
+					add_resource = {
+						type = aluminium
+						amount = -1
+					}
+				}
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100
+		}
+	}
+	
+
+	
+#	NIN_complete_stage_1 = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_first_stage_done	#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {
+#			OR = {
+#				check_variable = { convicts >99 }
+#				check_variable = { workers >99 }
+#			}
+#			
+#			
+#			owns_state = 9
+#			controls_state = 9
+#			check_variable = { structural_profiles = 8 }
+#		}
+#		
+#		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+##		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			owns_state = 9
+#			controls_state = 9
+#
+#
+#		}		
+#
+#		cost = 0		#The cost to execute the decision, by default its political power.
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+#			custom_effect_tooltip = shaft_requirements_tt
+#			
+#			add_to_variable = { structural_profiles = -8 }
+#			
+#			hidden_effect = {
+#				
+#				set_country_flag = stage_one_started
+#			}
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 500			
+#		}
+#	}
+	
+	NIN_install_pressure_valves = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_pressure_valves_done	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			OR = {
+				check_variable = { convicts >89 }
+				check_variable = { workers >89 }
+			}
+			
+			
+			owns_state = 9
+			controls_state = 9
+			check_variable = { structural_profiles = 10 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			has_country_flag = stage_one_completed
+
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = pressure_valves_requirements_tt
+			
+			add_to_variable = { structural_profiles = -10 }
+			
+			hidden_effect = {
+				#set_country_flag = pressure_valves_installed
+				set_country_flag = pressure_valves_started
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+	
+	NIN_install_tower_pumps = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_tower_pumps	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			OR = {
+				check_variable = { convicts >89 }
+				check_variable = { workers >89 }
+			}
+			
+			owns_state = 9
+			controls_state = 9
+			check_variable = { machine_parts = 10 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			has_country_flag = stage_one_completed
+
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = tower_pump_requirements_tt
+			
+			add_to_variable = { machine_parts = -10 }
+			
+			hidden_effect = {
+				#set_country_flag = tower_pumps_installed
+				set_country_flag = tower_pumps_started
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+	
+	NIN_install_the_core = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_generator_core	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			OR = {
+				check_variable = { convicts >124 }
+				check_variable = { workers >124 }
+			}
+			owns_state = 9
+			controls_state = 9
+			check_variable = { steel_composites = 25 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			has_country_flag = tower_pumps_installed
+			has_country_flag = pressure_valves_installed
+
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = core_requirements_tt
+			
+			add_to_variable = { steel_composites = -25 }
+			
+			hidden_effect = {
+				#set_country_flag = the_core_installed
+				set_country_flag = core_started
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+	
+	
+	NIN_install_support_frame_one = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_support_frame	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			OR = {
+				check_variable = { convicts >99 }
+				check_variable = { workers >99 }
+			}
+			owns_state = 9
+			controls_state = 9
+			check_variable = { structural_profiles = 25 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			has_country_flag = tower_pumps_installed
+			has_country_flag = pressure_valves_installed
+
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = support_frame_one_requirements_tt
+			
+			add_to_variable = { structural_profiles = -25 }
+			
+			hidden_effect = {
+				#set_country_flag = support_frame_one_installed
+				set_country_flag = support_frame_one_start
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+	
+	NIN_install_support_frame_two = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_support_frame	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			OR = {
+				check_variable = { convicts >99 }
+				check_variable = { workers >99 }
+			}
+			owns_state = 9
+			controls_state = 9
+			check_variable = { structural_profiles = 25 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			has_country_flag = tower_pumps_installed
+			has_country_flag = pressure_valves_installed
+
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = support_frame_two_requirements_tt
+			
+			add_to_variable = { structural_profiles = -25 }
+			
+			hidden_effect = {
+				#set_country_flag = support_frame_two_installed
+				set_country_flag = support_frame_two_start
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+	
+	NIN_install_thermall_hull_one = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_thermal_hull	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			OR = {
+				check_variable = { convicts >99 }
+				check_variable = { workers >99 }
+			}
+			owns_state = 9
+			controls_state = 9
+			check_variable = { machine_parts = 25 }
+			check_variable = { steel_composites = 10 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			has_country_flag = the_core_installed
+			has_country_flag = support_frame_one_installed
+			has_country_flag = support_frame_two_installed
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = thermal_hull_one_requirements_tt
+			
+			add_to_variable = { machine_parts = -25 }
+			add_to_variable = { steel_composites = -10 }
+			
+			hidden_effect = {
+				#set_country_flag = thermall_hull_one_installed
+				set_country_flag = thermall_hull_one_start
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+
+
+	NIN_install_thermall_hull_two = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_thermal_hull	#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			OR = {
+				check_variable = { convicts >99 }
+				check_variable = { workers >99 }
+			}
+			owns_state = 9
+			controls_state = 9
+			check_variable = { machine_parts = 25 }
+			check_variable = { steel_composites = 10 }
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 9
+			controls_state = 9
+			has_country_flag = the_core_installed
+			has_country_flag = support_frame_one_installed
+			has_country_flag = support_frame_two_installed
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = thermal_hull_two_requirements_tt
+			
+			add_to_variable = { machine_parts = -25 }
+			add_to_variable = { steel_composites = -10 }
+			
+			hidden_effect = {
+				#set_country_flag = thermall_hull_two_installed
+				set_country_flag = thermal_hull_two_start
+			}
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 500			
+		}
+	}
+
+	## TOOL FIX EVENT CHAIN ##
+	
+#	bad_tools_build_fix_3 = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_structural_profile	#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {	
+#			owns_state = 9
+#			controls_state = 9
+#			has_country_flag = bad_tools
+#			has_country_flag = tools_fix_2
+#			9 = {
+#				has_resources_amount = {
+#					resource = tungsten
+#					amount > 3
+#				}
+#			}
+#		}
+#		
+#		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+##		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			owns_state = 9
+#			controls_state = 9
+#			has_country_flag = bad_tools
+#			has_country_flag = tools_fix_2
+#		}		
+#
+#		cost =			#The cost to execute the decision, by default its political power
+#		
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+#			custom_effect_tooltip = "Use 4 Wood and 2 steel to rebuild some of our tools"
+#			hidden_effect = {
+#			set_country_flag =  tools_fix_3 
+#				9 = {
+#					add_resource = {
+#						type = tungsten
+#						amount = -2
+#					}
+#				}
+#			}
+#		}
+#	
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 100
+#		}
+#	}
+#	
+#	
+#	bad_tools_build_fix_2 = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_structural_profile	#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {	
+#			owns_state = 9
+#			controls_state = 9
+#			has_country_flag = bad_tools
+#			has_country_flag =  tools_fix_1
+#			9 = {
+#				has_resources_amount = {
+#					resource = rubber
+#					amount > 3
+#				}
+#			}
+#			9 = {
+#				has_resources_amount = {
+#					resource = tungsten
+#					amount > 1
+#				}
+#			}
+#			
+#			
+#		}
+#		
+#		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+##		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			owns_state = 9
+#			controls_state = 9
+#			has_country_flag = bad_tools
+#			has_country_flag =  tools_fix_1
+#		}		
+#
+#		cost =			#The cost to execute the decision, by default its political power
+#		
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+#			custom_effect_tooltip = "Use 4 Wood and 2 steel to rebuild some of our tools"
+#			hidden_effect = {
+#			set_country_flag =  tools_fix_2 
+#				9 = {
+#					add_resource = {
+#						type = rubber
+#						amount = -2
+#					}
+#				}
+#				9 = {
+#					add_resource = {
+#						type = tungsten
+#						amount = -1
+#					}
+#				}
+#			}
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 100
+#		}
+#	}
+#	
+#	bad_tools_build_fix_1 = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_structural_profile	#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {	
+#			owns_state = 9
+#			controls_state = 9
+#			has_country_flag = bad_tools
+#			9 = {
+#				has_resources_amount = {
+#					resource = rubber
+#					amount > 1
+#				}
+#			}
+#		}
+#		
+#		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+##		days_re_enable = 9	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			owns_state = 9
+#			controls_state = 9
+#			has_country_flag = bad_tools
+#		}		
+#
+#		cost =			#The cost to execute the decision, by default its political power
+#		
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+#			custom_effect_tooltip = "Use 2 Wood to rebuild some of our tools"
+#			hidden_effect = {
+#				set_country_flag =  tools_fix_1
+#				9 = {
+#					add_resource = {
+#						type = rubber
+#						amount = -1	
+#					}
+#				}
+#			}
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 100
+#		}
+#	}
+	
+#	###################################################################################################################
+#				#### TARGETED DECISIONS WILL PUT THE FLAG OF THE TARGET WITH THE DECISION ICON ####
+#	#### SCOPING FOR THE TARGET OF THE DECISION IS DONE WITH "FROM" and the country currently being played is ROOT ####
+#	###################################################################################################################	
+#	
+#	simple_targeted_decision = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+#		}
+#		
+#		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			ROOT = {
+#				is_ai = no
+#			}		
+#		}
+#		
+#		target_trigger = {		#Trigget to make the decision appear, these override the visible paramater so if visible is true but target_trigger is not, the decision will not appear
+#			FROM = { tag = USA }
+#		}		
+#
+#		cost = 10		#The cost to execute the decision, by default its political power.
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+#			FROM = { add_political_power = 50 }
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 0
+#		}
+#	}
+#}
+#simple_category_with_picture = {
+#	simple_decision_2 = {		#ID of the decision, must not contain spaces!
+#
+#		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+#			always = no
+#		}
+#		
+#		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			ROOT = {
+#				is_ai = no
+#			}		
+#		}		
+#
+#		cost = 10		#The cost to execute the decision, by default its political power.
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 0
+#		}
+#	}
+#}
+#
+#############################################################################
+##### ON MAP DECISIONS ALLOW YOU TO SHOW DECISION ICONS ON THE WORLD MAP ####
+#############################################################################
+#category_with_map_icon = {
+#	on_map_decision = {
+#
+#		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+#		on_map_mode = map_only		#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+#		highlight_states = { state = 318 }		#This is required if on_map_mode = map_only is used, will highlight the state and will make the decision icon appear above that state on the world map.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+#		}
+#		
+#		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+#		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+#
+#		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+#			ROOT = {
+#				is_ai = no
+#			}
+#		}		
+#
+#		cost = 10		#The cost to execute the decision, by default its political power.
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		complete_effect = {		#The effects to execute once the decision icon is clicked.
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+#			factor = 0
+#		}
+#	
+#	}
+#}

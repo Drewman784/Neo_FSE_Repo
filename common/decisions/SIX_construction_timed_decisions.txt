@@ -1,0 +1,201 @@
+#####################################################################################################################
+# EXAMPLE FILE- COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+SIX_construction_of_the_generator = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	###############################################
+	#### DECISIONS WITH TIMERS BECOME MISSIONS ####
+	###############################################
+	
+	SIX_stage_1_timeout = {		#ID of the mission, must not contain spaces!
+
+		icon = decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 201	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			has_country_flag = stage_one_completed
+		}
+		
+		fire_only_once = yes 		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {
+			NOT = { original_tag = IEC }
+			owns_state = 7
+			controls_state = 7
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+		}
+		
+		complete_effect  = {
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	
+	SIX_stage_2_timeout = {		#ID of the mission, must not contain spaces!
+
+		icon = decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 401	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			has_country_flag = tower_pumps_installed
+			has_country_flag = pressure_valves_installed
+		}
+		
+		fire_only_once = yes 		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {
+			has_country_flag = stage_one_completed
+			owns_state = 7
+			controls_state = 7
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+		}
+		
+		complete_effect  = {
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	
+	SIX_stage_3_timeout = {		#ID of the mission, must not contain spaces!
+
+		icon = decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 601	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			has_country_flag = the_core_installed
+			has_country_flag = support_frame_one_installed
+			has_country_flag = support_frame_two_installed
+		}
+		
+		fire_only_once = yes 		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {
+			owns_state = 7
+			controls_state = 7
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+		}
+		
+		complete_effect  = {
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	
+	SIX_stage_4_timeout = {		#ID of the mission, must not contain spaces!
+
+		icon = decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 801	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			has_country_flag = thermal_hull_one_installed
+			has_country_flag = thermal_hull_two_installed
+		}
+		
+		fire_only_once = yes 		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {
+			owns_state = 7
+			controls_state = 7
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+		}
+		
+		complete_effect  = {
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	
+
+#	#########################################################################################
+#	#### MISIONS CAN HAVE A SECONDARY PHASE AFTER THEY ARE REMOVED WHICH USES A MODIFIER ####
+#	#########################################################################################
+#	
+#	timeout_mission_with_remove_effect = {		#ID of the mission, must not contain spaces!
+#
+#		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+#		days_mission_timeout = 5	#The amount of days remaining until the mission expires and enters remove phase.
+#		days_remove = 5	#How many days the mission will be in remove phase.
+#		is_good = yes		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission.
+#		
+#		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+#		
+#		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+#			always = no
+#		}
+#		
+#		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+#
+#		visible = {		#Conditions to make this mission visible, can be left blank to make it always appear.
+#			ROOT = {
+#				is_ai = no
+#			}		
+#		}
+#
+#		# EFFECTS OF THIS DECISION/MISSION
+#
+#		modifier = {	#The modifier effect here will be used once the mission enters REMOVED phase.
+#			stability_weekly = 0.10
+#		}
+#
+#		timeout_effect = {		#The effects to execute once the mission timer expires.
+#		}
+#		
+#		remove_effect = {		#The effects to execute once the mission expires/completes and enters the remove phase.
+#		}
+#		
+#		# AI LOGIC FOR THIS DECISION/MISSION
+#
+#		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+#			factor = 0
+#		}
+#	}	
+#}

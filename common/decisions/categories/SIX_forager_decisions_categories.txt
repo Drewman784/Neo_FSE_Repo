@@ -1,0 +1,25 @@
+#####################################################################################################################
+# EXAMPLE FILE- COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+
+
+SIX_forager_decisions_categories = {
+	icon = GFX_category_icon
+	picture = GFX_category_image_template		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 5		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		NOT = { original_tag = IEC }
+		owns_state = 7
+		controls_state = 7
+		
+	}
+	
+	visible = {
+		NOT = { original_tag = IEC }
+		owns_state = 7
+		controls_state = 7
+	}
+	visible_when_empty = yes
+}
