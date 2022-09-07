@@ -1,0 +1,25 @@
+################
+#Site 06 Events#
+################
+
+add_namespace = nf_six
+
+
+country_event = { # Startup event
+	id = nf_six.1
+	title = nf_six.1.t
+	desc = nf_six.1.d
+	picture = GFX_report_startup_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Understood"
+		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}

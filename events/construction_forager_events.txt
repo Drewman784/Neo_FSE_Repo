@@ -1,0 +1,164 @@
+﻿###########################
+# Forager Construction Phase
+###########################
+
+add_namespace = forager_construction_phase_wood
+add_namespace = forager_construction_phase_nothing
+
+
+### Site 06 ###
+
+country_event = { # Find Wood 1
+	id = forager_construction_phase_wood.1
+	title = "Abandoned Sawmill"
+	desc = forager_construction_phase_wood.1.d
+	picture = GFX_report_forager_construction_event
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Excellent"
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = SIX_wood
+			value = 2
+		}
+	}
+}
+
+
+
+
+country_event = { # Find Wood 2
+	id = forager_construction_phase_wood.2
+	title = "Dilapilated Cabin"
+	desc = forager_construction_phase_materials.3.d
+	picture = GFX_report_forager_construction_event
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Take the wood"
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = SIX_wood
+			value = 2
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = { # Find Nothing 1
+	id = forager_construction_phase_nothing.1
+	title = "Hanging Tree"
+	desc = forager_construction_phase_nothing.1.d
+	picture = GFX_report_forager_construction_event
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Bury the body"
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#	is_triggered_only = yes
+#	
+#	option = { 
+#		name = "Take the wood"
+#		ai_chance = { factor = 100 }
+#		7 = {
+#			add_resource = {
+#				type = rubber
+#				amount = 2	
+#			}
+#		}
+#	}
+#}
+
+
+
+
+
+
+
+
+
+
+
+## Scavenge Materials
+#country_event = { #Find Wood 1
+#	id = forager_construction_phase_materials.1.1
+#	title = "An Abandoned Sawmill"
+#	desc = forager_construction_phase_materials.1.1.d
+#	picture = GFX_report_forager_construction_event
+#	
+#	is_triggered_only = yes
+#	
+#	option = { 
+#		name = "Take the wood"
+#		ai_chance = { factor = 100 }
+#		7 = {
+#			add_resource = {
+#				type = rubber
+#				amount = 2	
+#			}
+#		}
+#	}
+#}
+#
+#
+#country_event = { #Find Wood 2
+#	id = forager_construction_phase_materials.1.2
+#	title = "The Dilapidated Shack"
+#	desc = forager_construction_phase_materials.1.2.d
+#	picture = GFX_report_forager_construction_event
+#	
+#	is_triggered_only = yes
+#	
+#	option = { 
+#		name = "Take the wood"
+#		ai_chance = { factor = 100 }
+#		7 = {
+#			add_resource = {
+#				type = rubber
+#				amount = 2	
+#			}
+#		}
+#	}
+#}
+
+
+
+
+
+
+
+

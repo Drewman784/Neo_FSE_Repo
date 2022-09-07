@@ -1,0 +1,39 @@
+﻿###########################
+# Construction Accident Events
+###########################
+
+add_namespace = major_accident
+
+
+country_event = { # 06 First Major Accident
+	id = major_accident.1
+	title = major_accident.1.t
+	desc = major_accident.1.d
+	picture = GFX_report_forager_construction_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Oh no"
+		ai_chance = { factor = 100 }
+		effect_tooltip = {
+		}
+		hidden_effect = {
+			SIX = {
+				set_country_flag = accident_1
+#				load_focus_tree = {
+#					tree = site_06_focus_2
+#					keep_completed = yes
+#				}
+				complete_national_focus = halt_construction 
+				}	
+			}
+			
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}

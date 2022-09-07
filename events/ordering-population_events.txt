@@ -1,0 +1,105 @@
+###########################
+# Construction Population Ordering
+###########################
+
+add_namespace = construction_phase_order_placeholder
+add_namespace = construction_phase_order_convict
+add_namespace = construction_phase_order_worker
+add_namespace = construction_phase_order_guard
+add_namespace = construction_phase_order_engineer
+add_namespace = construction_phase_order_medic
+
+
+#country_event = { # Placeholder
+#	id = construction_phase_order_placeholder.1
+#	title = "More Men for the Site"
+#	desc = construction_phase_order_placeholder.1.d
+#	picture = GFX_report_ordering_pop_event
+#	
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	
+#	option = { 
+#		name = "Now get off this line"
+#		ai_chance = { factor = 100 }
+#	}
+#}
+
+country_event = { # Order Convicts
+	id = construction_phase_order_convict.1
+	title = "Fresh Bodies For The Site"
+	desc = construction_phase_order_convict.1.d
+	picture = GFX_report_ordering_pop_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Very Well"
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+country_event = { # Order Workers
+	id = construction_phase_order_worker.1
+	title = "Laborers for the Site"
+	desc = construction_phase_order_worker.1.d
+	picture = GFX_report_ordering_pop_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Very Well"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { # Order Guards
+	id = construction_phase_order_guard.1
+	title = "Armed Wardens For The Site"
+	desc = construction_phase_order_guard.1.d
+	picture = GFX_report_ordering_pop_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Very Well"
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+country_event = { # Order Engineers
+	id = construction_phase_order_engineer.1
+	title = "Bright Minds For The Site"
+	desc = construction_phase_order_engineer.1.d
+	picture = GFX_report_ordering_pop_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Very Well"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { # Order Medics
+	id = construction_phase_order_medic.1
+	title = "Healers For The Site"
+	desc = construction_phase_order_medic.1.d
+	picture = GFX_report_ordering_pop_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Very Well"
+		ai_chance = { factor = 100 }
+	}
+}
+
+

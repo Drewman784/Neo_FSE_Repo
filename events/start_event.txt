@@ -1,0 +1,29 @@
+###########################
+# Every Country startup event
+###########################
+
+add_namespace = startup
+
+
+country_event = { # Startup event
+	id = startup.1
+	title = startup.1.t
+	desc = startup.1.d
+	picture = GFX_report_startup_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Understood"
+		ai_chance = { factor = 100 }
+		effect_tooltip = {
+		}
+		hidden_effect = {
+		}
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
