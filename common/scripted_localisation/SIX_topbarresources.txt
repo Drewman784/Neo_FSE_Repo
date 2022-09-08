@@ -5,17 +5,17 @@ defined_text = { # 06 Food
 	text = {
 		trigger = {
 			tag = SIX
-			check_variable = {SIX_food>0}
+			check_variable = {food>0}
 			check_variable = {resource@steel>resource_imported@steel}
 		}
-		localization_key = "[?SIX_food]"
+		localization_key = "[?THIS.food]"
 		
 	}
 	text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[?SIX_food]"
+		localization_key = "[?THIS.food]"
 	}
 
 
@@ -25,16 +25,16 @@ defined_text = { # 06 Wood
 	text = {
 		trigger = {
 			tag = SIX
-			check_variable = {SIX_wood>0}
+			check_variable = {wood>0}
 			check_variable = {resource@rubber>resource_imported@rubber}
 		}
-		localization_key = "[?SIX_wood]"
+		localization_key = "[?THIS.wood]"
 	}
 	text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[?SIX_wood]"
+		localization_key = "[?THIS.wood]"
 	}
 
 
@@ -44,16 +44,16 @@ defined_text = { # 06 Coal
 	text = {
 		trigger = {
 			tag = SIX
-			check_variable = {SIX_coal>0}
+			check_variable = {coal>0}
 			check_variable = {resource@aluminium>resource_imported@aluminium}
 		}
-		localization_key = "[?SIX_coal]"
+		localization_key = "[?THIS.coal]"
 	}
 	text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[?SIX_coal]"
+		localization_key = "[?THIS.coal]"
 	}
 
 
@@ -63,16 +63,16 @@ defined_text = { # 06 Steel
 	text = {
 		trigger = {
 			tag = SIX
-			check_variable = {SIX_steel>0}
+			check_variable = {steel>0}
 			check_variable = {resource@tungsten>resource_imported@tungsten}
 		}
-		localization_key = "[?SIX_steel]"
+		localization_key = "[?THIS.steel]"
 	}
 	text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[?SIX_steel]"
+		localization_key = "[?THIS.steel]"
 	}
 
 
@@ -82,16 +82,16 @@ defined_text = { # 06 Steam Cores
 	text = {
 		trigger = {
 		tag = SIX	
-			check_variable = {SIX_steam_cores>0}
+			check_variable = {steam_cores>0}
 			check_variable = {resource@chromium>resource_imported@chromium}
 		}
-		localization_key = "[?SIX_steam_cores]"
+		localization_key = "[?THIS.steam_cores]"
 	}
 	text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[?SIX_steam_cores]"
+		localization_key = "[?THIS.steam_cores]"
 	}
 }
 

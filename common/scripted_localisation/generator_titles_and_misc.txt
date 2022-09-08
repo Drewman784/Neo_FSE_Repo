@@ -1,0 +1,179 @@
+# Building Panel Texts
+
+defined_text = {
+	name = building_panel_title
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { selected_building_slot = 19 }
+		}
+		localization_key = building_button_19
+	}	
+	
+}
+
+# Heat Icon
+
+defined_text = {
+	name = GFX_temp_heat_icon
+	text = {
+		localization_key = "GFX_heat_[?heat_button]"
+	}	
+}
+
+defined_text = {
+	name = heat_scripted_tooltip
+	text = {
+		trigger = {
+			check_variable = { heat_button = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { heat_button = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { heat_button = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { heat_button = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { heat_button = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { heat_button = 5 }
+		}
+		localization_key = heating_5
+	}
+}	
+
+
+
+

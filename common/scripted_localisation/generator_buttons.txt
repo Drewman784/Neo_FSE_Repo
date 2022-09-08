@@ -1,0 +1,1513 @@
+# Generator GUI button
+
+defined_text = {
+	name = GFX_generator
+	text = {
+		trigger = {
+			has_country_flag = THIS.has_generator 
+		}
+		localization_key = "GFX_generator_on"
+	}
+	text = {
+		trigger = {
+			not = { has_country_flag = THIS.has_generator }
+		}
+		localization_key = "GFX_generator_off"
+	}
+	
+}
+
+
+# Scripted to buttons for building
+
+defined_text = {
+	name = GFX_button_view_1
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_1]"
+	}	
+}
+
+defined_text = {
+	name = GFX_button_view_2
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_2]"
+	}	
+
+}
+
+defined_text = {
+	name = GFX_button_view_3
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_3]"
+	}	
+}
+
+defined_text = {
+	name = GFX_button_view_4
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_4]"
+	}	
+
+}
+
+defined_text = {
+	name = GFX_button_view_5
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_5]"
+	}	
+}
+
+defined_text = {
+	name = GFX_button_view_6
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_6]"
+	}	
+
+}
+
+defined_text = {
+	name = GFX_button_view_7
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_7]"
+	}	
+}
+
+defined_text = {
+	name = GFX_button_view_8
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = selected
+				value = 1
+			}
+		}
+		localization_key = "GFX_button_[?building_slot_8]"
+	}	
+
+}
+
+#
+# Building Slot Tooltips
+# I'm trying to find a way to shortened this but I haven't yet so lot's of code now
+#
+defined_text = {
+	name = building_type_1
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_1 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+	
+}
+defined_text = {
+	name = building_type_2
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_2 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+}
+
+defined_text = {
+	name = building_type_3
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_3 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+}
+
+defined_text = {
+	name = building_type_4
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_4 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+}
+
+defined_text = {
+	name = building_type_5
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_5 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+}
+
+defined_text = {
+	name = building_type_6
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_6 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+}
+
+defined_text = {
+	name = building_type_7
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_7 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+}
+
+defined_text = {
+	name = building_type_8
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 0 }
+		}
+		localization_key = building_button_0
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 1 }
+		}
+		localization_key = building_button_1
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 2 }
+		}
+		localization_key = building_button_2
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 3 }
+		}
+		localization_key = building_button_3
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 4 }
+		}
+		localization_key = building_button_4
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 5 }
+		}
+		localization_key = building_button_5
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 6 }
+		}
+		localization_key = building_button_6
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 7 }
+		}
+		localization_key = building_button_7
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 8 }
+		}
+		localization_key = building_button_8
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 9 }
+		}
+		localization_key = building_button_9
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 10 }
+		}
+		localization_key = building_button_10
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 11 }
+		}
+		localization_key = building_button_11
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 12 }
+		}
+		localization_key = building_button_12
+	}
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 13 }
+		}
+		localization_key = building_button_13
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 14 }
+		}
+		localization_key = building_button_14
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 15 }
+		}
+		localization_key = building_button_15
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 16 }
+		}
+		localization_key = building_button_16
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 17 }
+		}
+		localization_key = building_button_17
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 18 }
+		}
+		localization_key = building_button_18
+	}	
+	text = {
+		trigger = {
+			check_variable = { building_slot_8 = 19 }
+		}
+		localization_key = building_button_19
+	}	
+}
+
+
+# Heat Scripted Loc yes more code
+
+defined_text = {
+	name = heating_building_1
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_1 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_1 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_1 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_1 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_1 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_1 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+defined_text = {
+	name = heating_building_2
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_2 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_2 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_2 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_2 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_2 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_2 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+defined_text = {
+	name = heating_building_3
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_3 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_3 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_3 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_3 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_3 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_3 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+defined_text = {
+	name = heating_building_4
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_4 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_4 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_4 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_4 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_4 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_4 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+defined_text = {
+	name = heating_building_5
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_5 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_5 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_5 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_5 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_5 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_5 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+defined_text = {
+	name = heating_building_6
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_6 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_6 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_6 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_6 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_6 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_6 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+defined_text = {
+	name = heating_building_7
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_7 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_7 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_7 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_7 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_7 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_7 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+defined_text = {
+	name = heating_building_8
+	
+	text = {
+		trigger = {
+			check_variable = { building_heat_8 = 0 }
+		}
+		localization_key = heating_0
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_8 = 1 }
+		}
+		localization_key = heating_1
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_8 = 2 }
+		}
+		localization_key = heating_2
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_8 = 3 }
+		}
+		localization_key = heating_3
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_8 = 4 }
+		}
+		localization_key = heating_4
+	}
+	text = {
+		trigger = {
+			check_variable = { building_heat_8 = 5 }
+		}
+		localization_key = heating_5
+	}
+}
+
+# Building Panel Scripted
+
+defined_text = {
+	name = current_max_pop
+	
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 1 }
+		}
+		localization_key = building_max_pop_1
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 2 }
+		}
+		localization_key = building_max_pop_2
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 3 }
+		}
+		localization_key = building_max_pop_3
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 4 }
+		}
+		localization_key = building_max_pop_4
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 5 }
+		}
+		localization_key = building_max_pop_5
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 6 }
+		}
+		localization_key = building_max_pop_6
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 7 }
+		}
+		localization_key = building_max_pop_7
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.selected_button = 8 }
+		}
+		localization_key = building_max_pop_8
+	}
+}
+
+
