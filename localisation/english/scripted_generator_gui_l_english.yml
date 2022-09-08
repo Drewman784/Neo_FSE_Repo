@@ -1,0 +1,49 @@
+﻿l_english:
+
+ # Button Scripted Local
+ building_button_0:0 "Empty"
+ building_button_1:0 "Tents"
+ building_button_2:0 "Bunkhouse"
+ building_button_3:0 "Cookhouse"
+ building_button_4:0 "Hunter's Cabin"
+ building_button_5:0 "Hot House"
+ building_button_6:0 "Medical Post"
+ building_button_7:0 "Workshop"
+ building_button_8:0 "Stockpile"
+ building_button_9:0 "Coal Mine"
+ building_button_10:0 "Steel Works"
+ building_button_11:0 "Sawmill"
+ building_button_12:0 "Train Station"
+ building_button_13:0 "Unloading Station"
+ building_button_14:0 "Forager Cabin"
+ building_button_15:0 "Beacon"
+ building_button_16:0 "Brazier"
+ building_button_17:0 "SteamHub"
+ building_button_18:0 "Administrative Office"
+ building_button_19:0 "Radio Station"
+ 
+ heating_0:0 "Freezing"
+ heating_1:0 "Very Cold"
+ heating_2:0 "Cold"
+ heating_3:0 "Chilly"
+ heating_4:0 "Livable"
+ heating_5:0 "Comfortable"
+ 
+ BUILDING_TITLE:0 "[building_panel_title]"
+ HEATING_TOOLTIP:0 "[heat_scripted_tooltip]"
+ 
+ MAX_POP:0 "[current_max_pop]"
+ 
+ building_max_pop_1:0 "[?THIS.building_pop_1]/[?THIS.building_max_pop_1]"
+ building_max_pop_2:0 "[?THIS.building_pop_2]/[?THIS.building_max_pop_2]"
+ building_max_pop_3:0 "[?THIS.building_pop_3]/[?THIS.building_max_pop_3]"
+ building_max_pop_4:0 "[?THIS.building_pop_4]/[?THIS.building_max_pop_4]"
+ building_max_pop_5:0 "[?THIS.building_pop_5]/[?THIS.building_max_pop_5]"
+ building_max_pop_6:0 "[?THIS.building_pop_6]/[?THIS.building_max_pop_6]"
+ building_max_pop_7:0 "[?THIS.building_pop_7]/[?THIS.building_max_pop_7]"
+ building_max_pop_8:0 "[?THIS.building_pop_8]/[?THIS.building_max_pop_8]"
+ 
+ 
+
+ 
+

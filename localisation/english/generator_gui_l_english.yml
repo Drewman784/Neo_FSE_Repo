@@ -1,0 +1,31 @@
+﻿l_english:
+ GENERATOR_TOPBAR_BUTTON:0 "§HGenerator§! \nOpens the generator view"
+ 1_tooltip:0 "Operatoring: \nHeating: [heating_building_1] \nBuilding: [building_type_1]"
+ 2_tooltip:0 "Operatoring: \nHeating: [heating_building_2] \nBuilding: [building_type_2]"
+ 3_tooltip:0 "Operatoring: \nHeating: [heating_building_3] \nBuilding: [building_type_3]"
+ 4_tooltip:0 "Operatoring: \nHeating: [heating_building_4] \nBuilding: [building_type_4]"
+ 5_tooltip:0 "Operatoring: \nHeating: [heating_building_5] \nBuilding: [building_type_5]"
+ 6_tooltip:0 "Operatoring: \nHeating: [heating_building_6] \nBuilding: [building_type_6]"
+ 7_tooltip:0 "Operatoring: \nHeating: [heating_building_7] \nBuilding: [building_type_7]"
+ 8_tooltip:0 "Operatoring: \nHeating: [heating_building_8] \nBuilding: [building_type_8]"
+ 
+ WORKERS_UNEMPLOYED:0 "[?THIS.unemployed_workers]"
+ 
+ POP_INCREASE_1: "Increases current workers by 1"
+ POP_INCREASE_5: "Increases current workers by 5"
+ POP_INCREASE_MAX: "Increases current workers to the max available slots"
+ POP_DECREASE_1: "Decreases current workers by 1"
+ POP_DECREASE_5: "Decreases current workers by 5"
+ POP_DECREASE_MAX: "Removes all current workers from building"
+ Workers_Unemployed: "Workers Unemployed"
+ Current_Workers_Max_Workers: "Current Workers/Max Workers"
+ HOUSING_TAB: "Housing Tab"
+ FOOD_TAB: "Food Tab"
+ HEALTH_TAB: "Health Tab"
+ HEATING_TAB: "Heating Tab"
+ TECH_TAB: "Technology Tab"
+ RESOURCES_TAB: "Resources Tab"
+ SCOUT_TAB: "Scouting Tab"
+ ADMIN_TAB: "Administrative Tab"
+
+ 
