@@ -4,32 +4,28 @@ on_actions = {
 		
 		
 			SIX = {
+					
+				update_pop = yes
+				country_event = { id = startup.1 }	
 				
-				# Generator Construction #
-				
-				set_variable = { structural_profiles = 0 }
-				set_variable = { machine_parts = 0 }
-				set_variable = { steel_composites = 0 }
-				
-				# Population Demographics #
-				
-				set_variable = { workers = 30 }
-				set_variable = { engineers = 10 }
-				set_variable = { medical_personnel = 5 }
-				set_variable = { guards = 20 }
-				set_variable = { convicts = 0 }
-				set_variable = { children = 0 }
-				set_variable = { amputees = 0 }
-				set_variable = { automatons = 0 }
-				
-				# Hope and Discontent #
-				
-				set_variable = { hope = 3 }
-				set_variable = { discontent = 0 }
-				
-			country_event = { id = startup.1 }	
 			
 			}
+			
+			# Used for heating in SCRIPTED EFFECT FILE
+			# 2 so far is the base temp
+			# Only go from 0 - 5
+			set_variable = { weather_temp = 2 }
+			
+			
 		}
 	}
+	
+	on_daily_SIX = {
+		effect = {
+			call_heating = yes
+			update_heat_button = yes
+			update_pop = yes
+		}
+	}
+	
 }
