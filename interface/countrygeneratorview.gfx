@@ -1,0 +1,327 @@
+spriteTypes = {
+
+	# Generator GFX
+	
+	spriteType = {
+		name = "GFX_generator_off"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//generator_off.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_generator_on"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//generator_on.dds"
+	}
+
+	# Building GFX
+	
+	spriteType = {
+		name = "GFX_button_0"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//no_building_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_1"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//tents_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_2"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//bunkhouse_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_3"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//cookhouse_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_4"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//hunters_cabin_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_5"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//hot_house_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_6"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//medical_post_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_7"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//workshop_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_8"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//stockpile_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_9"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//coal_mine_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_10"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//steel_works_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_11"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//sawmill_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_12"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//train_station_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_13"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//unloading_station_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_14"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//forager_cabin_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_15"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//beacon_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_16"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//brazier_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_17"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//steamhub_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_18"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//admin_office_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_19"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//small_buildings//radio_button.dds"
+	}
+	
+	# GUI CAT GFX
+	
+	spriteType = {
+		name = "GFX_button_heating"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//heating_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_housing"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//housing_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_food"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//food_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_health"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//health_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_resources"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//resources_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_tech"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//tech_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_scouting"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//scouting_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_admin"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//admin_button.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_topbar_background_extended"
+		texturefile = "gfx//interface//topbar//background_extended.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar_generator"
+		texturefile = "gfx//interface//topbar//toolbar//generator_view_button.dds"
+		noOfFrames = 2		
+	}
+	
+	# Building Buttons
+	
+	spriteType = {
+		name = "GFX_button_tents"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//tents_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_bunkhouse"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//bunkhouse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_cookhouse"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//cookhouse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_hunters_cabin"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//hunters_cabin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_hot_house"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//hot_house.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_workshop"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//workshop.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_medical_post"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//medical_post.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_stockpile"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//stockpile.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_coal_mine"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//coal_mine.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_steel_works"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//steel_works.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_sawmill"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//sawmill.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_train_station"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//train_station.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_unloading_station"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//unloading_station.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_forager_cabin"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//forager_cabin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_beacon"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//beacon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_brazier"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//brazier.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_steamhub"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//steamhub.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_admin_office"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//admin_office.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_radio_station"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//buildings//radio_station.dds"
+	}
+	
+	# Heat Icon GFX
+	
+	spriteType = {
+		name = "GFX_heat_0"
+		texturefile = "gfx//interface//topbar//GFX_heat_icon_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_heat_1"
+		texturefile = "gfx//interface//topbar//GFX_heat_icon_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_heat_2"
+		texturefile = "gfx//interface//topbar//GFX_heat_icon_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_heat_3"
+		texturefile = "gfx//interface//topbar//GFX_heat_icon_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_heat_4"
+		texturefile = "gfx//interface//topbar//GFX_heat_icon_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_heat_5"
+		texturefile = "gfx//interface//topbar//GFX_heat_icon_5.dds"
+	}
+	
+	# Pop icon and GFX
+	
+	spriteType = {
+		name = "GFX_button_pop_1"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//button_pop_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_pop_5"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//button_pop_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_pop_max"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//button_pop_max.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_pop_1_neg"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//button_pop_1_neg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_pop_5_neg"
+		texturefile = "gfx//interface//topbar//generatorguibuttons//button_pop_5_neg.dds"
+	}
+}

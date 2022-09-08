@@ -1,0 +1,859 @@
+guiTypes = {
+	
+	@XPANEL1 = 5
+	@YPANEL1 = 5
+	@XPANEL2 = 100
+	@YPANEL2 = 100
+	@YPANEL3 = 195
+	
+
+	containerWindowType = {
+		name = "main_generator_button"
+		position = { x=272 y=36 }
+		size = { width = 0 height = 0 }
+		clipping = no
+		moveable = no
+		
+		#In Topbar to open containerWindowType below
+
+		buttonType = {
+			name = "generator_site_button"
+			position = { x = 396 y = 0 }
+			quadTextureSprite ="GFX_topbar_generator"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "GENERATOR_TOPBAR_BUTTON"
+		}
+		
+	}
+
+	containerWindowType = {
+		name = "main_generator_view"
+		position = { x=300 y=250 }
+		size = { width = 1300 height = 900 }
+		clipping = no
+		moveable = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_window_w_close"
+		}
+		
+		# Main Generator GUI
+		
+		buttonType = {
+			name = "generator_center"
+			position = { x = 400 y = 350 }
+			quadTextureSprite ="GFX_generator_off"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			pdx_tooltip = "GENERATOR_CENTER_TOOLTIP"
+		}	
+		
+		# Buttons for building categories	
+		
+		containerWindowType = {
+			name = "side_list_building"
+			position = { x = 0 y = 0 }
+			size = { width = 30% height = 100% }
+			origo = UPPER_RIGHT
+			orientation = UPPER_RIGHT
+	
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_w_close"
+			}
+			
+			# Button to close Interface
+			
+			buttonType = {
+				name = "close_button"
+				position = { x = -43 y = 12 }
+				quadTextureSprite ="GFX_closebutton"
+				buttonFont = "Main_14_black"
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+			}	
+
+
+			
+			containerWindowType = {
+				name = "cat_buttons"
+				position = { x = 5 y = 5 }
+				size = { width = 85% height = 30% }
+				origo = UPPER_LEFT
+				orientation = UPPER_LEFT
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_thin_border"
+				}
+				
+				buttonType = {
+					name = "housing_button"
+					position = { x = 15 y = 15 }
+					quadTextureSprite ="GFX_button_housing"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "HOUSING_TAB"
+				}		
+
+				buttonType = {
+					name = "food_button"
+					position = { x = 80 y = 15 }
+					quadTextureSprite ="GFX_button_food"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "FOOD_TAB"
+				}
+
+				buttonType = {
+					name = "health_button"
+					position = { x = 145 y = 15 }
+					quadTextureSprite ="GFX_button_health"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "HEALTH_TAB"
+				}	
+				
+				buttonType = {
+					name = "heating_button"
+					position = { x = 210 y = 15 }
+					quadTextureSprite ="GFX_button_heating"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "HEATING_TAB"
+				}	
+
+				buttonType = {
+					name = "technology_button"
+					position = { x = 15 y = 75 }
+					quadTextureSprite ="GFX_button_tech"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "TECH_TAB"
+				}
+
+				buttonType = {
+					name = "resources_button"
+					position = { x = 80 y = 75 }
+					quadTextureSprite ="GFX_button_resources"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "RESOURCES_TAB"
+				}	
+
+				buttonType = {
+					name = "scouting_button"
+					position = { x = 145 y = 75 }
+					quadTextureSprite ="GFX_button_scouting"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "SCOUT_TAB"
+				}
+				
+				buttonType = {
+					name = "admin_button"
+					position = { x = 210 y = 75 }
+					quadTextureSprite ="GFX_button_admin"
+					buttonFont = "Main_14_black"
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					scale = 1.25
+					pdx_tooltip = "ADMIN_TAB"
+				}
+				
+			}
+		
+		}
+				
+		
+		# Buttons (AHHH)
+		
+		buttonType = {
+			name = "1_button"
+			position = { x = 300 y = 400 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "1_tooltip"
+		}
+		
+		buttonType = {
+			name = "2_button"
+			position = { x = 350 y = 300 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "2_tooltip"
+		}
+		
+		buttonType = {
+			name = "3_button"
+			position = { x = 450 y = 250 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "3_tooltip"
+		}
+		
+		buttonType = {
+			name = "4_button"
+			position = { x = 550 y = 300 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "4_tooltip"
+		}
+		
+		buttonType = {
+			name = "5_button"
+			position = { x = 600 y = 400 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "5_tooltip"
+		}
+		
+		buttonType = {
+			name = "6_button"
+			position = { x = 550 y = 500 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "6_tooltip"
+		}
+		
+		buttonType = {
+			name = "7_button"
+			position = { x = 450 y = 550 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "7_tooltip"
+		}
+		
+		buttonType = {
+			name = "8_button"
+			position = { x = 350 y = 500 }
+			quadTextureSprite ="GFX_button_0"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "8_tooltip"
+		}
+		
+		
+		
+	}
+	###########################
+	### Building Categories ###
+	###########################
+	
+	containerWindowType = {
+		name = "housing_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+#			background = {
+#				name = "Background"
+#				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+#			}
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "tents"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_tents"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "TENTS_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "bunkhouse"
+			position = { x = @XPANEL2 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_bunkhouse"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "BUNK_TOOLTIP"
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "food_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "cookhouse"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_cookhouse"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "COOK_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "hunters_cabin"
+			position = { x = @XPANEL2 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_hunters_cabin"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "CABIN_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "hot_house"
+			position = { x = @XPANEL1 y = @YPANEL2 }
+			quadTextureSprite ="GFX_button_hot_house"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "HOT_TOOLTIP"
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "health_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "medical_post"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_medical_post"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "POST_TOOLTIP"
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "technology_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "workshop"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_workshop"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "SHOP_TOOLTIP"
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "resources_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "stockpile"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_stockpile"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "PILE_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "coal_mine"
+			position = { x = @XPANEL2 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_coal_mine"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "COAL_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "steel_works"
+			position = { x = @XPANEL1 y = @YPANEL2 }
+			quadTextureSprite ="GFX_button_steel_works"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "STEEL_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "sawmill"
+			position = { x = @XPANEL2 y = @YPANEL2 }
+			quadTextureSprite ="GFX_button_sawmill"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "SAWMILL_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "train_station"
+			position = { x = @XPANEL1 y = @YPANEL3 }
+			quadTextureSprite ="GFX_button_train_station"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "TRAIN_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "unloading_station"
+			position = { x = @XPANEL2 y = @YPANEL3 }
+			quadTextureSprite ="GFX_button_unloading_station"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "UNLOADING_TOOLTIP"
+		}
+		
+		
+	}
+	
+	containerWindowType = {
+		name = "scouting_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "forager_cabin"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_forager_cabin"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "FORAGER_CABIN_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "beacon"
+			position = { x = @XPANEL2 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_beacon"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "BEACON_TOOLTIP"
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "heating_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "brazier"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_brazier"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "BRAZIER_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "steamhub"
+			position = { x = @XPANEL2 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_steamhub"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "STEAMHUB_TOOLTIP"
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "admin_buildings"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "administrative_office"
+			position = { x = @XPANEL1 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_admin_office"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "ADMIN_BUILDING_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "radio_station"
+			position = { x = @XPANEL2 y = @YPANEL1 }
+			quadTextureSprite ="GFX_button_radio_station"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "RADIO_TOOLTIP"
+		}
+		
+	}
+	
+	#######################
+	### GENERATOR PANEL ###
+	#######################
+	
+	
+	containerWindowType = {
+		name = "generator_panel"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "turn_on_off_button"
+			position = { x = 50 y = 100 }
+			quadTextureSprite ="GFX_button_admin_office"
+			Orientation = "UPPER_LEFT"
+			shortcut = "shift+e"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "ADMIN_BUILDING_TOOLTIP"
+		}
+		
+	}
+	
+	######################
+	### Building Panel ###
+	######################
+	
+	containerWindowType = {
+		name = "building_panel"
+		position = { x = 1215 y = 518 }
+		size = { width = 380 height = 620 }
+		origo = UPPER_LEFT
+		orientation = UPPER_LEFT
+		
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_decisions_bg_small"
+		}
+		
+		buttonType = {
+			name = "increase_pop_1"
+			position = { x = 100 y = 400 }
+			quadTextureSprite ="GFX_button_pop_1"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "POP_INCREASE_1"
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "increase_pop_5"
+			position = { x = 175 y = 400 }
+			quadTextureSprite ="GFX_button_pop_5"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "POP_INCREASE_5"
+			
+		}
+		
+		buttonType = {
+			name = "increase_pop_max"
+			position = { x = 250 y = 400 }
+			quadTextureSprite ="GFX_button_pop_max"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "POP_INCREASE_MAX"
+		}
+		
+		buttonType = {
+			name = "decrease_pop_1"
+			position = { x = 100 y = 300 }
+			quadTextureSprite ="GFX_button_pop_1_neg"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "POP_DECREASE_1"
+		}
+		
+		buttonType = {
+			name = "decrease_pop_5"
+			position = { x = 175 y = 300 }
+			quadTextureSprite ="GFX_button_pop_5_neg"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "POP_DECREASE_5"
+		}
+		
+		buttonType = {
+			name = "decrease_pop_max"
+			position = { x = 250 y = 300 }
+			quadTextureSprite ="GFX_button_pop_max"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "POP_DECREASE_MAX"
+		}
+		
+		instantTextboxType = {
+			name = "workers_unemployed"
+			position = { x = 100 y = 350 }
+			Orientation = "UPPER_LEFT"
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "WORKERS_UNEMPLOYED"
+			maxHeight = 50
+			format = center
+			pdx_tooltip = "Workers_Unemployed"
+		}
+		
+		instantTextboxType = {
+			name = "building_title"
+			position = { x = 80 y = 70 }
+			Orientation = "UPPER_LEFT"
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "BUILDING_TITLE"
+			maxHeight = 200
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "CURRENT_MAX_WORKERS"
+			position = { x = 100 y = 170 }
+			Orientation = "UPPER_LEFT"
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "MAX_POP"
+			maxHeight = 70
+			format = center
+			pdx_tooltip = "Current_Workers_Max_Workers"
+		}
+		
+#		instantTextboxType = {
+#			name = "RESOURCE_PRODUCTION_PLACEHOLDER"
+#			position = { x = 100 y = 110 }
+#			Orientation = "UPPER_LEFT"
+#			textureFile = ""
+#			font = "hoi_36header"
+#			borderSize = {x = 0 y = 0}
+#			text = "RESOURCE_PRODUCED"
+#			maxHeight = 70
+#			format = center
+#			pdx_tooltip = "PRODUCTION_TOOLTIP"
+#		}
+		
+		
+		
+		iconType = {
+			name = "heat_title"
+			position = { x = 270 y = 70 }
+			quadTextureSprite = "GFX_temp_heat_icon"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "HEATING_TOOLTIP"
+		}
+		
+	}
+	
+	#############################
+	### Building Confirmation ###
+	#############################
+	
+#	containerWindowType = {
+#		name = "building_confirmation_popup"
+#		size = { width = 480 height=322 }
+#		orientation= center
+#		origo = center
+#		moveable = yes
+#		fade_time = 200
+#		fade_type = linear
+#		click_to_front = yes
+#		
+#		background = {
+#			name = "Background"
+#			quadTextureSprite ="GFX_tiled_window_pol_goal"
+#		}
+#		
+#		instantTextBoxType = {
+#			name = "title"
+#			position = { x = 10 y = 16 }
+#			textureFile = ""
+#			font = "hoi_24header"
+#			borderSize = {x = 0 y = 10}
+#			text = "Title"
+#			maxWidth = 450
+#			maxHeight = 40
+#			fixedsize = yes
+#			vertical_alignment = center
+#			format = centre
+#		}
+#		
+#		instantTextBoxType = {
+#			name = "description"
+#			position = { x = 24 y = 90 }
+#			textureFile = ""
+#			font = "hoi_18mbs"
+#			borderSize = {x = 0 y = 0}
+#			text = "Long text here!"
+#			maxWidth = 430
+#			maxHeight = 155
+#			format = centre
+#			scrollbartype = "standardtext_slider"
+#		}
+#		
+#		buttonType = {
+#			name = "decline_button"
+#			position = { x=90 y=250}
+#			quadTextureSprite ="GFX_button_148x34"
+#			buttonText = "PDXO_CANCEL"
+#			buttonFont = "hoi_16mbs"
+#			shortcut = "ESCAPE"
+#			clicksound = click_close
+#		}
+#		
+#		buttonType = {
+#			name = "accept_button"
+#			position = { x=260 y=250}
+#			quadTextureSprite ="GFX_button_148x34"
+#			buttonText = "OK"
+#			buttonFont = "hoi_16mbs"
+#			shortcut = "RETURN"
+#			clicksound = click_default
+#		}
+#	}
+	
+}
+	
