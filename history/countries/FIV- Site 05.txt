@@ -2,7 +2,7 @@
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+
 }
 
 set_country_flag = has_generator
@@ -98,4 +98,39 @@ country_lock_all_division_template = yes
 #		neutrality = 50
 #	}
 #}
+
+
+FIV = {
+	# Button Array (Used for gui generator)
+	# 0 - Blank (Unbuilt)
+	set_variable = { building_slot_1 = 0 }
+	set_variable = { building_slot_2 = 0 } 
+	set_variable = { building_slot_3 = 0 } 
+	set_variable = { building_slot_4 = 0 }
+	set_variable = { building_slot_5 = 0 } 
+	set_variable = { building_slot_6 = 0 } 
+	set_variable = { building_slot_7 = 0 }
+	set_variable = { building_slot_8 = 0 } 
+	
+	# Tier Button (Designates which buttons are on which level of generator heating)
+	set_variable = { tier_1 = 7 }
+	set_variable = { tier_2 = 8 }
+}
+
+
+# Flags for fun
+set_country_flag = has_generator
+set_country_flag = {
+	flag = generator_view
+	value = 0
+}
+set_country_flag = {
+	flag = selected
+	value = 0
+}
+
+# Variables for Vehicular accidents
+set_variable = { construction_view = 1 } # Determines which panel is showed
+set_variable = { select_button = 0 } # Choose the Button to build on
+set_variable = { button = 0 } # Building var
 

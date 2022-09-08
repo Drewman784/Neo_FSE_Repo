@@ -2,10 +2,15 @@
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	
 }
 
 set_country_flag = has_generator
+set_country_flag = {
+	flag = generator_view
+	value = 0
+}
+
 
 set_convoys = 0
 
@@ -91,7 +96,7 @@ country_lock_all_division_template = yes
 
 #set_popularities = {
 #	democratic = 10
-##	fascism = 0
+#	fascism = 0
 #	communism = 0
 #	neutrality = 60
 #	theocracy = 15
@@ -119,5 +124,85 @@ country_lock_all_division_template = yes
 #		neutrality = 50
 #	}
 #}
+
+
+
+
+
+# Tier Button (Designates which buttons are on which level of generator heating)
+SIX = {
+
+	# Button Array (Used for gui generator)
+	# 0 - Blank (Unbuilt)
+	set_variable = { building_slot_1 = 0 }
+	set_variable = { building_slot_2 = 0 } 
+	set_variable = { building_slot_3 = 0 } 
+	set_variable = { building_slot_4 = 0 }
+	set_variable = { building_slot_5 = 0 } 
+	set_variable = { building_slot_6 = 0 } 
+	set_variable = { building_slot_7 = 0 }
+	set_variable = { building_slot_8 = 0 } 
+	
+	# Heating Levels for buildings
+	set_variable = { building_heat_1 = 0 }
+	set_variable = { building_heat_2 = 0 } 
+	set_variable = { building_heat_3 = 0 } 
+	set_variable = { building_heat_4 = 0 }
+	set_variable = { building_heat_5 = 0 } 
+	set_variable = { building_heat_6 = 0 } 
+	set_variable = { building_heat_7 = 0 }
+	set_variable = { building_heat_8 = 0 } 
+
+	# Tier Button (Designates which buttons are on which level of generator heating)
+	set_variable = { building_tier_1 = 1 }
+	set_variable = { building_tier_2 = 1 }
+	set_variable = { building_tier_3 = 1 }
+	set_variable = { building_tier_4 = 1 }
+	set_variable = { building_tier_5 = 1 }
+	set_variable = { building_tier_6 = 1 }
+	set_variable = { building_tier_7 = 1 }
+	set_variable = { building_tier_8 = 2 } # Just for testing
+	
+	# Vars for Population and workers in the buttons (what?)
+	set_variable = { building_pop_1 = 0 }
+	set_variable = { building_pop_2 = 0 }
+	set_variable = { building_pop_3 = 0 }
+	set_variable = { building_pop_4 = 0 }
+	set_variable = { building_pop_5 = 0 }
+	set_variable = { building_pop_6 = 0 }
+	set_variable = { building_pop_7 = 0 }
+	set_variable = { building_pop_8 = 0 }
+	
+	set_variable = { building_max_pop_1 = 0 }
+	set_variable = { building_max_pop_2 = 0 }
+	set_variable = { building_max_pop_3 = 0 }
+	set_variable = { building_max_pop_4 = 0 }
+	set_variable = { building_max_pop_5 = 0 }
+	set_variable = { building_max_pop_6 = 0 }
+	set_variable = { building_max_pop_7 = 0 }
+	set_variable = { building_max_pop_8 = 0 }
+	
+	
+	# Flags for fun
+	set_country_flag = has_generator
+	set_country_flag = {
+		flag = generator_view
+		value = 0
+	}
+	set_country_flag = {
+		flag = selected
+		value = 0
+	}
+	# Variables for Vehicular accidents
+	set_variable = { construction_view = 1 } # Determines which panel is showed
+	set_variable = { button = 0 } # Building var
+	set_variable = { heat_button = 0 } # Holds heat value of selected button (For Building Panel)
+	set_variable = { selected_button = 0 } # Holds info of which button was selected
+	set_variable = { misc_button_use = 1 } # Random use
+	set_variable = { resources_increment = 1 } 
+}
+
+
+
 
 
