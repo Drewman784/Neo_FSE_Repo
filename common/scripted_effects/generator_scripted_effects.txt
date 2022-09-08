@@ -1,0 +1,1412 @@
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+#
+#	Heating Calculation
+#	0 - Freezing
+#	1 - Very Cold
+#	2 - Cold
+# 	3 - Chilly
+# 	4 - Livable (Or liveable)
+# 	5 - Comfortable
+#
+update_heat_buildings = {
+	
+	THIS = {
+	
+		# How it works
+		# Adds to temp var which sets heating level for building slot
+		# Add the weather temp to heat
+		# Add generator_heat_level to heat
+		# yeah and then clamp down to 0 - 5
+		
+		set_temp_variable = { heat = 0 }
+		
+		if = {
+			limit = {
+				check_variable = { increment = 1 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_1 }
+			set_temp_variable = { temp_building_tier = building_tier_1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 2 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_2 }
+			set_temp_variable = { temp_building_tier = building_tier_2 }
+		}	
+		else_if = {
+			limit = {
+				check_variable = { increment = 3 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_3 }
+			set_temp_variable = { temp_building_tier = building_tier_3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 4 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_4 }
+			set_temp_variable = { temp_building_tier = building_tier_4 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 5 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_5 }
+			set_temp_variable = { temp_building_tier = building_tier_5 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 6 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_6 }
+			set_temp_variable = { temp_building_tier = building_tier_6 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 7 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_7 }
+			set_temp_variable = { temp_building_tier = building_tier_7 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 8 }
+			}
+			set_temp_variable = { temp_building_slot = building_slot_8 }
+			set_temp_variable = { temp_building_tier = building_tier_8 }
+		}
+		
+		#Insulation 1 IF
+		if = {
+			limit = {
+				OR = {
+					check_variable = { temp_building_slot = 1 } # Means that 1 (or tents) has a insulation of 1
+					check_variable = { temp_building_slot = 3 }
+					check_variable = { temp_building_slot = 5 }
+					check_variable = { temp_building_slot = 6 }
+					check_variable = { temp_building_slot = 9 }
+					check_variable = { temp_building_slot = 10 }
+					check_variable = { temp_building_slot = 11 }
+					check_variable = { temp_building_slot = 12 }
+					check_variable = { temp_building_slot = 13 }
+					check_variable = { temp_building_slot = 18 }
+					check_variable = { temp_building_slot = 19 }
+				}
+ 			}
+			add_to_temp_variable = { heat = 1 }
+		}
+		#Insulation 2 IF
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { temp_building_slot = 2 }
+					check_variable = { temp_building_slot = 4 }
+					check_variable = { temp_building_slot = 7 }
+					check_variable = { temp_building_slot = 14 }
+				}
+			}
+			add_to_temp_variable = { heat = 2 }
+		}
+		
+		add_to_temp_variable = { heat = global.weather_temp } # Temperature that controls the weather
+		
+		#Lots of Math
+		#I think it works
+		set_temp_variable = { tier_cal = temp_building_tier }
+		subtract_from_temp_variable = { tier_cal = 1 }
+		set_temp_variable = { ran_cal = generator_heat_range }
+		subtract_from_temp_variable = { ran_cal = 2 }
+		set_temp_variable = { heat_cal = generator_heat_level }
+		subtract_from_temp_variable = { heat_cal = tier_cal }
+		add_to_temp_variable = { heat_cal = ran_cal }
+		clamp_temp_variable = {
+			var = heat_cal
+			min = 0
+			max = generator_heat_level
+		}
+		add_to_temp_variable = { heat = heat_cal }
+		
+		# Makes it so that when a building slot is empty it is freezing
+		if = {
+			limit = {
+				check_variable = { temp_building_slot = 0 }
+			}
+			set_temp_variable = { heat = 0 }
+		}
+		
+		
+		if = {
+			limit = {
+				check_variable = { increment = 1 }
+			}
+			set_variable = { building_heat_1 = heat } 
+			clamp_variable = { 
+				var = building_heat_1
+				min = 0
+				max = 5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 2 }
+			}
+			set_variable = { building_heat_2 = heat } 
+			clamp_variable = { 
+				var = building_heat_2
+				min = 0
+				max = 5
+			}
+		}	
+		else_if = {
+			limit = {
+				check_variable = { increment = 3 }
+			}
+			set_variable = { building_heat_3 = heat } 
+			clamp_variable = { 
+				var = building_heat_3
+				min = 0
+				max = 5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 4 }
+			}
+			set_variable = { building_heat_4 = heat } 
+			clamp_variable = { 
+				var = building_heat_4
+				min = 0
+				max = 5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 5 }
+			}
+			set_variable = { building_heat_5 = heat } 
+			clamp_variable = { 
+				var = building_heat_5
+				min = 0
+				max = 5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 6 }
+			}
+			set_variable = { building_heat_6 = heat } 
+			clamp_variable = { 
+				var = building_heat_6
+				min = 0
+				max = 5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 7 }
+			}
+			set_variable = { building_heat_7 = heat } 
+			clamp_variable = { 
+				var = building_heat_7
+				min = 0
+				max = 5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { increment = 8 }
+			}
+			set_variable = { building_heat_8 = heat } 
+			clamp_variable = { 
+				var = building_heat_8
+				min = 0
+				max = 5
+			}
+		}
+		
+		add_to_variable = { increment = 1 }
+	
+	}
+	
+}
+
+update_heat_button = {
+
+	THIS = {
+		
+		if = {
+			limit = {
+				check_variable = {  selected_button = 1 } 
+			}
+			set_variable = { heat_button = building_heat_1 }  
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 } 
+			}
+			set_variable = { heat_button = building_heat_2 }  
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 } 
+			}
+			set_variable = { heat_button = building_heat_3 }  
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 } 
+			}
+			set_variable = { heat_button = building_heat_4 }  
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 5 } 
+			}
+			set_variable = { heat_button = building_heat_5 }  
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 } 
+			}
+			set_variable = { heat_button = building_heat_6 }  
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 } 
+			}
+			set_variable = { heat_button = building_heat_7 }  
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 } 
+			}
+			set_variable = { heat_button = building_heat_8 }  
+		}
+		
+	}
+}
+
+update_pop = {
+	THIS = {
+	
+		#Working Population
+		set_variable = { worker_population = workers } 
+		add_to_variable = { worker_population = engineers }
+		add_to_variable = { worker_population = medical_personnel }
+		
+	}
+}
+
+add_1_worker_pop_to_building = {
+	
+	THIS = {
+	
+		selected_building_pop_effect = yes
+		
+		if = {
+			limit = {
+				NOT = { check_variable = { selected_building_pop = selected_building_max_pop } }
+			}
+			subtract_from_variable = { unemployed_workers = 1 }
+			clamp_variable = {
+				var = unemployed_workers
+				min = 0
+				max = unemployed_workers
+			}
+		}
+		
+		if = {
+			limit = {
+				check_variable = { unemployed_workers = 0 } # Cuts off ifs if unemployed_workers is 0
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 1 }
+			}
+			add_to_variable = { building_pop_1 = 1 }
+			clamp_variable = {
+				var = building_pop_1
+				min = 0
+				max = building_max_pop_1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 }
+			}
+			add_to_variable = { building_pop_2 = 1 }
+			clamp_variable = {
+				var = building_pop_2
+				min = 0
+				max = building_max_pop_2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 }
+			}
+			add_to_variable = { building_pop_3 = 1 }
+			clamp_variable = {
+				var = building_pop_3
+				min = 0
+				max = building_max_pop_3
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 }
+			}
+			add_to_variable = { building_pop_4 = 1 }
+			clamp_variable = {
+				var = building_pop_4
+				min = 0
+				max = building_max_pop_4
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 5 }
+			}
+			add_to_variable = { building_pop_5 = 1 }
+			clamp_variable = {
+				var = building_pop_5
+				min = 0
+				max = building_max_pop_5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 }
+			}
+			add_to_variable = { building_pop_6 = 1 }
+			clamp_variable = {
+				var = building_pop_6
+				min = 0
+				max = building_max_pop_6
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 }
+			}
+			add_to_variable = { building_pop_7 = 1 }
+			clamp_variable = {
+				var = building_pop_7
+				min = 0
+				max = building_max_pop_7
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 }
+			}
+			add_to_variable = { building_pop_8 = 1 }
+			clamp_variable = {
+				var = building_pop_8
+				min = 0
+				max = building_max_pop_8
+			}
+		}
+	
+	}
+
+}
+
+add_5_worker_pop_to_building = {
+	
+	THIS = {
+		
+		selected_building_pop_effect = yes
+		
+		set_temp_variable = { diff = selected_building_max_pop } # Calculates the amount of open jobs in a building
+		subtract_from_temp_variable = { diff = selected_building_pop }
+		
+		clamp_temp_variable = {
+			var = diff
+			min = 0
+			max = 5
+		}
+		
+		if = {
+			limit = {
+				NOT = { check_variable = { selected_building_pop = selected_building_max_pop } }
+			}
+			subtract_from_variable = { unemployed_workers = diff }
+			clamp_variable = {
+				var = unemployed_workers
+				min = 0
+				max = unemployed_workers
+			}
+		}
+		
+
+		if = {
+			limit = {
+				check_variable = { unemployed_workers = 0 } # Cuts off ifs if unemployed_workers is 0
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 1 }
+			}
+			add_to_variable = { building_pop_1 = diff }
+			clamp_variable = {
+				var = building_pop_1
+				min = 0
+				max = building_max_pop_1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 }
+			}
+			add_to_variable = { building_pop_2 = diff }
+			clamp_variable = {
+				var = building_pop_2
+				min = 0
+				max = building_max_pop_2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 }
+			}
+			add_to_variable = { building_pop_3 = diff }
+			clamp_variable = {
+				var = building_pop_3
+				min = 0
+				max = building_max_pop_3
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 }
+			}
+			add_to_variable = { building_pop_4 = diff }
+			clamp_variable = {
+				var = building_pop_4
+				min = 0
+				max = building_max_pop_4
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 5 }
+			}
+			add_to_variable = { building_pop_5 = diff }
+			clamp_variable = {
+				var = building_pop_5
+				min = 0
+				max = building_max_pop_5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 }
+			}
+			add_to_variable = { building_pop_6 = diff }
+			clamp_variable = {
+				var = building_pop_6
+				min = 0
+				max = building_max_pop_6
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 }
+			}
+			add_to_variable = { building_pop_7 = diff }
+			clamp_variable = {
+				var = building_pop_7
+				min = 0
+				max = building_max_pop_7
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 }
+			}
+			add_to_variable = { building_pop_8 = diff }
+			clamp_variable = {
+				var = building_pop_8
+				min = 0
+				max = building_max_pop_8
+			}
+		}
+	
+	}
+
+}
+
+add_max_worker_pop_to_building = {
+	
+	THIS = {
+	
+		selected_building_pop_effect = yes
+		
+		set_temp_variable = { diff = selected_building_max_pop } # Calculates the amount of open jobs in a building
+		subtract_from_temp_variable = { diff = selected_building_pop }
+		
+		if = {
+			limit = {
+				NOT = { check_variable = { diff = 0 } }# Cuts off ifs if unemployed_worker
+			}
+			subtract_from_variable = { unemployed_workers = diff }
+			clamp_variable = {
+				var = unemployed_workers
+				min = 0
+				max = unemployed_workers
+			}
+		}
+		
+		if = {
+			limit = {
+				check_variable = { diff = 0 } # Cuts off ifs if there are no jobs left
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 1 }
+			}
+			add_to_variable = { building_pop_1 = diff }
+			clamp_variable = {
+				var = building_pop_1
+				min = 0
+				max = building_max_pop_1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 }
+			}
+			add_to_variable = { building_pop_2 = diff }
+			clamp_variable = {
+				var = building_pop_2
+				min = 0
+				max = building_max_pop_2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 }
+			}
+			add_to_variable = { building_pop_3 = diff }
+			clamp_variable = {
+				var = building_pop_3
+				min = 0
+				max = building_max_pop_3
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 }
+			}
+			add_to_variable = { building_pop_4 = diff }
+			clamp_variable = {
+				var = building_pop_4
+				min = 0
+				max = building_max_pop_4
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = diff }
+			}
+			add_to_variable = { building_pop_5 = 5 }
+			clamp_variable = {
+				var = building_pop_5
+				min = 0
+				max = building_max_pop_5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 }
+			}
+			add_to_variable = { building_pop_6 = diff }
+			clamp_variable = {
+				var = building_pop_6
+				min = 0
+				max = building_max_pop_6
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 }
+			}
+			add_to_variable = { building_pop_7 = diff }
+			clamp_variable = {
+				var = building_pop_7
+				min = 0
+				max = building_max_pop_7
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 }
+			}
+			add_to_variable = { building_pop_8 = diff }
+			clamp_variable = {
+				var = building_pop_8
+				min = 0
+				max = building_max_pop_8
+			}
+		}
+	
+	}
+
+}
+
+decrease_1_worker_pop_to_building = {
+	
+	THIS = {
+	
+		selected_building_pop_effect = yes
+		
+		if = {
+			limit = {
+				NOT = { check_variable = { selected_building_pop = 0 } }
+			}
+			add_to_variable = { unemployed_workers = 1 }
+			clamp_variable = {
+				var = unemployed_workers
+				min = 0
+				max = unemployed_workers
+			}
+		}
+		
+		if = {
+			limit = {
+				check_variable = { selected_building_pop = 0 } # Cuts off ifs if unemployed_workers is 0
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 1 }
+			}
+			subtract_from_variable = { building_pop_1 = 1 }
+			clamp_variable = {
+				var = building_pop_1
+				min = 0
+				max = building_max_pop_1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 }
+			}
+			subtract_from_variable = { building_pop_2 = 1 }
+			clamp_variable = {
+				var = building_pop_2
+				min = 0
+				max = building_max_pop_2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 }
+			}
+			subtract_from_variable = { building_pop_3 = 1 }
+			clamp_variable = {
+				var = building_pop_3
+				min = 0
+				max = building_max_pop_3
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 }
+			}
+			subtract_from_variable = { building_pop_4 = 1 }
+			clamp_variable = {
+				var = building_pop_4
+				min = 0
+				max = building_max_pop_4
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 5 }
+			}
+			subtract_from_variable = { building_pop_5 = 1 }
+			clamp_variable = {
+				var = building_pop_5
+				min = 0
+				max = building_max_pop_5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 }
+			}
+			subtract_from_variable = { building_pop_6 = 1 }
+			clamp_variable = {
+				var = building_pop_6
+				min = 0
+				max = building_max_pop_6
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 }
+			}
+			subtract_from_variable = { building_pop_7 = 1 }
+			clamp_variable = {
+				var = building_pop_7
+				min = 0
+				max = building_max_pop_7
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 }
+			}
+			subtract_from_variable = { building_pop_8 = 1 }
+			clamp_variable = {
+				var = building_pop_8
+				min = 0
+				max = building_max_pop_8
+			}
+		}
+	
+	}
+
+}
+
+decrease_5_worker_pop_to_building = {
+	
+	THIS = {
+	
+		selected_building_pop_effect = yes
+		
+		set_temp_variable = { diff = selected_building_pop } # Calculates the amount of open jobs in a building
+		
+		clamp_temp_variable = {
+			var = diff
+			min = 0
+			max = 5
+		}
+		
+		if = {
+			limit = {
+				NOT = { check_variable = { selected_building_pop = 0 } }
+			}
+			add_to_variable = { unemployed_workers = diff }
+			clamp_variable = {
+				var = unemployed_workers
+				min = 0
+				max = unemployed_workers
+			}
+		}
+		
+		if = {
+			limit = {
+				check_variable = { selected_building_pop = 0 } # Cuts off ifs if unemployed_workers is 0
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 1 }
+			}
+			subtract_from_variable = { building_pop_1 = diff }
+			clamp_variable = {
+				var = building_pop_1
+				min = 0
+				max = building_max_pop_1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 }
+			}
+			subtract_from_variable = { building_pop_2 = diff }
+			clamp_variable = {
+				var = building_pop_2
+				min = 0
+				max = building_max_pop_2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 }
+			}
+			subtract_from_variable = { building_pop_3 = diff }
+			clamp_variable = {
+				var = building_pop_3
+				min = 0
+				max = building_max_pop_3
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 }
+			}
+			subtract_from_variable = { building_pop_4 = diff }
+			clamp_variable = {
+				var = building_pop_4
+				min = 0
+				max = building_max_pop_4
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 5 }
+			}
+			subtract_from_variable = { building_pop_5 = diff }
+			clamp_variable = {
+				var = building_pop_5
+				min = 0
+				max = building_max_pop_5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 }
+			}
+			subtract_from_variable = { building_pop_6 = diff }
+			clamp_variable = {
+				var = building_pop_6
+				min = 0
+				max = building_max_pop_6
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 }
+			}
+			subtract_from_variable = { building_pop_7 = diff }
+			clamp_variable = {
+				var = building_pop_7
+				min = 0
+				max = building_max_pop_7
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 }
+			}
+			subtract_from_variable = { building_pop_8 = diff }
+			clamp_variable = {
+				var = building_pop_8
+				min = 0
+				max = building_max_pop_8
+			}
+		}
+	
+	}
+
+}
+
+decrease_max_worker_pop_to_building = {
+	
+	THIS = {
+	
+		selected_building_pop_effect = yes
+		
+		set_temp_variable = { diff = selected_building_pop } # Calculates the amount of open jobs in a building
+		
+		if = {
+			limit = {
+				NOT = { check_variable = { diff = 0 } }# Cuts off ifs if unemployed_worker
+			}
+			add_to_variable = { unemployed_workers = diff }
+			clamp_variable = {
+				var = unemployed_workers
+				min = 0
+				max = unemployed_workers
+			}
+		}
+		
+		if = {
+			limit = {
+				check_variable = { diff = 0 } # Cuts off ifs if there are no jobs left
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 1 }
+			}
+			subtract_from_variable = { building_pop_1 = diff }
+			clamp_variable = {
+				var = building_pop_1
+				min = 0
+				max = building_max_pop_1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 }
+			}
+			subtract_from_variable = { building_pop_2 = diff }
+			clamp_variable = {
+				var = building_pop_2
+				min = 0
+				max = building_max_pop_2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 }
+			}
+			subtract_from_variable = { building_pop_3 = diff }
+			clamp_variable = {
+				var = building_pop_3
+				min = 0
+				max = building_max_pop_3
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 }
+			}
+			subtract_from_variable = { building_pop_4 = diff }
+			clamp_variable = {
+				var = building_pop_4
+				min = 0
+				max = building_max_pop_4
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = diff }
+			}
+			subtract_from_variable = { building_pop_5 = 5 }
+			clamp_variable = {
+				var = building_pop_5
+				min = 0
+				max = building_max_pop_5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 }
+			}
+			subtract_from_variable = { building_pop_6 = diff }
+			clamp_variable = {
+				var = building_pop_6
+				min = 0
+				max = building_max_pop_6
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 }
+			}
+			subtract_from_variable = { building_pop_7 = diff }
+			clamp_variable = {
+				var = building_pop_7
+				min = 0
+				max = building_max_pop_7
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 }
+			}
+			subtract_from_variable = { building_pop_8 = diff }
+			clamp_variable = {
+				var = building_pop_8
+				min = 0
+				max = building_max_pop_8
+			}
+		}
+	
+	}
+
+}
+
+# Resource Calculation Effect
+
+cal_resources_buildings = {
+
+	set_temp_variable = { temp_building_slot_resource = 0 }
+	set_temp_variable = { temp_building_pop = 0 }
+	set_temp_variable = { temp_building_max_pop = 0 }
+	
+	if = {
+		limit = {
+			check_variable = { resources_increment = 1 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_1 }
+		set_temp_variable = { temp_building_pop = building_pop_1 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { resources_increment = 2 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_2 }
+		set_temp_variable = { temp_building_pop = building_pop_2 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { resources_increment = 3 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_3 }
+		set_temp_variable = { temp_building_pop = building_pop_3 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { resources_increment = 4 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_4 }
+		set_temp_variable = { temp_building_pop = building_pop_4 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_4 }
+	}
+	else_if = {
+			limit = {
+			check_variable = { resources_increment = 5 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_5 }
+		set_temp_variable = { temp_building_pop = building_pop_5 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { resources_increment = 6 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_6 }
+		set_temp_variable = { temp_building_pop = building_pop_6 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { resources_increment = 7 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_7 }
+		set_temp_variable = { temp_building_pop = building_pop_7 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_7 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { resources_increment = 8 }
+		}
+		set_temp_variable = { temp_building_slot_resource = building_slot_8 }
+		set_temp_variable = { temp_building_pop = building_pop_8 }
+		set_temp_variable = { temp_building_max_pop = building_max_pop_8 }
+	}
+	
+	set_temp_variable = { cal = temp_building_pop }
+	divide_temp_variable = { cal = temp_building_max_pop }
+	multiply_temp_variable = { cal = 10 }
+	
+	# Coal
+	if = {
+		limit = {
+			check_variable = { temp_building_slot_resource = 9 }
+		}
+		add_to_variable = { ROOT.coal = 10 }
+	}
+	else_if = { # Wood
+		limit = {
+			check_variable = { temp_building_slot_resource = 11 }
+		}
+		add_to_variable = { ROOT.wood = 10 }
+	}
+	else_if = { # Steel
+		limit = {
+			check_variable = { temp_building_slot_resource = 10 } 
+		}
+		add_to_variable = { ROOT.steel = 10 }
+	}
+	else_if = { # Food
+		limit = {
+			check_variable = { temp_building_slot_resource = 3 }
+			check_variable = { temp_building_slot_resource = 4 }
+			check_variable = { temp_building_slot_resource = 5 }
+		}
+		add_to_variable = { ROOT.food = 10 }
+		set_variable = { food_debug = 1 } 
+	}
+	
+	add_to_variable = { resources_increment = 1 }
+	
+}
+
+# Uility Effect
+
+cal_max_pop_building_slot = {
+
+	# Found in countrygeneratorview in buttons
+	# If you want to know how this works
+	# It stores the button's building slot into the temp_building_slot to use for cal to reduce code significantly
+	if = {
+		limit = {
+			check_variable = { misc_button_use = 1 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 2 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_2 }
+	}	
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 3 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 4 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 5 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 6 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 7 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_7 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 8 }
+		}
+		set_temp_variable = { temp_building_slot = building_slot_8 }
+	}
+
+	set_temp_variable = { temp_pop_max = 0 } # To store the pop max to give to the button's corresponding var
+
+	if = {
+		limit = {
+			OR = {
+				check_variable = { temp_building_slot = 1 }
+				check_variable = { temp_building_slot = 2 }
+				check_variable = { temp_building_slot = 8 }
+				check_variable = { temp_building_slot = 15 }
+				check_variable = { temp_building_slot = 16 }
+				check_variable = { temp_building_slot = 17 }
+				
+			}
+		}
+		set_temp_variable = { temp_pop_max = 0 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { temp_building_slot = 3 }
+				check_variable = { temp_building_slot = 4 }
+				check_variable = { temp_building_slot = 5 }
+				check_variable = { temp_building_slot = 6 }
+				check_variable = { temp_building_slot = 7 }
+				check_variable = { temp_building_slot = 9 }
+				check_variable = { temp_building_slot = 10 }
+				check_variable = { temp_building_slot = 11 }
+				check_variable = { temp_building_slot = 12 }
+				check_variable = { temp_building_slot = 13 }
+				check_variable = { temp_building_slot = 14 }
+				check_variable = { temp_building_slot = 18 }
+				check_variable = { temp_building_slot = 19 }
+			
+			
+			}
+		}
+		set_temp_variable = { temp_pop_max = 15 } # CHANGE FOR LATER
+	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { misc_button_use = 1 }
+		}
+		set_variable = { building_max_pop_1 = temp_pop_max }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 2 }
+		}
+		set_variable = { building_max_pop_2 = temp_pop_max }
+	}	
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 3 }
+		}
+		set_variable = { building_max_pop_3 = temp_pop_max }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 4 }
+		}
+		set_variable = { building_max_pop_4 = temp_pop_max }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 5 }
+		}
+		set_variable = { building_max_pop_5 = temp_pop_max }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 6 }
+		}
+		set_variable = { building_max_pop_6 = temp_pop_max }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 7 }
+		}
+		set_variable = { building_max_pop_7 = temp_pop_max }
+	}
+	else_if = {
+		limit = {
+			check_variable = { misc_button_use = 8 }
+		}
+		set_variable = { building_max_pop_8 = temp_pop_max }
+	}
+	
+	add_to_variable = { misc_button_use = 1 } 
+}
+
+call_max_pop_eight = {
+	
+	cal_max_pop_building_slot = yes
+	cal_max_pop_building_slot = yes
+	cal_max_pop_building_slot = yes
+	cal_max_pop_building_slot = yes
+	cal_max_pop_building_slot = yes
+	cal_max_pop_building_slot = yes
+	cal_max_pop_building_slot = yes
+	cal_max_pop_building_slot = yes
+	
+	set_variable = { misc_button_use = 1 }
+	
+}
+
+call_heating = {
+	
+	update_heat_buildings = yes
+	update_heat_buildings = yes
+	update_heat_buildings = yes
+	update_heat_buildings = yes
+	update_heat_buildings = yes
+	update_heat_buildings = yes
+	update_heat_buildings = yes
+	update_heat_buildings = yes
+	
+	set_variable = { increment = 1 }
+	
+}
+
+call_resources = {
+	
+	cal_resources_buildings = yes
+	cal_resources_buildings = yes
+	cal_resources_buildings = yes
+	cal_resources_buildings = yes
+	cal_resources_buildings = yes
+	cal_resources_buildings = yes
+	cal_resources_buildings = yes
+	cal_resources_buildings = yes
+	
+	set_variable = { resources_increment = 1 } 
+	
+}
+
+selected_building_pop_effect = {
+	#Used Currently in add pop and decrease pop for updating the last selected button info
+	THIS = {
+		if = {
+			limit = {
+				check_variable = { selected_button = 1 }
+			}
+			set_variable = { selected_building_slot = building_slot_1 }
+			set_variable = { selected_building_pop = building_pop_1 }
+			set_variable = { selected_building_max_pop = building_max_pop_1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 2 }
+			}
+			set_variable = { selected_building_slot = building_slot_2 }
+			set_variable = { selected_building_pop = building_pop_2 }
+			set_variable = { selected_building_max_pop = building_max_pop_2 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 3 }
+			}
+			set_variable = { selected_building_slot = building_slot_3 }
+			set_variable = { selected_building_pop = building_pop_3 }
+			set_variable = { selected_building_max_pop = building_max_pop_3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 4 }
+			}
+			set_variable = { selected_building_slot = building_slot_4 }
+			set_variable = { selected_building_pop = building_pop_4 }
+			set_variable = { selected_building_max_pop = building_max_pop_4 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 5 }
+			}
+			set_variable = { selected_building_slot = building_slot_5 }
+			set_variable = { selected_building_pop = building_pop_5 }
+			set_variable = { selected_building_max_pop = building_max_pop_5 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 6 }
+			}
+			set_variable = { selected_building_slot = building_slot_6 }
+			set_variable = { selected_building_pop = building_pop_6 }
+			set_variable = { selected_building_max_pop = building_max_pop_6 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 7 }
+			}
+			set_variable = { selected_building_slot = building_slot_7 }
+			set_variable = { selected_building_pop = building_pop_7 }
+			set_variable = { selected_building_max_pop = building_max_pop_7 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { selected_button = 8 }
+			}
+			set_variable = { selected_building_slot = building_slot_8 }
+			set_variable = { selected_building_pop = building_pop_8 }
+			set_variable = { selected_building_max_pop = building_max_pop_8 }
+		}
+	}
+
+}
+
+
+
