@@ -1,0 +1,629 @@
+#
+# documentation
+#
+
+# Nah
+
+
+scripted_gui = {
+
+
+### TOPBAR BUTTON ###
+
+
+	generator_button_top_bar = {
+		context_type = player_context
+
+		window_name = "main_generator_button"
+		parent_window_token = top_bar
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			generator_site_button_click = {
+				if = {
+					limit = {
+						has_country_flag = { 
+							flag = generator_view
+							value > 0
+						}
+					}
+					set_country_flag = {
+						flag = generator_view
+						value = 0
+					}
+				}
+				else = {
+					set_country_flag = {
+						flag = generator_view
+						value = 1
+					}
+				}
+				
+			}
+		}
+		
+	}
+	
+	### Real Main UI ###
+	
+	countrygeneratorview = {
+		context_type = player_context
+
+		window_name = "main_generator_view"
+		parent_window_token = top_bar
+		visible = {
+			has_country_flag = generator_view
+		}
+
+		effects = {
+			close_button_click = {
+				set_country_flag = {
+						flag = generator_view
+						value = 0
+				}
+			}
+			
+			# Build Slot Buttons
+			
+			1_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_1 = button } 
+				}
+				set_variable = { selected_button = 1 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			} 
+			
+			2_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_2 = button }  
+					
+				}
+				set_variable = { selected_button = 2 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			}
+			
+			3_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_3 = button }  
+					
+				}
+				set_variable = { selected_button = 3 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			} 
+			
+			4_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_4 = button }  
+					
+				}
+				set_variable = { selected_button = 4 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			}
+			
+			5_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_5 = button }  
+					
+				}
+				set_variable = { selected_button = 5 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			} 
+			
+			6_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_6 = button }  
+					
+				}
+				set_variable = { building_slot_6 = button } 
+				set_variable = { selected_button = 6 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			}
+			
+			7_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_7 = button }  
+					
+				}
+				set_variable = { building_slot_7 = button }
+				set_variable = { selected_button = 7 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			} 
+			
+			8_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = selected }
+					}
+					set_variable = { building_slot_8 = button }  
+					
+				}
+				set_variable = { building_slot_8 = button } 
+				set_variable = { selected_button = 8 }
+				set_country_flag = {
+					flag = selected
+					value = 1
+				}
+				clr_country_flag = generator_center
+				set_variable = { construction_view = 0 }
+				call_max_pop_eight = yes
+				selected_building_pop_effect = yes
+			}
+			
+			# Generator Panel 
+			
+			generator_center_click = {
+				set_country_flag = { 
+					flag = generator_center
+					value = 1
+				}
+			}
+			
+			# Building Categories (So far) 
+			
+			housing_button_click = {
+				set_variable = { construction_view = 1 }
+				set_country_flag = {
+					flag = generator_center
+					value = 0
+				}
+			}
+			
+			food_button_click = {
+				set_variable = { construction_view = 2 }
+			}
+			
+			health_button_click = {
+				set_variable = { construction_view = 3 }
+			}
+			
+			technology_button_click = {
+				set_variable = { construction_view = 4 }
+			}
+			
+			resources_button_click = {
+				set_variable = { construction_view = 5 }
+			}
+			
+			scouting_button_click = {
+				set_variable = { construction_view = 6 }
+			}
+			
+			heating_button_click = {
+				set_variable = { construction_view = 7 }
+			}
+			
+			admin_button_click = {
+				set_variable = { construction_view = 8 }
+			}
+		}
+		
+		triggers = {
+			
+		}
+		
+		properties = {
+		
+			# Generator GUI
+			
+			generator_center = {
+				image = "[GFX_generator]"
+			}
+			
+			
+			#Buttons for Building (AHHH)
+			
+			1_button = {
+				image = "[GFX_button_view_1]"
+			}
+			2_button = {
+				image = "[GFX_button_view_2]"
+			}
+			3_button = {
+				image = "[GFX_button_view_3]"
+			}
+			4_button = {
+				image = "[GFX_button_view_4]"
+			}
+			5_button = {
+				image = "[GFX_button_view_5]"
+			}
+			6_button = {
+				image = "[GFX_button_view_6]"
+			}
+			7_button = {
+				image = "[GFX_button_view_7]"
+			}
+			8_button = {
+				image = "[GFX_button_view_8]"
+			}
+			
+		
+		}
+	
+	}
+	
+	
+	# Building panels
+	
+	housing_buildings = {
+		context_type = player_context
+
+		window_name = "housing_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 1 }
+			has_country_flag = generator_view
+			
+		}
+		
+		effects = {
+		
+			# Building Buttons (uh oh codeeee)
+				
+			tents_click = {
+				set_variable = { button = 1 }
+				clr_country_flag = selected
+			}
+			
+			bunkhouse_click = {
+				set_variable = { button = 2 }
+				clr_country_flag = selected
+				
+			}
+		
+		}
+		
+	}
+	
+	food_buildings = {
+		context_type = player_context
+
+		window_name = "food_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 2 }
+			has_country_flag = generator_view
+		}
+		
+		effects = {
+		
+			cookhouse_click = {
+				set_variable = { button = 3 }
+				clr_country_flag = selected
+			}
+			
+			hunters_cabin_click = {
+				set_variable = { button = 4 }
+				clr_country_flag = selected
+				
+			}
+			
+			hot_house_click = {
+				set_variable = { button = 5 }
+				clr_country_flag = selected
+				
+			}
+		
+		}
+	}	
+	
+	health_buildings = {
+		context_type = player_context
+
+		window_name = "health_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 3 }
+			has_country_flag = generator_view
+		}
+		
+		effects = {
+		
+			medical_post_click = {
+				set_variable = { button = 6 }
+				clr_country_flag = selected
+			}
+			
+		}
+		
+		
+	}	
+	
+	technology_buildings = {
+		context_type = player_context
+
+		window_name = "technology_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 4 }
+			has_country_flag = generator_view
+		}
+		
+		effects = {
+		
+			workshop_click = {
+				set_variable = { button = 7 }
+				clr_country_flag = selected
+			}
+			
+			
+		
+		}
+		
+	}	
+	
+	resources_buildings = {
+		context_type = player_context
+
+		window_name = "resources_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 5 }
+			has_country_flag = generator_view
+		}
+		
+		effects = {
+		
+			stockpile_click = {
+				set_variable = { button = 8 }
+				clr_country_flag = selected
+			}
+			
+			coal_mine_click = {
+				set_variable = { button = 9 }
+				clr_country_flag = selected
+			}
+		
+			steel_works_click = {
+				set_variable = { button = 10 }
+				clr_country_flag = selected
+			}
+			
+			sawmill_click = {
+				set_variable = { button = 11 }	
+				clr_country_flag = selected
+			}
+			
+			train_station_click = {
+				set_variable = { button = 12}
+				clr_country_flag = selected
+			}
+			
+			unloading_station_click = {
+				set_variable = { button = 13}	
+				clr_country_flag = selected
+			}
+	
+		}	
+		
+		
+	}	
+	
+	
+	scouting_buildings = {
+		context_type = player_context
+
+		window_name = "scouting_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 6 }
+			has_country_flag = generator_view
+		}
+		
+		effects = {
+		
+			forager_cabin_click = {
+				set_variable = { button = 14}
+				clr_country_flag = selected
+			}
+			
+			beacon_click = {
+				set_variable = { button = 15}
+				clr_country_flag = selected
+			}
+		
+		}
+		
+	}
+	
+	heating_buildings = {
+		context_type = player_context
+
+		window_name = "heating_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 7 }
+			has_country_flag = generator_view
+		}
+		
+		effects = {
+			
+			brazier_click = {
+				set_variable = { button = 16}
+				clr_country_flag = selected
+			}
+			
+			steamhub_click = {
+				set_variable = { button = 17}
+				clr_country_flag = selected
+			}
+		
+		}
+		
+	}
+	
+	admin_buildings = {
+		context_type = player_context
+
+		window_name = "admin_buildings"
+		parent_window_token = top_bar
+		visible = {
+			check_variable = { construction_view = 8 }
+			has_country_flag = generator_view
+		}
+		
+		effects = {
+			
+			administrative_office_click = {
+				set_variable = { button = 18 }	
+				clr_country_flag = selected
+			}
+			
+			radio_station_click = {
+				set_variable = { button = 19 }
+				clr_country_flag = selected
+			}
+		
+		}
+		
+	}
+	
+	# Generator Panel
+	
+	generator_panel = {
+		context_type = player_context
+		
+		window_name = "generator_panel"
+		parent_window_token = top_bar
+		visible = {
+			has_country_flag = generator_view
+			has_country_flag = generator_center
+		}
+		
+		
+	
+	}
+	
+	building_panel = {
+		context_type = player_context
+		
+		window_name = "building_panel"
+		parent_window_token = top_bar
+		
+		visible = {
+			has_country_flag = selected
+			has_country_flag = generator_view
+			check_variable = { construction_view = 0 }
+		}
+		
+		effects = {
+		
+			increase_pop_1_click = {
+				add_1_worker_pop_to_building = yes
+			}
+			
+			increase_pop_5_click = {
+				add_5_worker_pop_to_building = yes
+			}
+			
+			increase_pop_max_click = {
+				add_max_worker_pop_to_building = yes
+			}
+			
+			decrease_pop_1_click = {
+				decrease_1_worker_pop_to_building = yes
+			}
+			
+			decrease_pop_5_click = {
+				decrease_5_worker_pop_to_building = yes
+			}
+			
+			decrease_pop_max_click = {
+				decrease_max_worker_pop_to_building = yes
+			}
+		
+		} 
+		
+		properties = {
+			heat_title = {
+				image = "[GFX_temp_heat_icon]"
+			}
+		}
+	
+	}
+	
+#	building_panel = {
+#		context_type = player_context
+#		
+#		window_name = "building_confirmation_popup"
+#		parent_window_token = top_bar
+#		
+#		visible = {
+#			has_country_flag = confirm
+#		}
+#	
+#	}
+
+}
